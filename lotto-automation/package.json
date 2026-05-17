@@ -1,0 +1,17 @@
+{
+  "name": "lotto-automation",
+  "version": "1.0.0",
+  "description": "Automated NZ Lotto Pick Your Dip filler for the Gordon Analyzer",
+  "main": "auto-fill-lotto.js",
+  "private": true,
+  "scripts": {
+    "start": "node auto-fill-lotto.js",
+    "headless": "HEADLESS=true node auto-fill-lotto.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "puppeteer": "^22.15.0"
+  }
+}

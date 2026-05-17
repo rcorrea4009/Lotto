@@ -13,16 +13,10 @@
 body{background:var(--bg);color:var(--text);font-family:'Share Tech Mono',monospace;min-height:100vh;overflow-x:hidden}
 body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellipse at 20% 0%,rgba(0,229,255,.06),transparent 50%),radial-gradient(ellipse at 80% 100%,rgba(245,197,24,.06),transparent 50%);pointer-events:none;z-index:0}
 .wrap{position:relative;z-index:1;max-width:700px;margin:0 auto;padding:0 16px 80px}
-
-/* Header */
 header{text-align:center;padding:28px 0 18px;border-bottom:1px solid var(--border);margin-bottom:16px}
 .logo{font-family:'Orbitron',sans-serif;font-size:clamp(1.4rem,5vw,2rem);font-weight:900;letter-spacing:.08em;background:linear-gradient(135deg,var(--gold),var(--gold2),var(--cyan));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:5px}
 .sub{color:var(--dim);font-size:.65rem;letter-spacing:.18em;text-transform:uppercase}
-
-/* Disclaimer */
 .disc{background:rgba(255,68,85,.07);border:1px solid rgba(255,68,85,.3);border-radius:6px;padding:8px 12px;font-size:.64rem;color:#ff8899;text-align:center;margin-bottom:12px}
-
-/* Upload */
 .upload-box{background:var(--panel);border:1px solid var(--border);border-radius:8px;padding:14px 16px;margin-bottom:12px;transition:border-color .2s}
 .upload-box.has-file{border-color:var(--green)}
 .upload-top{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
@@ -39,14 +33,10 @@ header{text-align:center;padding:28px 0 18px;border-bottom:1px solid var(--borde
 .fmt-hint{font-size:.58rem;color:var(--dim);background:rgba(255,255,255,.02);border:1px dashed var(--border);border-radius:6px;padding:8px 12px;margin-top:8px;line-height:1.6}
 .fmt-hint span{color:var(--gold)}
 .fmt-hint a{color:var(--cyan);text-decoration:none}
-
-/* Tabs */
 .tabs{display:flex;gap:6px;overflow-x:auto;padding-bottom:12px;-ms-overflow-style:none;scrollbar-width:none}
 .tabs::-webkit-scrollbar{display:none}
 .tab{padding:7px 12px;border-radius:6px;white-space:nowrap;border:1px solid var(--border);background:transparent;color:var(--dim);font-family:'Orbitron',sans-serif;font-size:.52rem;font-weight:700;letter-spacing:.08em;cursor:pointer;transition:all .2s;flex-shrink:0}
 .tab.on{border-color:var(--gold);background:rgba(245,197,24,.1);color:var(--gold)}
-
-/* Panels */
 .panel{background:var(--panel);border:1px solid var(--border);border-radius:10px;padding:18px;margin-bottom:14px;border-top:2px solid var(--cyan)}
 .panel.gold{border-color:rgba(245,197,24,.4);border-top-color:var(--gold)}
 .panel.green{border-color:rgba(0,255,136,.3);border-top-color:var(--green)}
@@ -54,14 +44,10 @@ header{text-align:center;padding:28px 0 18px;border-bottom:1px solid var(--borde
 .panel.gold .ptitle{color:var(--gold)}
 .panel.green .ptitle{color:var(--green)}
 .ptitle::after{content:'';flex:1;height:1px;background:var(--border)}
-
-/* Stats rows */
 .sr{display:flex;justify-content:space-between;align-items:center;padding:6px 0;border-bottom:1px solid rgba(255,255,255,.04);font-size:.67rem}
 .sr:last-child{border-bottom:none}
 .sl{color:var(--dim)}
 .sv{color:var(--gold);font-weight:bold;text-align:right;max-width:55%}
-
-/* Latest balls */
 .ball-row{display:flex;gap:8px;flex-wrap:wrap;align-items:flex-end;margin-bottom:10px}
 .bwrap{display:flex;flex-direction:column;align-items:center;gap:3px}
 .blbl{font-size:.46rem;color:var(--dim)}
@@ -74,25 +60,17 @@ header{text-align:center;padding:28px 0 18px;border-bottom:1px solid var(--borde
 .ball.md{width:44px;height:44px;font-size:.82rem}
 .ball.sm{width:24px;height:24px;font-size:.58rem}
 .ball.pk{width:46px;height:46px;font-size:.88rem}
-
-/* Heatmap */
 .heatgrid{display:grid;grid-template-columns:repeat(8,1fr);gap:5px;margin-bottom:12px}
 .hball{aspect-ratio:1;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;border:1px solid rgba(255,255,255,.1);cursor:default}
 .hball .hn{font-size:.64rem;font-weight:bold;line-height:1}
 .hball .hc{font-size:.38rem;opacity:.8}
-
-/* Pick mode tabs */
 .mtabs{display:flex;gap:6px;margin-bottom:14px;flex-wrap:wrap}
 .mtab{flex:1;min-width:70px;padding:7px 4px;border-radius:5px;border:1px solid var(--border);background:transparent;color:var(--dim);font-family:'Orbitron',sans-serif;font-size:.52rem;letter-spacing:.07em;cursor:pointer;transition:all .2s;text-transform:uppercase}
 .mtab.on{border-color:var(--gold);background:rgba(245,197,24,.1);color:var(--gold)}
-
-/* Controls row */
 .crow{display:flex;align-items:center;gap:12px;margin-bottom:14px;font-size:.67rem;flex-wrap:wrap}
 .crow label{color:var(--dim);white-space:nowrap}
 .ci{width:58px;background:var(--bg);border:1px solid var(--border);color:var(--text);font-family:inherit;font-size:.85rem;padding:4px 8px;border-radius:5px;text-align:center;-moz-appearance:textfield}
 .ci::-webkit-inner-spin-button{-webkit-appearance:none}
-
-/* Buttons */
 .btn{font-family:'Orbitron',sans-serif;font-size:.6rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:9px 18px;border:none;border-radius:6px;cursor:pointer;transition:all .2s}
 .btn:hover{transform:translateY(-1px);filter:brightness(1.1)}
 .btn.gold{background:linear-gradient(135deg,var(--gold),var(--gold2));color:#1a0e00;box-shadow:0 0 18px rgba(245,197,24,.3)}
@@ -100,20 +78,14 @@ header{text-align:center;padding:28px 0 18px;border-bottom:1px solid var(--borde
 .btn.outline{background:transparent;color:var(--cyan);border:1px solid var(--cyan)}
 .btn:disabled{opacity:.5;cursor:not-allowed;transform:none}
 .brow{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
-
-/* Sim bars */
 .sbw{margin-bottom:10px}
 .sbl{display:flex;justify-content:space-between;font-size:.62rem;color:var(--dim);margin-bottom:3px}
 .sb{height:6px;background:var(--border);border-radius:3px;overflow:hidden}
 .sbf{height:100%;border-radius:3px;transition:width .7s ease}
-
-/* History table */
 .htbl{width:100%;border-collapse:collapse;font-size:.62rem}
 .htbl th{color:var(--dim);font-weight:normal;text-align:left;padding:5px 5px;border-bottom:1px solid var(--border);font-size:.56rem;letter-spacing:.08em}
 .htbl td{padding:5px 5px;border-bottom:1px solid rgba(255,255,255,.03);vertical-align:middle}
 .htbl tr:hover td{background:rgba(255,255,255,.02)}
-
-/* AI */
 .ai-btns{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:16px}
 .ai-btn{padding:10px 14px;border-radius:6px;border:1px solid var(--cyan);background:transparent;color:var(--cyan);font-family:'Orbitron',sans-serif;font-size:.55rem;font-weight:700;letter-spacing:.09em;cursor:pointer;transition:all .2s}
 .ai-btn:hover{background:rgba(0,229,255,.08)}
@@ -123,31 +95,20 @@ header{text-align:center;padding:28px 0 18px;border-bottom:1px solid var(--borde
 .ai-empty{text-align:center;padding:24px;color:var(--dim);font-size:.68rem;border:1px dashed var(--border);border-radius:8px}
 .spinner{display:inline-block;width:13px;height:13px;border:2px solid var(--border);border-top-color:var(--cyan);border-radius:50%;animation:spin .8s linear infinite;margin-right:8px;vertical-align:middle}
 .ai-loading{text-align:center;padding:18px;color:var(--dim);font-size:.68rem}
-
-/* Live dot */
 .live{display:flex;align-items:center;gap:5px;font-size:.58rem;color:var(--green)}
 .dot{width:6px;height:6px;border-radius:50%;background:var(--green);animation:pulse 1.5s infinite}
-
-/* Picks output */
 .picks-empty{text-align:center;padding:14px 0;color:var(--dim);font-size:.68rem}
 .pick-line{margin-bottom:14px}
 .pick-lbl{font-size:.55rem;color:var(--dim);margin-bottom:6px;letter-spacing:.07em}
 .pick-row{display:flex;gap:7px;flex-wrap:wrap;align-items:center}
 .pick-rank{font-size:.45rem;color:var(--dim);margin-top:2px}
-
-/* Page fade */
 .page{animation:fadeIn .3s ease}
-
-/* Badges */
 .badge{display:inline-block;font-size:.48rem;padding:2px 6px;border-radius:8px;letter-spacing:.07em;margin-left:5px;vertical-align:middle}
 .badge.live{background:rgba(0,255,136,.15);color:var(--green);border:1px solid rgba(0,255,136,.4)}
 .badge.file{background:rgba(0,229,255,.1);color:var(--cyan);border:1px solid rgba(0,229,255,.3)}
-
 @keyframes fadeIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
 @keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
 @keyframes spin{to{transform:rotate(360deg)}}
-
-/* ── GORDON STYLES ─────────────────────────────────────── */
 .g-section{margin-bottom:18px}
 .g-label{font-family:'Orbitron',sans-serif;font-size:.58rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--cyan);margin-bottom:8px}
 .g-label.gold{color:var(--gold)}
@@ -185,27 +146,26 @@ header{text-align:center;padding:28px 0 18px;border-bottom:1px solid var(--borde
 .g-progress-fill{height:100%;background:linear-gradient(90deg,var(--cyan),var(--green));border-radius:3px;transition:width .4s ease}
 .g-run-btn{font-family:'Orbitron',sans-serif;font-size:.65rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:12px 28px;border:none;border-radius:8px;cursor:pointer;background:linear-gradient(135deg,#cc88ff,#8833cc);color:#fff;box-shadow:0 0 20px rgba(200,136,255,.3);transition:all .2s;display:block;margin:0 auto}
 .g-run-btn:hover{transform:translateY(-2px);box-shadow:0 0 30px rgba(200,136,255,.5)}
-.pattern-row{display:flex;gap:4px;align-items:center;font-size:.6rem;margin:3px 0}
-.pattern-col{display:flex;flex-direction:column;align-items:center;gap:2px;padding:4px 6px;border-radius:4px;border:1px solid var(--border);min-width:28px}
-.pattern-col.match{border-color:var(--green);background:rgba(0,255,136,.06)}
-.pattern-cell{font-size:.62rem;font-weight:bold;width:20px;text-align:center}
 .dl-btn{font-family:'Orbitron',sans-serif;font-size:.55rem;font-weight:700;letter-spacing:.1em;padding:8px 16px;border-radius:6px;cursor:pointer;background:linear-gradient(135deg,var(--green),#009944);color:#001a0e;border:none;transition:all .2s}
 .dl-btn:hover{transform:translateY(-1px);filter:brightness(1.1)}
 .g-chips{display:flex;flex-wrap:wrap;gap:4px;margin:6px 0}
-
+/* Puppeteer panel */
+.pup-tabs{display:flex;gap:4px;margin-bottom:10px;border-bottom:1px solid var(--border)}
+.pup-tab{padding:7px 12px;border:none;background:transparent;color:var(--dim);font-family:'Orbitron',sans-serif;font-size:.5rem;font-weight:700;letter-spacing:.08em;cursor:pointer;border-bottom:2px solid transparent;text-transform:uppercase}
+.pup-tab.on{color:#cc88ff;border-bottom-color:#cc88ff}
+.pup-panel{display:none}
+.pup-panel.on{display:block;animation:fadeIn .25s ease}
+.code-box{background:#020508;border:1px solid #cc88ff;border-radius:8px;padding:14px;font-size:.55rem;line-height:1.6;color:#c8d8f0;overflow-x:auto;overflow-y:auto;max-height:260px;white-space:pre;font-family:'Share Tech Mono',monospace;position:relative}
+.copy-btn-small{position:absolute;top:8px;right:8px;z-index:2;padding:5px 12px;border-radius:5px;border:1px solid #cc88ff;background:rgba(200,136,255,.1);color:#cc88ff;font-family:'Orbitron',sans-serif;font-size:.46rem;font-weight:700;letter-spacing:.08em;cursor:pointer}
 </style>
 </head>
 <body>
 <div class="wrap">
-
 <header>
   <div class="logo">⚡ NZ LOTTO ANALYZER</div>
   <div class="sub">Live Results · CSV/Excel Upload · AI Analysis · Smart Picks</div>
 </header>
-
 <div class="disc">⚠️ FOR ENTERTAINMENT ONLY — No system can predict random lotto draws. Play responsibly.</div>
-
-<!-- UPLOAD BOX -->
 <div class="upload-box" id="uploadBox">
   <div class="upload-top">
     <div style="flex:1;min-width:160px">
@@ -224,8 +184,6 @@ header{text-align:center;padding:28px 0 18px;border-bottom:1px solid var(--borde
     Get data from <a href="https://lottoresults.co.nz" target="_blank">lottoresults.co.nz</a> or <a href="https://en.lottolyzer.com/history/new-zealand/nz-lotto" target="_blank">lottolyzer.com</a>
   </div>
 </div>
-
-<!-- TABS -->
 <div class="tabs">
   <button class="tab on" onclick="switchTab('latest')">🏆 Latest</button>
   <button class="tab" onclick="switchTab('heatmap')">📊 Heatmap</button>
@@ -235,22 +193,17 @@ header{text-align:center;padding:28px 0 18px;border-bottom:1px solid var(--borde
   <button class="tab" onclick="switchTab('ai')">🤖 AI</button>
   <button class="tab" onclick="switchTab('gordon')">🧠 Gordon</button>
 </div>
-
-<!-- PAGES -->
 <div id="page-latest" class="page"></div>
 <div id="page-heatmap" class="page" style="display:none"></div>
 <div id="page-picks" class="page" style="display:none"></div>
 <div id="page-simulate" class="page" style="display:none"></div>
 <div id="page-history" class="page" style="display:none"></div>
 <div id="page-ai" class="page" style="display:none"></div>
-
-</div>
 <div id="page-gordon" class="page" style="display:none"></div>
-
+</div>
 <script>
-// ── FALLBACK DATA (11 real verified 2026 draws) ─────────────
 const FALLBACK = [
-  {date:"2026-05-16",numbers:[6,8,13,17,34,36],bonus:28,powerball:5,draw:2586}
+  {date:"2026-05-16",numbers:[6,8,13,17,34,36],bonus:28,powerball:5,draw:2586},
   {date:"2026-05-13",numbers:[2,5,6,12,14,28],bonus:34,powerball:6,draw:2585},
   {date:"2026-05-09",numbers:[3,10,12,18,26,32],bonus:36,powerball:5,draw:2584},
   {date:"2026-05-06",numbers:[3,4,16,22,24,34],bonus:38,powerball:10,draw:2583},
@@ -265,7 +218,6 @@ const FALLBACK = [
   {date:"2026-04-04",numbers:[1,9,25,30,38,40],bonus:22,powerball:4,draw:2574},
   {date:"2026-04-01",numbers:[1,2,24,25,30,38],bonus:39,powerball:1,draw:2573},
 ];
-
 let draws = [...FALLBACK];
 let usingFile = false;
 let fileName = "";
@@ -276,8 +228,6 @@ let picks = [];
 let simRes = null;
 let aiType = null;
 let aiLoading = false;
-
-// ── Build stats ──────────────────────────────────────────────
 function buildStats(d) {
   const freq = {}, pbFreq = {}, pairFreq = {};
   for (let i = 1; i <= 40; i++) freq[i] = 0;
@@ -298,8 +248,6 @@ function buildStats(d) {
   const avgSum = d.length > 0 ? Math.round(d.reduce((s, r) => s + r.numbers.reduce((a, b) => a + b, 0), 0) / d.length) : 0;
   return { freq, pbFreq, sorted, maxF, minF, hotPair, avgSum };
 }
-
-// ── Pick logic ───────────────────────────────────────────────
 function pickNums(mode, count = 6) {
   const { freq, sorted } = stats;
   const pool = Array.from({ length: 40 }, (_, i) => i + 1);
@@ -324,7 +272,6 @@ function pickNums(mode, count = 6) {
   while (ps.length < count) { const rv = pool[Math.floor(Math.random() * pool.length)]; if (!ps.includes(rv)) ps.push(rv); }
   return ps.sort((a, b) => a - b);
 }
-
 function pickPB() {
   const { pbFreq } = stats;
   const pool = [1,2,3,4,5,6,7,8,9,10];
@@ -333,13 +280,7 @@ function pickPB() {
   for (let i = 0; i < pool.length; i++) { rv -= w[i]; if (rv <= 0) return pool[i]; }
   return pool[Math.floor(Math.random() * pool.length)];
 }
-
-// ── Ball HTML ────────────────────────────────────────────────
-function ball(n, type, size) {
-  return `<div class="ball ${type} ${size}">${n}</div>`;
-}
-
-// ── Heat colour ──────────────────────────────────────────────
+function ball(n, type, size) { return `<div class="ball ${type} ${size}">${n}</div>`; }
 function heatClr(n) {
   const { freq, maxF, minF } = stats;
   const t = maxF === minF ? 0.5 : (freq[n] - minF) / (maxF - minF);
@@ -348,8 +289,6 @@ function heatClr(n) {
   const b = Math.round(255 * Math.max(0, 1 - t * 2));
   return { bg: `radial-gradient(circle at 35% 35%,rgba(255,255,255,.2),rgb(${r},${g},${b}))`, light: t > 0.45 };
 }
-
-// ── Parse CSV/Excel row ──────────────────────────────────────
 function parseRow(row) {
   const get = (...keys) => {
     for (const k of keys) {
@@ -376,103 +315,60 @@ function parseRow(row) {
     draw: Number(get("draw","drawno","drawnumber")) || null,
   };
 }
-
 function processRows(rows) {
   const parsed = rows.map(parseRow).filter(Boolean);
-  if (parsed.length === 0) {
-    showErr("No valid rows found. Check column names: Date, N1, N2, N3, N4, N5, N6, Bonus, Powerball");
-    return;
-  }
+  if (parsed.length === 0) { showErr("No valid rows found. Check column names: Date, N1..N6, Bonus, Powerball"); return; }
   parsed.sort((a, b) => new Date(b.date) - new Date(a.date));
-  draws = parsed;
-  usingFile = true;
-  picks = []; simRes = null;
-  stats = buildStats(draws);
-  updateUploadUI();
-  renderTab(currentTab);
+  draws = parsed; usingFile = true; picks = []; simRes = null;
+  stats = buildStats(draws); updateUploadUI(); renderTab(currentTab);
 }
-
-function showErr(msg) {
-  const el = document.getElementById("uploadErr");
-  el.textContent = msg; el.style.display = "block";
-}
-
-// ── File input handler ───────────────────────────────────────
+function showErr(msg) { const el = document.getElementById("uploadErr"); el.textContent = msg; el.style.display = "block"; }
 document.getElementById("fileInput").addEventListener("change", function(e) {
-  const file = e.target.files[0];
-  if (!file) return;
+  const file = e.target.files[0]; if (!file) return;
   document.getElementById("uploadErr").style.display = "none";
   fileName = file.name;
   const ext = file.name.split(".").pop().toLowerCase();
-  if (ext === "csv") {
-    Papa.parse(file, {
-      header: true, skipEmptyLines: true,
-      complete: r => processRows(r.data),
-      error: err => showErr("CSV error: " + err.message),
-    });
-  } else if (ext === "xlsx" || ext === "xls") {
+  if (ext === "csv") Papa.parse(file, { header: true, skipEmptyLines: true, complete: r => processRows(r.data), error: err => showErr("CSV error: " + err.message) });
+  else if (ext === "xlsx" || ext === "xls") {
     const reader = new FileReader();
     reader.onload = ev => {
-      try {
-        const wb = XLSX.read(ev.target.result, { type: "binary" });
-        const ws = wb.Sheets[wb.SheetNames[0]];
-        processRows(XLSX.utils.sheet_to_json(ws, { defval: "" }));
-      } catch (err) { showErr("Excel error: " + err.message); }
+      try { const wb = XLSX.read(ev.target.result, { type: "binary" }); processRows(XLSX.utils.sheet_to_json(wb.Sheets[wb.SheetNames[0]], { defval: "" })); }
+      catch (err) { showErr("Excel error: " + err.message); }
     };
     reader.readAsBinaryString(file);
-  } else {
-    showErr("Please upload .csv, .xlsx or .xls only");
-  }
+  } else showErr("Please upload .csv, .xlsx or .xls only");
   this.value = "";
 });
-
 function resetFile() {
-  draws = [...FALLBACK]; usingFile = false; fileName = "";
-  picks = []; simRes = null;
-  stats = buildStats(draws);
-  document.getElementById("uploadErr").style.display = "none";
-  updateUploadUI();
-  renderTab(currentTab);
+  draws = [...FALLBACK]; usingFile = false; fileName = ""; picks = []; simRes = null;
+  stats = buildStats(draws); document.getElementById("uploadErr").style.display = "none";
+  updateUploadUI(); renderTab(currentTab);
 }
-
 function updateUploadUI() {
-  const box = document.getElementById("uploadBox");
-  const title = document.getElementById("uploadTitle");
-  const hint = document.getElementById("uploadHint");
-  const btn = document.getElementById("fileBtn");
-  const reset = document.getElementById("resetBtn");
-  const fmt = document.getElementById("fmtHint");
+  const box = document.getElementById("uploadBox"), title = document.getElementById("uploadTitle"), hint = document.getElementById("uploadHint"), btn = document.getElementById("fileBtn"), reset = document.getElementById("resetBtn"), fmt = document.getElementById("fmtHint");
   if (usingFile) {
-    box.classList.add("has-file");
-    title.className = "upload-label-text active";
+    box.classList.add("has-file"); title.className = "upload-label-text active";
     title.textContent = "✅ YOUR DATA: " + fileName + " (" + draws.length + " draws loaded)";
-    hint.textContent = "All stats, heatmap and picks are now using your real historical data";
+    hint.textContent = "All stats, heatmap and picks now using your real historical data";
     btn.className = "file-btn active"; btn.childNodes[0].textContent = "CHANGE FILE ";
-    reset.style.display = "inline-block";
-    fmt.style.display = "none";
+    reset.style.display = "inline-block"; fmt.style.display = "none";
   } else {
-    box.classList.remove("has-file");
-    title.className = "upload-label-text inactive";
+    box.classList.remove("has-file"); title.className = "upload-label-text inactive";
     title.textContent = "📂 UPLOAD YOUR LOTTO DATA";
     hint.innerHTML = 'Upload CSV or Excel — columns: <strong style="color:var(--gold)">Date · N1 · N2 · N3 · N4 · N5 · N6 · Bonus · Powerball</strong>';
     btn.className = "file-btn inactive"; btn.childNodes[0].textContent = "UPLOAD FILE ";
-    reset.style.display = "none";
-    fmt.style.display = "block";
+    reset.style.display = "none"; fmt.style.display = "block";
   }
 }
-
-// ── Tab switching ────────────────────────────────────────────
 function switchTab(name) {
   document.querySelectorAll(".tab").forEach((t, i) => {
     const names = ["latest","heatmap","picks","simulate","history","ai","gordon"];
     t.classList.toggle("on", names[i] === name);
   });
   document.querySelectorAll(".page").forEach(p => p.style.display = "none");
-  currentTab = name;
-  renderTab(name);
+  currentTab = name; renderTab(name);
   document.getElementById("page-" + name).style.display = "block";
 }
-
 function renderTab(name) {
   const el = document.getElementById("page-" + name);
   if (name === "latest") el.innerHTML = renderLatest();
@@ -483,8 +379,6 @@ function renderTab(name) {
   else if (name === "ai") el.innerHTML = renderAI();
   else if (name === "gordon") el.innerHTML = renderGordon();
 }
-
-// ── LATEST ──────────────────────────────────────────────────
 function renderLatest() {
   const l = draws[0], p = draws[1];
   if (!l) return "<div style='color:var(--dim);padding:20px;text-align:center'>No draw data available</div>";
@@ -504,7 +398,6 @@ function renderLatest() {
       ${p.bonus > 0 ? ball(p.bonus,"bonus","sm") : ""} ${p.powerball > 0 ? ball(p.powerball,"pb","sm") : ""}
     </div>` : ""}
   </div>`;
-
   const { sorted, hotPair, avgSum } = stats;
   html += `<div class="panel">
     <div class="ptitle">📈 Stats</div>
@@ -520,106 +413,66 @@ function renderLatest() {
   </div>`;
   return html;
 }
-
-// ── HEATMAP ──────────────────────────────────────────────────
 function renderHeatmap() {
   const { freq } = stats;
   let balls = "";
   for (let n = 1; n <= 40; n++) {
     const { bg, light } = heatClr(n);
     balls += `<div class="hball" title="Number ${n}: drawn ${freq[n]} times" style="background:${bg};color:${light?"#fff":"#111"}">
-      <span class="hn">${n}</span><span class="hc">${freq[n]}×</span>
-    </div>`;
+      <span class="hn">${n}</span><span class="hc">${freq[n]}×</span></div>`;
   }
   return `<div class="panel">
     <div class="ptitle">📊 Frequency Heatmap</div>
     <div style="font-size:.6rem;color:var(--dim);margin-bottom:10px">Based on ${draws.length} draws · ${usingFile ? fileName : "verified 2026 data"}</div>
     <div class="heatgrid">${balls}</div>
     <div style="display:flex;gap:16px;font-size:.58rem;justify-content:center;color:var(--dim)">
-      <span>🔴 Hot</span><span>🟡 Warm</span><span>🔵 Cold</span>
-    </div>
-  </div>`;
+      <span>🔴 Hot</span><span>🟡 Warm</span><span>🔵 Cold</span></div></div>`;
 }
-
-// ── PICKS ────────────────────────────────────────────────────
 function renderPicks() {
   const modes = {weighted:"Weighted",pure:"Random",hot:"Hot",balanced:"Balanced"};
   let picksHTML = "";
-  if (picks.length === 0) {
-    picksHTML = '<div class="picks-empty">Hit Generate to create your picks</div>';
-  } else {
+  if (picks.length === 0) picksHTML = '<div class="picks-empty">Hit Generate to create your picks</div>';
+  else {
     picks.forEach((p, li) => {
       picksHTML += `<div class="pick-line">
         <div class="pick-lbl">LINE ${li+1} · ${modes[pickMode]}${usingFile ? " · from " + draws.length + " draws" : ""}</div>
         <div class="pick-row">
           ${p.nums.map((n,i) => `<div class="bwrap">${ball(n,"pick","pk")}<div class="pick-rank">#${stats.sorted.findIndex(x=>+x[0]===n)+1}</div></div>`).join("")}
           ${p.pb != null ? `<div class="bwrap">${ball(p.pb,"pb","pk")}<div class="pick-rank">PB</div></div>` : ""}
-        </div>
-      </div>`;
+        </div></div>`;
     });
   }
   return `<div class="panel gold">
     <div class="ptitle">🎯 Smart Pick Generator</div>
-    <div class="mtabs">
-      ${Object.entries(modes).map(([k,v]) => `<button class="mtab${pickMode===k?" on":""}" onclick="setPickMode('${k}')">${v}</button>`).join("")}
-    </div>
-    <div class="crow">
-      <label>Lines:</label>
-      <input type="number" class="ci" id="lineCount" value="1" min="1" max="10">
-      <label>Powerball:</label>
-      <input type="checkbox" id="withPB" checked>
-    </div>
+    <div class="mtabs">${Object.entries(modes).map(([k,v]) => `<button class="mtab${pickMode===k?" on":""}" onclick="setPickMode('${k}')">${v}</button>`).join("")}</div>
+    <div class="crow"><label>Lines:</label><input type="number" class="ci" id="lineCount" value="1" min="1" max="10"><label>Powerball:</label><input type="checkbox" id="withPB" checked></div>
     ${picksHTML}
-    <div class="brow">
-      <button class="btn gold" onclick="generatePicks()">⚡ GENERATE</button>
-      <button class="btn outline" onclick="clearPicks()">CLEAR</button>
-    </div>
-  </div>`;
+    <div class="brow"><button class="btn gold" onclick="generatePicks()">⚡ GENERATE</button><button class="btn outline" onclick="clearPicks()">CLEAR</button></div></div>`;
 }
-
 function setPickMode(m) { pickMode = m; renderTab("picks"); }
-
 function generatePicks() {
   const lines = Math.min(+document.getElementById("lineCount").value || 1, 10);
   const withPB = document.getElementById("withPB").checked;
   picks = [];
-  for (let i = 0; i < lines; i++)
-    picks.push({ nums: pickNums(pickMode), pb: withPB ? pickPB() : null });
+  for (let i = 0; i < lines; i++) picks.push({ nums: pickNums(pickMode), pb: withPB ? pickPB() : null });
   renderTab("picks");
 }
-
 function clearPicks() { picks = []; renderTab("picks"); }
-
-// ── SIMULATE ─────────────────────────────────────────────────
 function renderSimulate() {
-  const bars = [
-    ["Match 6 (Jackpot)","m6","var(--gold)"],
-    ["Match 5 + Bonus","m5b","var(--cyan)"],
-    ["Match 5","m5","#88aaff"],
-    ["Match 4","m4","var(--green)"],
-    ["Match 3","m3","#aaffcc"],
-  ];
+  const bars = [["Match 6 (Jackpot)","m6","var(--gold)"],["Match 5 + Bonus","m5b","var(--cyan)"],["Match 5","m5","#88aaff"],["Match 4","m4","var(--green)"],["Match 3","m3","#aaffcc"]];
   let barsHTML = bars.map(([lbl, key, color]) => {
     const val = simRes ? simRes[key] : 0;
     const pct = simRes ? Math.max(val>0?2:0, Math.min(100,(val/(simRes.n*0.02))*100)) : 0;
     const txt = simRes ? `${val}× (${(val/simRes.n*100).toFixed(3)}%)` : "—";
-    return `<div class="sbw">
-      <div class="sbl"><span>${lbl}</span><span>${txt}</span></div>
-      <div class="sb"><div class="sbf" style="width:${pct}%;background:${color}"></div></div>
-    </div>`;
+    return `<div class="sbw"><div class="sbl"><span>${lbl}</span><span>${txt}</span></div><div class="sb"><div class="sbf" style="width:${pct}%;background:${color}"></div></div></div>`;
   }).join("");
   return `<div class="panel green">
     <div class="ptitle">🎲 Draw Simulator</div>
-    <div class="crow">
-      <label>Simulate draws:</label>
-      <input type="number" class="ci" id="simCount" value="${simRes ? simRes.n : 1000}" min="100" max="100000" style="width:80px">
-    </div>
+    <div class="crow"><label>Simulate draws:</label><input type="number" class="ci" id="simCount" value="${simRes ? simRes.n : 1000}" min="100" max="100000" style="width:80px"></div>
     ${barsHTML}
     ${simRes ? `<div style="font-size:.58rem;color:var(--dim);margin-top:6px">Pick: [${simRes.pick.join(", ")}] · Wins: ${simRes.m3+simRes.m4+simRes.m5+simRes.m5b+simRes.m6} / ${simRes.n.toLocaleString()}</div>` : ""}
-    <div class="brow"><button class="btn green" onclick="runSim()">▶ RUN</button></div>
-  </div>`;
+    <div class="brow"><button class="btn green" onclick="runSim()">▶ RUN</button></div></div>`;
 }
-
 function runSim() {
   const n = Math.min(+document.getElementById("simCount").value || 1000, 100000);
   const my = pickNums("weighted");
@@ -632,8 +485,6 @@ function runSim() {
   simRes = { m3, m4, m5, m5b, m6, n, pick: my };
   renderTab("simulate");
 }
-
-// ── HISTORY ──────────────────────────────────────────────────
 function renderHistory() {
   const rows = draws.slice(0, 30);
   let tableRows = rows.map(d => `<tr>
@@ -645,27 +496,16 @@ function renderHistory() {
   </tr>`).join("");
   return `<div class="panel">
     <div class="ptitle">📋 History ${usingFile ? '<span class="badge file">YOUR FILE</span>' : '<span class="badge live">LIVE</span>'}</div>
-    <div style="overflow-x:auto">
-      <table class="htbl">
-        <thead><tr><th>Date</th><th>#</th><th>Numbers</th><th>Bonus</th><th>PB</th></tr></thead>
-        <tbody>${tableRows}</tbody>
-      </table>
-    </div>
+    <div style="overflow-x:auto"><table class="htbl"><thead><tr><th>Date</th><th>#</th><th>Numbers</th><th>Bonus</th><th>PB</th></tr></thead><tbody>${tableRows}</tbody></table></div>
     ${draws.length > 30 ? `<div style="text-align:center;padding:10px 0 0;font-size:.6rem;color:var(--dim)">Showing 30 of ${draws.length} draws</div>` : ""}
   </div>`;
 }
-
-// ── AI ───────────────────────────────────────────────────────
 function renderAI() {
   const btnHtml = [["patterns","📊 Analyze Patterns"],["picks","🎯 Suggest Picks"],["odds","🎲 Explain Odds"]].map(([t,l]) =>
-    `<button class="ai-btn${aiType===t&&!aiLoading?" on":""}" onclick="runAI('${t}')" ${aiLoading?"disabled":""}>${l}</button>`
-  ).join("");
-
+    `<button class="ai-btn${aiType===t&&!aiLoading?" on":""}" onclick="runAI('${t}')" ${aiLoading?"disabled":""}>${l}</button>`).join("");
   let outputHtml = "";
   if (aiLoading) outputHtml = `<div class="ai-loading"><span class="spinner"></span>Claude is analysing...</div>`;
-  else if (document.getElementById("aiResult")?.textContent) outputHtml = `<div class="ai-out" id="aiResult">${document.getElementById("aiResult").textContent}</div>`;
-  else outputHtml = `<div class="ai-empty" id="aiResult">Click a button above to ask Claude to analyse the data</div>`;
-
+  else outputHtml = `<div class="ai-empty">Click a button above to ask Claude to analyse the data</div>`;
   return `<div class="panel">
     <div class="ptitle">🤖 AI Pattern Analysis</div>
     <div style="font-size:.65rem;color:var(--dim);margin-bottom:14px">Claude analyses ${draws.length} draws ${usingFile ? "from "+fileName : "(verified 2026 data)"} — entertainment only</div>
@@ -673,7 +513,6 @@ function renderAI() {
     ${outputHtml}
   </div>`;
 }
-
 async function runAI(type) {
   if (aiLoading) return;
   aiLoading = true; aiType = type;
@@ -681,88 +520,42 @@ async function runAI(type) {
   const hot = sorted.slice(0, 5).map(x => x[0]).join(", ");
   const cold = sorted.slice(-5).map(x => x[0]).join(", ");
   const prompts = {
-    patterns: `NZ Lotto: ${draws.length} draws. Hottest numbers: ${hot}. Coldest: ${cold}. Avg sum: ${avgSum}. Analyse interesting patterns for entertainment. Note past data cannot predict future draws. Max 150 words.`,
-    picks: `NZ Lotto stats — hottest: ${hot}, coldest: ${cold}, avg sum: ${avgSum}. Suggest 3 picks of 6 numbers (1-40): Hot Pick, Balanced Pick, Due Numbers. Show actual numbers. Entertainment only. Max 150 words.`,
-    odds: `Explain NZ Lotto odds: jackpot 1 in 3,838,380 (pick 6 from 40). Also match 5+bonus, match 5, match 4, match 3 odds. Explain simply why historical data cannot predict future draws. Max 150 words.`,
+    patterns: `NZ Lotto: ${draws.length} draws. Hottest: ${hot}. Coldest: ${cold}. Avg sum: ${avgSum}. Analyse patterns for entertainment. Note past data cannot predict future. Max 150 words.`,
+    picks: `NZ Lotto stats — hottest: ${hot}, coldest: ${cold}, avg sum: ${avgSum}. Suggest 3 picks of 6 numbers (1-40): Hot Pick, Balanced Pick, Due Numbers. Show actual numbers. Max 150 words.`,
+    odds: `Explain NZ Lotto odds: jackpot 1 in 3,838,380. Also match 5+bonus, match 5, match 4, match 3 odds. Why historical data cannot predict future. Max 150 words.`,
   };
-
-  // Re-render to show spinner
   renderTab("ai");
-  document.getElementById("page-ai").style.display = "block";
-
   try {
     const res = await fetch("https://api.anthropic.com/v1/messages", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        model: "claude-sonnet-4-20250514",
-        max_tokens: 500,
-        messages: [{ role: "user", content: prompts[type] }],
-      }),
+      method: "POST", headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ model: "claude-sonnet-4-20250514", max_tokens: 500, messages: [{ role: "user", content: prompts[type] }] }),
     });
     const data = await res.json();
     const text = data.content?.filter(c => c.type === "text").map(c => c.text).join("") || JSON.stringify(data).slice(0, 300);
     aiLoading = false;
     document.getElementById("page-ai").innerHTML = `<div class="panel">
       <div class="ptitle">🤖 AI Pattern Analysis</div>
-      <div style="font-size:.65rem;color:var(--dim);margin-bottom:14px">Claude analyses ${draws.length} draws — entertainment only</div>
-      <div class="ai-btns">
-        ${[["patterns","📊 Analyze Patterns"],["picks","🎯 Suggest Picks"],["odds","🎲 Explain Odds"]].map(([t,l]) =>
-          `<button class="ai-btn${t===type?" on":""}" onclick="runAI('${t}')">${l}</button>`
-        ).join("")}
-      </div>
-      <div class="ai-out">${text.replace(/</g,"&lt;").replace(/>/g,"&gt;")}</div>
-    </div>`;
+      <div style="font-size:.65rem;color:var(--dim);margin-bottom:14px">Claude analysed ${draws.length} draws — entertainment only</div>
+      <div class="ai-btns">${[["patterns","📊 Analyze Patterns"],["picks","🎯 Suggest Picks"],["odds","🎲 Explain Odds"]].map(([t,l]) => `<button class="ai-btn${t===type?" on":""}" onclick="runAI('${t}')">${l}</button>`).join("")}</div>
+      <div class="ai-out">${text.replace(/</g,"&lt;").replace(/>/g,"&gt;")}</div></div>`;
   } catch (e) {
     aiLoading = false;
     document.getElementById("page-ai").innerHTML = `<div class="panel">
       <div class="ptitle">🤖 AI Pattern Analysis</div>
-      <div style="font-size:.65rem;color:var(--dim);margin-bottom:14px">Note: AI requires running on a server — it won't work when opening the HTML file directly from your computer. Host on GitHub Pages for AI to work.</div>
-      <div class="ai-btns">
-        ${[["patterns","📊 Analyze Patterns"],["picks","🎯 Suggest Picks"],["odds","🎲 Explain Odds"]].map(([t,l]) =>
-          `<button class="ai-btn" onclick="runAI('${t}')">${l}</button>`
-        ).join("")}
-      </div>
-      <div class="ai-out" style="color:#ff8899">Error: ${e.message}</div>
-    </div>`;
+      <div style="font-size:.65rem;color:var(--dim);margin-bottom:14px">Note: AI requires running on a server (e.g. GitHub Pages).</div>
+      <div class="ai-btns">${[["patterns","📊 Analyze Patterns"],["picks","🎯 Suggest Picks"],["odds","🎲 Explain Odds"]].map(([t,l]) => `<button class="ai-btn" onclick="runAI('${t}')">${l}</button>`).join("")}</div>
+      <div class="ai-out" style="color:#ff8899">Error: ${e.message}</div></div>`;
   }
 }
-
-
 // ══════════════════════════════════════════════════════════
 // GORDON ANALYSIS ENGINE
 // ══════════════════════════════════════════════════════════
-
-let gordonState = null; // stores full analysis result
-
-// Generate a single weighted random ticket (12 lines of 6 numbers)
-function genTicket() {
-  const lines = [];
-  for (let i = 0; i < 12; i++) {
-    lines.push(pickNums('weighted'));
-  }
-  return lines;
-}
-
-// Count how many times each number 1-40 appears across all 12 lines of a ticket
-function countTicket(ticket) {
-  const cnt = {};
-  for (let n = 1; n <= 40; n++) cnt[n] = 0;
-  ticket.forEach(line => line.forEach(n => cnt[n]++));
-  return cnt;
-}
-
-// Detect pattern shape for a number across 3 tickets
-// Returns array of 3 counts e.g. [2,2,1]
-function getPattern(counts3, num) {
-  return counts3.map(c => c[num]);
-}
-
-// Check if two patterns are "similar" - same shape with slight variation
+let gordonState = null;
+function genTicket() { const lines = []; for (let i = 0; i < 12; i++) lines.push(pickNums('weighted')); return lines; }
+function countTicket(ticket) { const cnt = {}; for (let n = 1; n <= 40; n++) cnt[n] = 0; ticket.forEach(line => line.forEach(n => cnt[n]++)); return cnt; }
+function getPattern(counts3, num) { return counts3.map(c => c[num]); }
 function patternSimilar(p1, p2) {
-  // Exact match
   if (p1[0]===p2[0] && p1[1]===p2[1] && p1[2]===p2[2]) return true;
-  // Same direction trend
   const trend = arr => {
     if (arr[0]===arr[1] && arr[1]===arr[2]) return 'flat';
     if (arr[0]<=arr[1] && arr[1]<=arr[2]) return 'up';
@@ -772,323 +565,242 @@ function patternSimilar(p1, p2) {
     return 'mixed';
   };
   if (trend(p1) === trend(p2)) return true;
-  // Within 1 count difference on each position
   const diff = Math.abs(p1[0]-p2[0]) + Math.abs(p1[1]-p2[1]) + Math.abs(p1[2]-p2[2]);
   return diff <= 2;
 }
-
-// Check if a number is consistent (low variance) across 3 counts
 function isConsistent(pattern) {
   const avg = pattern.reduce((a,b)=>a+b,0)/3;
   const variance = pattern.reduce((s,v)=>s+Math.pow(v-avg,2),0)/3;
-  return variance <= 1.5 && avg >= 1; // appears regularly with low variance
+  return variance <= 1.5 && avg >= 1;
 }
-
-// Parse pasted Pick Your Dip lines
-// Handles the real Lotto NZ copy-paste format:
-// Each line = letter label (A/B/C...) then 6 numbers one per row, separated by ● bullets
 function parseDipAndRun() {
   const raw = document.getElementById("dipPaste").value.trim();
-  const errEl = document.getElementById("dipError");
-  const infoEl = document.getElementById("dipInfo");
+  const errEl = document.getElementById("dipError"), infoEl = document.getElementById("dipInfo");
   errEl.style.display = "none"; infoEl.style.display = "none";
-
-  if (!raw) {
-    errEl.textContent = "Please paste your Pick Your Dip lines first.";
-    errEl.style.display = "block"; return;
-  }
-
-  // Split into tokens line by line
+  if (!raw) { errEl.textContent = "Please paste your Pick Your Dip lines first."; errEl.style.display = "block"; return; }
   const tokens = raw.split("\n").map(t => t.trim()).filter(t => t.length > 0);
   const parsed = [];
   let current = [];
-
   for (const token of tokens) {
-    // ● bullet = end of current line, save it
     if (token === "●" || token === "•" || token === "*") {
       if (current.length === 6) parsed.push([...current]);
-      current = [];
-      continue;
+      current = []; continue;
     }
-    // Single letter = line label (A, B, C, J, K etc) — skip
-    if (/^[A-Za-z]$/.test(token)) {
-      continue;
-    }
-    // Try to parse as a number
+    if (/^[A-Za-z]$/.test(token)) continue;
     const n = parseInt(token, 10);
     if (!isNaN(n) && n >= 1 && n <= 40) {
       current.push(n);
-      // Auto-save when we hit 6 numbers
-      if (current.length === 6) {
-        parsed.push([...current]);
-        current = [];
-      }
+      if (current.length === 6) { parsed.push([...current]); current = []; }
     }
   }
-  // Catch any final group without a trailing ●
   if (current.length === 6) parsed.push([...current]);
-
-  if (parsed.length === 0) {
-    errEl.textContent = "Could not parse any lines. Make sure you copy directly from the Lotto NZ Pick Your Dip page and paste as-is.";
-    errEl.style.display = "block"; return;
-  }
-  if (parsed.length < 12) {
-    errEl.textContent = "Only found " + parsed.length + " valid lines. Need at least 12 (ideally 72). Try copying all lines from the Lotto NZ page.";
-    errEl.style.display = "block"; return;
-  }
-  if (parsed.length < 72) {
-    infoEl.textContent = "⚠ Found " + parsed.length + " lines (expected 72). Continuing — results may vary with fewer lines.";
-    infoEl.style.display = "block";
-  } else {
-    infoEl.textContent = "✅ Found " + parsed.length + " lines — splitting into " + Math.floor(parsed.length/12) + " tickets of 12 lines each.";
-    infoEl.style.display = "block";
-  }
-
-  // Use however many complete tickets we have (min 1, max 6)
+  if (parsed.length === 0) { errEl.textContent = "Could not parse any lines. Paste directly from Lotto NZ Pick Your Dip."; errEl.style.display = "block"; return; }
+  if (parsed.length < 12) { errEl.textContent = "Only found " + parsed.length + " valid lines. Need at least 12 (ideally 72)."; errEl.style.display = "block"; return; }
+  if (parsed.length < 72) { infoEl.textContent = "⚠ Found " + parsed.length + " lines (expected 72). Continuing — results may vary."; infoEl.style.display = "block"; }
+  else { infoEl.textContent = "✅ Found " + parsed.length + " lines — splitting into " + Math.floor(parsed.length/12) + " tickets of 12 lines each."; infoEl.style.display = "block"; }
   const ticketCount = Math.min(6, Math.floor(parsed.length / 12));
   let dipLines = parsed.slice(0, ticketCount * 12);
-  // Pad to 72 if needed by repeating
   while (dipLines.length < 72) dipLines = [...dipLines, ...parsed.slice(0, 72 - dipLines.length)];
   dipLines = dipLines.slice(0, 72);
-
   runGordon(dipLines);
 }
-
 function loadDipExample() {
-  // Generate 72 example lines (pure random to demo)
   let ex = "";
   for (let i = 0; i < 72; i++) {
-    const nums = [];
-    while (nums.length < 6) {
-      const n = Math.floor(Math.random()*40)+1;
-      if (!nums.includes(n)) nums.push(n);
-    }
-    nums.sort((a,b)=>a-b);
-    ex += nums.join(" ") + "\n";
+    const nums = []; while (nums.length < 6) { const n = Math.floor(Math.random()*40)+1; if (!nums.includes(n)) nums.push(n); }
+    nums.sort((a,b)=>a-b); ex += nums.join(" ") + "\n";
   }
   document.getElementById("dipPaste").value = ex.trim();
-  document.getElementById("dipInfo").textContent = "✅ Example loaded — 72 random lines. In real use, paste your actual Pick Your Dip lines from lotto.co.nz";
+  document.getElementById("dipInfo").textContent = "✅ Example loaded — 72 random lines.";
   document.getElementById("dipInfo").style.display = "block";
 }
-
-// Main Gordon analysis function
 function runGordon(dipLines) {
-  // dipLines = array of 72 arrays of 6 numbers from Pick Your Dip paste
-  // Split into 6 tickets of 12 lines each
   const tickets = [];
-  for (let t = 0; t < 6; t++) {
-    tickets.push(dipLines.slice(t*12, t*12+12));
-  }
-
-  // Step 2: Count each number across each ticket's 12 lines
+  for (let t = 0; t < 6; t++) tickets.push(dipLines.slice(t*12, t*12+12));
   const counts = tickets.map(t => countTicket(t));
-
-  // Step 3: Split into Group A (0-2) and Group B (3-5)
-  const groupA = counts.slice(0,3);
-  const groupB = counts.slice(3,6);
-
-  // Step 4: For each number, check pattern consistency across both groups
-  const numbersAside = [];
-  const patternData = {};
-
+  const groupA = counts.slice(0,3), groupB = counts.slice(3,6);
+  const numbersAside = []; const patternData = {};
   for (let n = 1; n <= 40; n++) {
-    const patA = getPattern(groupA, n);
-    const patB = getPattern(groupB, n);
-    const consistent = isConsistent(patA) && isConsistent(patB);
-    const similar = patternSimilar(patA, patB);
+    const patA = getPattern(groupA, n), patB = getPattern(groupB, n);
+    const consistent = isConsistent(patA) && isConsistent(patB), similar = patternSimilar(patA, patB);
     patternData[n] = { patA, patB, consistent, similar, qualifies: consistent && similar };
     if (consistent && similar) numbersAside.push(n);
   }
-
-  // Step 5: Compare numbersAside against last 6 draws
   const last6 = draws.slice(0,6);
   const recentNums = new Set(last6.flatMap(d => d.numbers));
-
-  // Categorise
   const inRecent = numbersAside.filter(n => recentNums.has(n));
   const notInRecent = numbersAside.filter(n => !recentNums.has(n));
-  const finalPool = numbersAside; // use all qualified numbers
-
-  // Step 6: Split pool into ranges and build combinations
+  const finalPool = numbersAside;
   const r1 = finalPool.filter(n => n >= 1  && n <= 10);
   const r2 = finalPool.filter(n => n >= 11 && n <= 20);
   const r3 = finalPool.filter(n => n >= 21 && n <= 30);
   const r4 = finalPool.filter(n => n >= 31 && n <= 40);
-
-  // Pad ranges if too small using hot numbers
   const { sorted } = stats;
-  function padRange(arr, lo, hi, need) {
-    if (arr.length >= need) return arr;
-    const hot = sorted.map(x=>+x[0]).filter(n=>n>=lo&&n<=hi&&!arr.includes(n));
-    return [...arr, ...hot].slice(0, Math.max(need, arr.length));
-  }
-  const p1 = padRange(r1, 1, 10, 4);
-  const p2 = padRange(r2, 11, 20, 4);
-  const p3 = padRange(r3, 21, 30, 4);
-  const p4 = padRange(r4, 31, 40, 2);
-
-  // Build combinations: pick 1 from each range group
-  const combinations = [];
-  const used = new Set();
-
-  // Systematic combinations: vary within each range
-  const maxCombos = 120;
-  let attempts = 0;
-
-  // Use first few from each range, rotate through them
-  const pool1 = p1.slice(0, Math.min(p1.length, 5));
-  const pool2 = p2.slice(0, Math.min(p2.length, 5));
-  const pool3 = p3.slice(0, Math.min(p3.length, 6));
-  const pool4 = p4.slice(0, Math.min(p4.length, 4));
-
-  // Ensure minimum pool sizes
   function ensurePool(pool, lo, hi, need) {
     if (pool.length >= need) return pool;
     const extras = sorted.map(x=>+x[0]).filter(n=>n>=lo&&n<=hi&&!pool.includes(n));
     return [...pool, ...extras].slice(0, need);
   }
-  const ep1 = ensurePool(pool1,1,10,3);
-  const ep2 = ensurePool(pool2,11,20,3);
-  const ep3 = ensurePool(pool3,21,30,4);
-  const ep4 = ensurePool(pool4,31,40,3);
-
-  // Generate systematic combos
-  for (let a=0; a<ep1.length && combinations.length<maxCombos; a++) {
-    for (let b=0; b<ep2.length && combinations.length<maxCombos; b++) {
-      for (let c=0; c<ep3.length && combinations.length<maxCombos; c++) {
-        for (let d=c+1; d<ep3.length && combinations.length<maxCombos; d++) {
+  const ep1 = ensurePool(r1,1,10,3), ep2 = ensurePool(r2,11,20,3), ep3 = ensurePool(r3,21,30,4), ep4 = ensurePool(r4,31,40,3);
+  const combinations = []; const used = new Set(); const maxCombos = 120;
+  for (let a=0; a<ep1.length && combinations.length<maxCombos; a++)
+    for (let b=0; b<ep2.length && combinations.length<maxCombos; b++)
+      for (let c=0; c<ep3.length && combinations.length<maxCombos; c++)
+        for (let d=c+1; d<ep3.length && combinations.length<maxCombos; d++)
           for (let e=0; e<ep4.length && combinations.length<maxCombos; e++) {
-            // Build a 6-number line: 1 from range1, 1 from range2, 2 from range3, 1 from range4 + 1 bonus from range4
             const extra4 = ep4.filter(n=>n!==ep4[e]);
             const lastNum = extra4.length > 0 ? extra4[e % extra4.length] : ep4[e];
             const line = [ep1[a], ep2[b], ep3[c], ep3[d], ep4[e], lastNum];
             const unique = [...new Set(line)].sort((x,y)=>x-y);
-            if (unique.length === 6) {
-              const key = unique.join(',');
-              if (!used.has(key)) { used.add(key); combinations.push(unique); }
-            }
+            if (unique.length === 6) { const key = unique.join(','); if (!used.has(key)) { used.add(key); combinations.push(unique); } }
           }
-        }
-      }
-    }
-  }
-
-  // Fill remaining with weighted random if needed
   while (combinations.length < maxCombos) {
     const line = pickNums('weighted').sort((a,b)=>a-b);
-    const key = line.join(',');
-    if (!used.has(key)) { used.add(key); combinations.push(line); }
+    const key = line.join(','); if (!used.has(key)) { used.add(key); combinations.push(line); }
   }
-
-  // Step 7: Format into 10 tickets x 12 lines
-  const finalTickets = [];
-  let idx = 0;
+  const finalTickets = []; let idx = 0;
   for (let t = 0; t < 10; t++) {
     const ticketLines = [];
-    for (let l = 0; l < 12; l++) {
-      ticketLines.push({ nums: combinations[idx % combinations.length], pb: pickPB() });
-      idx++;
-    }
+    for (let l = 0; l < 12; l++) { ticketLines.push({ nums: combinations[idx % combinations.length], pb: pickPB() }); idx++; }
     finalTickets.push(ticketLines);
   }
-
   gordonState = { tickets, counts, groupA, groupB, patternData, numbersAside, inRecent, notInRecent, finalPool, r1, r2, r3, r4, combinations, finalTickets, last6 };
   renderTab('gordon');
 }
-
-// ── GORDON RENDER ────────────────────────────────────────────
-function renderGordon() {
-  if (!gordonState) return renderGordonStart();
-  return renderGordonResult();
-}
-
+function renderGordon() { return gordonState ? renderGordonResult() : renderGordonStart(); }
 function renderGordonStart() {
   return `<div class="panel" style="border-top-color:#cc88ff">
     <div class="ptitle" style="color:#cc88ff">🧠 Gordon Analysis System</div>
-
     <div class="g-step purple" style="margin-bottom:14px">
       <strong style="color:#cc88ff">How it works:</strong><br>
-      1. Go to <strong style="color:var(--gold)">lotto.co.nz</strong> → Pick Your Dip → auto-generate each line <strong style="color:var(--gold)">72 times</strong><br>
-      2. Copy all 72 lines and paste them below<br>
-      3. App splits them into 6 tickets × 12 lines<br>
-      4. Counts how many times each number (1–40) appears per ticket<br>
-      5. Finds numbers with consistent patterns across both groups<br>
-      6. Compares against last 6 real draws<br>
-      7. Builds 120 combinations → <strong style="color:var(--gold)">10 tickets × 12 lines</strong> ready to play
+      1. Get 72 lines from <strong style="color:var(--gold)">lotto.co.nz</strong> Pick Your Dip (manually, console script, or Puppeteer)<br>
+      2. Paste them below → app splits into 6 tickets × 12 lines<br>
+      3. Counts each number (1–40) per ticket, finds consistent patterns<br>
+      4. Compares against last 6 real draws<br>
+      5. Builds 120 combinations → <strong style="color:var(--gold)">10 tickets × 12 lines</strong> ready to play
     </div>
-
     <div class="g-label purple">📋 PASTE YOUR 72 PICK YOUR DIP LINES HERE</div>
-    <div style="font-size:.6rem;color:var(--dim);margin-bottom:8px">
-      Go to <a href="https://lotto.co.nz" target="_blank" style="color:var(--cyan)">lotto.co.nz</a> → Pick Your Dip → auto-generate <strong style="color:var(--gold)">72 lines</strong> → select all & copy → paste below.<br>
-      The app handles the exact Lotto NZ format (numbers one per line with ● separators and letter labels like A, B, C automatically).
-    </div>
-    <textarea id="dipPaste" placeholder="Paste your Pick Your Dip lines here...
-The app handles the exact Lotto NZ copy format e.g.:
-6
-12
-13
-22
-25
-29
-●
-B
-3
-4
-8
-..." style="width:100%;height:200px;background:#05080f;border:1px solid #cc88ff;border-radius:6px;color:var(--text);font-family:'Share Tech Mono',monospace;font-size:.65rem;padding:10px;resize:vertical;outline:none;line-height:1.6"></textarea>
-
+    <textarea id="dipPaste" placeholder="Paste your Pick Your Dip lines here — handles the exact Lotto NZ format with ● separators and letter labels (A, B, C...) automatically." style="width:100%;height:180px;background:#05080f;border:1px solid #cc88ff;border-radius:6px;color:var(--text);font-family:'Share Tech Mono',monospace;font-size:.65rem;padding:10px;resize:vertical;outline:none;line-height:1.6"></textarea>
     <div id="dipError" style="display:none;font-size:.62rem;color:#ff8899;margin:6px 0;padding:6px 10px;background:rgba(255,68,85,.08);border:1px solid rgba(255,68,85,.3);border-radius:5px"></div>
     <div id="dipInfo" style="display:none;font-size:.62rem;color:var(--green);margin:6px 0"></div>
-
     <div style="display:flex;gap:10px;margin-top:12px;flex-wrap:wrap;align-items:center">
       <button class="g-run-btn" style="margin:0;padding:10px 22px;font-size:.6rem" onclick="parseDipAndRun()">🧠 PARSE & RUN GORDON</button>
       <button onclick="loadDipExample()" style="padding:9px 14px;border-radius:6px;border:1px solid #cc88ff;background:transparent;color:#cc88ff;font-family:'Orbitron',sans-serif;font-size:.52rem;font-weight:700;letter-spacing:.08em;cursor:pointer">LOAD EXAMPLE</button>
     </div>
+    <!-- ── AUTOMATION OPTIONS ─────────────────────────── -->
+    <div style="margin-top:20px;border-top:1px solid var(--border);padding-top:16px">
+      <div style="font-family:'Orbitron',sans-serif;font-size:.6rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:#cc88ff;margin-bottom:10px">
+        ⚡ Skip the manual copy — automate it
+      </div>
+      <div class="pup-tabs">
+        <button class="pup-tab on" onclick="switchPupTab('console')">🌐 Browser Console</button>
+        <button class="pup-tab" onclick="switchPupTab('puppeteer')">🤖 Puppeteer (Full Auto)</button>
+      </div>
+      <!-- BROWSER CONSOLE PANEL -->
+      <div id="pup-console" class="pup-panel on">
+        <div class="g-step purple" style="margin-bottom:10px">
+          <strong style="color:#cc88ff">Quickest option — no install needed.</strong> Paste a script into your browser console while on the Lotto NZ site. It clicks Fill 72 times for you.<br><br>
+          <strong style="color:var(--gold)">Steps:</strong><br>
+          1. Open <strong style="color:var(--cyan)">mylotto.co.nz/lotto/pyo</strong> in Chrome/Edge<br>
+          2. Press <strong style="color:var(--gold)">F12</strong> → Console tab<br>
+          3. Click <strong style="color:var(--gold)">COPY SCRIPT</strong> below → paste in console → Enter<br>
+          4. Wait ~30 sec → copy printed output → paste into textarea above
+        </div>
+        <div style="position:relative;margin-bottom:8px">
+          <button id="copyScriptBtn" onclick="copyAutoScript()" class="copy-btn-small">COPY SCRIPT</button>
+          <div id="autoScriptBox" class="code-box" style="padding-right:80px"></div>
+        </div>
+      </div>
+      <!-- PUPPETEER PANEL -->
+      <div id="pup-puppeteer" class="pup-panel">
+        <div class="g-step purple" style="margin-bottom:10px">
+          <strong style="color:#cc88ff">Full automation — runs by itself on your computer.</strong> No need to open the browser or click anything. Requires Node.js (one-time install).<br><br>
+          📁 The files are already in your workspace at:<br>
+          <code style="background:rgba(255,255,255,.05);padding:2px 6px;border-radius:3px;color:var(--gold);font-size:.6rem">lotto-automation/</code><br>
+          • <strong style="color:var(--cyan)">auto-fill-lotto.js</strong> — the Puppeteer script<br>
+          • <strong style="color:var(--cyan)">package.json</strong> — dependencies<br>
+          • <strong style="color:var(--cyan)">README.md</strong> — full setup guide
+        </div>
+        <div class="g-step purple" style="margin-bottom:10px">
+          <strong style="color:var(--gold)">Quick Start (3 steps):</strong><br><br>
+          <strong style="color:var(--cyan)">① Install Node.js</strong> (one-time)<br>
+          Download LTS from <a href="https://nodejs.org/en/download" target="_blank" style="color:var(--cyan)">nodejs.org</a> → install → check with <code style="background:rgba(255,255,255,.05);padding:1px 4px;border-radius:3px;color:var(--gold)">node --version</code><br><br>
+          <strong style="color:var(--cyan)">② Install Puppeteer</strong> (one-time, in Terminal/PowerShell):<br>
+          <code style="background:rgba(255,255,255,.05);padding:4px 8px;border-radius:3px;color:var(--gold);display:inline-block;margin:4px 0">cd lotto-automation</code><br>
+          <code style="background:rgba(255,255,255,.05);padding:4px 8px;border-radius:3px;color:var(--gold);display:inline-block">npm install</code><br><br>
+          <strong style="color:var(--cyan)">③ Run it</strong> (whenever you want new lines):<br>
+          <code style="background:rgba(255,255,255,.05);padding:4px 8px;border-radius:3px;color:var(--gold);display:inline-block;margin:4px 0">npm start</code><br>
+          <span style="font-size:.58rem;color:var(--dim)">— A Chrome window opens, auto-fills 72 lines, saves to <code style="color:var(--gold)">lotto-output.txt</code>, takes ~45 sec. Use <code style="color:var(--gold)">npm run headless</code> for invisible mode.</span>
+        </div>
+        <div class="g-step purple" style="margin-bottom:10px;border-left-color:var(--green)">
+          <strong style="color:var(--green)">④ Paste into Gordon</strong><br>
+          Open <code style="background:rgba(255,255,255,.05);padding:1px 4px;border-radius:3px;color:var(--gold)">lotto-output.txt</code> → copy everything → paste into the textarea above → hit <strong style="color:var(--gold)">PARSE & RUN GORDON</strong>
+        </div>
+        <div style="position:relative;margin-bottom:8px">
+          <button id="copyPupBtn" onclick="copyPupScript()" class="copy-btn-small">COPY SCRIPT</button>
+          <div id="pupScriptBox" class="code-box" style="padding-right:80px;max-height:200px"></div>
+        </div>
+        <div style="font-size:.58rem;color:var(--dim);background:rgba(255,255,255,.02);border:1px dashed var(--border);border-radius:6px;padding:8px 12px;margin-top:8px">
+          💡 <strong style="color:var(--text)">Why a separate file?</strong> Puppeteer is a Node.js library that controls a real Chrome browser — it can't run inside a webpage. So it lives in <code style="color:var(--gold)">lotto-automation/</code> on your computer. The output you paste back into the analyzer.<br><br>
+          ⚠️ <strong style="color:var(--text)">Won't work on GitHub Pages</strong> — GitHub Pages only serves static files. Puppeteer runs locally on your machine. The output then goes into the deployed analyzer.
+        </div>
+      </div>
+    </div>
   </div>`;
 }
-
+// Populate code boxes after render
+setTimeout(populateScriptBoxes, 80);
+function populateScriptBoxes() {
+  const cb = document.getElementById('autoScriptBox');
+  if (cb) cb.textContent = '(async function() {\n  const TOTAL = 72, DELAY = 400;\n  const sleep = ms => new Promise(r => setTimeout(r, ms));\n  const pbToggle = document.querySelector(\'input[type="checkbox"]\');\n  if (pbToggle && pbToggle.checked) { pbToggle.click(); await sleep(500); }\n  console.log("Starting auto-fill for " + TOTAL + " lines...");\n  let filled = 0, attempts = 0;\n  while (filled < TOTAL && attempts < TOTAL * 5) {\n    attempts++;\n    const buttons = document.querySelectorAll(\'.lnz-ticket-line__auto-fill,[class*="auto-fill"],[class*="autofill"]\');\n    let clicked = false;\n    for (const btn of buttons) {\n      const line = btn.closest(\'.lnz-ticket-line,[class*="ticket-line"],[class*="ticketLine"]\');\n      if (!line) continue;\n      const nums = line.querySelectorAll(\'.lnz-ticket-line__number-text,[class*="number-text"],.selected\');\n      if (nums.length < 6) { btn.click(); clicked = true; await sleep(DELAY); break; }\n    }\n    const allLines = document.querySelectorAll(\'.lnz-ticket-line,[class*="ticket-line"]\');\n    filled = 0;\n    for (const l of allLines) {\n      if (l.querySelectorAll(\'.lnz-ticket-line__number-text,[class*="number-text"],.selected\').length >= 6) filled++;\n    }\n    if (!clicked) await sleep(DELAY * 2);\n    if (attempts % 10 === 0) console.log("Progress: " + filled + "/" + TOTAL);\n  }\n  console.log("Done! " + filled + " lines filled. Reading...");\n  await sleep(600);\n  const allLines = document.querySelectorAll(\'.lnz-ticket-line,[class*="ticket-line"]\');\n  const labels = "ABCDEFGHJKLMNPQRSTUV".split("");\n  let out = "", count = 0;\n  for (const line of allLines) {\n    const els = line.querySelectorAll(\'.lnz-ticket-line__number-text,[class*="number-text"],.selected\');\n    const ns = [...els].map(e => parseInt(e.textContent.trim())).filter(n => !isNaN(n) && n >= 1 && n <= 40).slice(0,6);\n    if (ns.length === 6) { out += labels[count % labels.length] + "\\n" + ns.join("\\n") + "\\n\\u25CF\\n"; count++; }\n    if (count >= TOTAL) break;\n  }\n  if (count === 0) { console.error("Could not read numbers - try manual copy"); }\n  else { console.log("=== COPY FROM HERE ==="); console.log(out); console.log("=== PASTE INTO GORDON ANALYZER ==="); }\n})();';
+  const pb = document.getElementById('pupScriptBox');
+  if (pb) pb.textContent = '// auto-fill-lotto.js — runs on your computer\n// Full version saved at: lotto-automation/auto-fill-lotto.js\n\nconst puppeteer = require("puppeteer");\nconst fs = require("fs");\n\nconst TOTAL_LINES = 72;\nconst CLICK_DELAY = 420;\nconst sleep = ms => new Promise(r => setTimeout(r, ms));\n\n(async () => {\n  const browser = await puppeteer.launch({\n    headless: process.env.HEADLESS === "true" ? "new" : false,\n    defaultViewport: { width: 1366, height: 900 },\n  });\n  const page = await browser.newPage();\n  await page.goto("https://mylotto.co.nz/lotto/pyo", { waitUntil: "domcontentloaded" });\n  await sleep(4000);\n\n  // Toggle off Powerball\n  await page.evaluate(() => {\n    for (const c of document.querySelectorAll(\'input[type="checkbox"]\')) {\n      const t = (c.closest("label")?.textContent || "").toLowerCase();\n      if (t.includes("powerball") && c.checked) c.click();\n    }\n  });\n\n  // Click auto-fill until all lines filled\n  let filled = 0, attempts = 0;\n  while (filled < TOTAL_LINES && attempts < TOTAL_LINES * 6) {\n    attempts++;\n    await page.evaluate(() => {\n      for (const b of document.querySelectorAll(\'[class*="auto-fill"]\')) {\n        const line = b.closest(\'[class*="ticket-line"]\');\n        if (line?.querySelectorAll(\'[class*="number-text"]\').length < 6) { b.click(); return; }\n      }\n    });\n    await sleep(CLICK_DELAY);\n    filled = await page.evaluate(() => {\n      let n = 0;\n      for (const l of document.querySelectorAll(\'[class*="ticket-line"]\'))\n        if (l.querySelectorAll(\'[class*="number-text"]\').length >= 6) n++;\n      return n;\n    });\n  }\n\n  // Extract and format\n  const lines = await page.evaluate(() => {\n    const out = [];\n    for (const c of document.querySelectorAll(\'[class*="ticket-line"]\')) {\n      const ns = [...c.querySelectorAll(\'[class*="number-text"]\')]\n        .map(e => parseInt(e.textContent.trim()))\n        .filter(n => n >= 1 && n <= 40).slice(0, 6);\n      if (ns.length === 6) out.push(ns);\n    }\n    return out;\n  });\n\n  const labels = "ABCDEFGHJKLMNPQRSTUV".split("");\n  let gordon = "";\n  lines.slice(0, TOTAL_LINES).forEach((nums, i) => {\n    gordon += labels[i % labels.length] + "\\n" + nums.join("\\n") + "\\n\\u25CF\\n";\n  });\n\n  fs.writeFileSync("lotto-output.txt", gordon);\n  console.log(gordon);\n  console.log("Saved to lotto-output.txt");\n  await browser.close();\n})();\n\n// See README.md for full instructions';
+}
+function switchPupTab(tab) {
+  document.querySelectorAll('.pup-tab').forEach((t, i) => t.classList.toggle('on', ['console','puppeteer'][i] === tab));
+  document.querySelectorAll('.pup-panel').forEach(p => p.classList.remove('on'));
+  document.getElementById('pup-' + tab).classList.add('on');
+  setTimeout(populateScriptBoxes, 50);
+}
+function copyAutoScript() {
+  const box = document.getElementById("autoScriptBox"); if (!box) return;
+  navigator.clipboard.writeText(box.textContent).then(() => {
+    const btn = document.getElementById("copyScriptBtn"); if (!btn) return;
+    btn.textContent = "COPIED!"; btn.style.color = "#00ff88"; btn.style.borderColor = "#00ff88";
+    setTimeout(() => { btn.textContent = "COPY SCRIPT"; btn.style.color = "#cc88ff"; btn.style.borderColor = "#cc88ff"; }, 2500);
+  }).catch(() => alert("Auto-copy failed — please select and copy manually."));
+}
+function copyPupScript() {
+  const box = document.getElementById("pupScriptBox"); if (!box) return;
+  navigator.clipboard.writeText(box.textContent).then(() => {
+    const btn = document.getElementById("copyPupBtn"); if (!btn) return;
+    btn.textContent = "COPIED!"; btn.style.color = "#00ff88"; btn.style.borderColor = "#00ff88";
+    setTimeout(() => { btn.textContent = "COPY SCRIPT"; btn.style.color = "#cc88ff"; btn.style.borderColor = "#cc88ff"; }, 2500);
+  }).catch(() => alert("Auto-copy failed — please select and copy manually."));
+}
 function renderGordonResult() {
-  const { tickets, counts, groupA, groupB, patternData, numbersAside, inRecent, notInRecent, finalTickets, last6, combinations } = gordonState;
+  const { tickets, counts, patternData, numbersAside, finalTickets, last6, combinations } = gordonState;
   const allNums = Array.from({length:40},(_,i)=>i+1);
-
-  // ── Step 1: Matrix display ──────────────────────────────
-  // Show count matrix for all 6 tickets
   let matrixRows = '';
   tickets.forEach((tk, ti) => {
-    const cnt = counts[ti];
-    const group = ti < 3 ? 'A' : 'B';
+    const cnt = counts[ti], group = ti < 3 ? 'A' : 'B';
     const cells = allNums.map(n => {
-      const v = cnt[n];
-      const pd = patternData[n];
+      const v = cnt[n], pd = patternData[n];
       const cls = pd.qualifies ? 'pattern-match' : v >= 3 ? 'hot' : v === 2 ? 'warm' : v === 0 ? 'zero' : '';
       return `<td class="${cls}">${v === 0 ? '·' : v}</td>`;
     }).join('');
     matrixRows += `<tr><td class="tkname">T${ti+1} (Grp ${group})</td>${cells}</tr>`;
   });
-
-  const numHeaders = allNums.map(n => {
-    const pd = patternData[n];
-    return `<th class="${pd.qualifies?'num-hdr':''}">${n}</th>`;
-  }).join('');
-
-  // ── Step 2: Pattern qualified numbers ──────────────────
+  const numHeaders = allNums.map(n => { const pd = patternData[n]; return `<th class="${pd.qualifies?'num-hdr':''}">${n}</th>`; }).join('');
   const asideChips = numbersAside.map(n => {
     const isHot = gordonState.inRecent.includes(n);
     return `<span class="g-num-chip ${isHot?'hot':'aside'}" title="${isHot?'In last 6 draws':'Not in last 6 draws'}">${n}</span>`;
   }).join('');
-
-  // ── Step 3: Last 6 draws display ───────────────────────
   const last6HTML = last6.map(d =>
     `<div style="display:flex;gap:4px;align-items:center;margin-bottom:4px;font-size:.6rem">
       <span style="color:var(--dim);width:70px;flex-shrink:0">${d.date}</span>
-      ${d.numbers.map(n => {
-        const aside = numbersAside.includes(n);
-        return `<div class="g-ball ${aside?'main':'pb'}" style="${aside?'':'opacity:0.4'}">${n}</div>`;
-      }).join('')}
-    </div>`
-  ).join('');
-
-  // ── Step 4: Final 10 tickets ───────────────────────────
+      ${d.numbers.map(n => { const aside = numbersAside.includes(n); return `<div class="g-ball ${aside?'main':'pb'}" style="${aside?'':'opacity:0.4'}">${n}</div>`; }).join('')}
+    </div>`).join('');
   let ticketsHTML = '';
   finalTickets.forEach((tk, ti) => {
     const linesHTML = tk.map((line, li) =>
@@ -1096,67 +808,41 @@ function renderGordonResult() {
         <span class="g-line-num">${li+1}.</span>
         ${line.nums.map(n => `<div class="g-ball main">${n}</div>`).join('')}
         <div class="g-ball pb" style="margin-left:6px">${line.pb}</div>
-      </div>`
-    ).join('');
+      </div>`).join('');
     ticketsHTML += `<div class="g-ticket">
-      <div class="g-ticket-hdr">
-        <span>TICKET ${ti+1}</span>
-        <span style="font-size:.5rem;color:var(--dim)">12 LINES</span>
-      </div>
-      ${linesHTML}
-    </div>`;
+      <div class="g-ticket-hdr"><span>TICKET ${ti+1}</span><span style="font-size:.5rem;color:var(--dim)">12 LINES</span></div>
+      ${linesHTML}</div>`;
   });
-
   return `
   <div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:14px;align-items:center">
     <button class="g-run-btn" onclick="gordonState=null;renderTab('gordon');document.getElementById('page-gordon').style.display='block'" style="margin:0;padding:9px 18px;font-size:.58rem">🔄 PASTE NEW LINES</button>
     <button class="dl-btn" onclick="downloadGordon()">⬇ DOWNLOAD TICKETS</button>
   </div>
-
-  <!-- STEP 1: COUNT MATRIX -->
   <div class="panel" style="border-top-color:#cc88ff">
     <div class="ptitle" style="color:#cc88ff">STEP 1 · Count Matrix (all 6 tickets × 40 numbers)</div>
-    <div style="font-size:.6rem;color:var(--dim);margin-bottom:8px">
-      Each cell = how many times that number appeared across the 12 lines of that ticket.
-      <span style="color:var(--green)">■ Green</span> = consistent pattern · <span style="color:var(--gold)">■ Gold</span> = appears often
-    </div>
-    <div class="g-matrix">
-      <table class="g-table">
-        <thead><tr><th>Ticket</th>${numHeaders}</tr></thead>
-        <tbody>${matrixRows}</tbody>
-      </table>
-    </div>
+    <div style="font-size:.6rem;color:var(--dim);margin-bottom:8px">Each cell = how many times that number appeared across the 12 lines of that ticket. <span style="color:var(--green)">■ Green</span> = consistent pattern · <span style="color:var(--gold)">■ Gold</span> = appears often</div>
+    <div class="g-matrix"><table class="g-table"><thead><tr><th>Ticket</th>${numHeaders}</tr></thead><tbody>${matrixRows}</tbody></table></div>
   </div>
-
-  <!-- STEP 2: NUMBERS ASIDE -->
   <div class="panel gold" style="border-top-color:var(--gold)">
     <div class="ptitle">STEP 2 · Numbers Put Aside (${numbersAside.length} qualified)</div>
-    <div style="font-size:.6rem;color:var(--dim);margin-bottom:8px">
-      Numbers showing consistent patterns across both groups (tickets 1-3 and 4-6).
-      <span style="color:var(--red)">Red</span> = also appeared in last 6 draws · <span style="color:var(--gold)">Gold</span> = pattern only
-    </div>
+    <div style="font-size:.6rem;color:var(--dim);margin-bottom:8px">Numbers showing consistent patterns across both groups. <span style="color:var(--red)">Red</span> = also in last 6 draws · <span style="color:var(--gold)">Gold</span> = pattern only</div>
     <div class="g-chips">${asideChips || '<span style="color:var(--dim);font-size:.65rem">No numbers qualified — try regenerating</span>'}</div>
     <div style="font-size:.58rem;color:var(--dim);margin-top:8px">
       In last 6 draws: <strong style="color:var(--red)">${gordonState.inRecent.join(', ') || 'none'}</strong> &nbsp;|&nbsp;
       Not in last 6: <strong style="color:var(--gold)">${gordonState.notInRecent.join(', ') || 'none'}</strong>
     </div>
   </div>
-
-  <!-- STEP 3: LAST 6 DRAWS COMPARISON -->
   <div class="panel" style="border-top-color:var(--green)">
     <div class="ptitle" style="color:var(--green)">STEP 3 · Last 6 Draws (highlighted = in pool)</div>
-    <div style="font-size:.6rem;color:var(--dim);margin-bottom:8px">Gold balls = number is in the qualified pool. Blue = not qualified.</div>
+    <div style="font-size:.6rem;color:var(--dim);margin-bottom:8px">Gold balls = qualified pool · Blue = not qualified</div>
     ${last6HTML}
   </div>
-
-  <!-- STEP 4: 120 COMBINATIONS PREVIEW -->
   <div class="panel" style="border-top-color:var(--cyan)">
     <div class="ptitle">STEP 4 · ${combinations.length} Combinations Built</div>
     <div style="font-size:.6rem;color:var(--dim);margin-bottom:10px">
-      Numbers split by range: 
-      1-10: <strong style="color:var(--gold)">${gordonState.r1.join(', ')||'—'}</strong> · 
-      11-20: <strong style="color:var(--cyan)">${gordonState.r2.join(', ')||'—'}</strong> · 
-      21-30: <strong style="color:var(--green)">${gordonState.r3.join(', ')||'—'}</strong> · 
+      By range: 1-10: <strong style="color:var(--gold)">${gordonState.r1.join(', ')||'—'}</strong> ·
+      11-20: <strong style="color:var(--cyan)">${gordonState.r2.join(', ')||'—'}</strong> ·
+      21-30: <strong style="color:var(--green)">${gordonState.r3.join(', ')||'—'}</strong> ·
       31-40: <strong style="color:#cc88ff">${gordonState.r4.join(', ')||'—'}</strong>
     </div>
     <div style="display:flex;flex-wrap:wrap;gap:4px;max-height:120px;overflow-y:auto">
@@ -1164,57 +850,36 @@ function renderGordonResult() {
       ${combinations.length>30?`<div style="font-size:.55rem;color:var(--dim);padding:3px 6px">...and ${combinations.length-30} more</div>`:''}
     </div>
   </div>
-
-  <!-- STEP 5: FINAL 10 TICKETS -->
   <div class="panel gold">
     <div class="ptitle">STEP 5 · Final 10 Tickets × 12 Lines</div>
     <div style="font-size:.6rem;color:var(--dim);margin-bottom:12px">Gold balls = main numbers · Blue = Powerball</div>
     ${ticketsHTML}
     <div style="margin-top:14px;display:flex;gap:10px;flex-wrap:wrap">
-      <button class="dl-btn" onclick="downloadGordon()">⬇ DOWNLOAD ALL TICKETS (TEXT)</button>
+      <button class="dl-btn" onclick="downloadGordon()">⬇ DOWNLOAD TXT</button>
       <button class="dl-btn" onclick="downloadGordonCSV()" style="background:linear-gradient(135deg,var(--cyan),#0099bb);color:#001a2a">⬇ DOWNLOAD CSV</button>
       <button onclick="gordonState=null;renderTab('gordon');document.getElementById('page-gordon').style.display='block'" style="padding:9px 14px;border-radius:6px;border:1px solid #cc88ff;background:transparent;color:#cc88ff;font-family:'Orbitron',sans-serif;font-size:.52rem;font-weight:700;letter-spacing:.08em;cursor:pointer">🔄 PASTE NEW LINES</button>
     </div>
   </div>`;
 }
-
-// ── DOWNLOAD FUNCTIONS ───────────────────────────────────────
 function downloadGordon() {
   if (!gordonState) return;
-  let txt = 'NZ LOTTO - GORDON ANALYSIS\n';
-  txt += '================================\n\n';
+  let txt = 'NZ LOTTO - GORDON ANALYSIS\n================================\n\n';
   txt += 'QUALIFIED NUMBERS: ' + gordonState.numbersAside.join(', ') + '\n\n';
   gordonState.finalTickets.forEach((tk, ti) => {
-    txt += 'TICKET ' + (ti+1) + '\n';
-    txt += '-----------\n';
-    tk.forEach((line, li) => {
-      txt += 'Line ' + (li+1).toString().padStart(2,' ') + ': ' + line.nums.join('  ') + '  |  PB: ' + line.pb + '\n';
-    });
+    txt += 'TICKET ' + (ti+1) + '\n-----------\n';
+    tk.forEach((line, li) => { txt += 'Line ' + (li+1).toString().padStart(2,' ') + ': ' + line.nums.join('  ') + '  |  PB: ' + line.pb + '\n'; });
     txt += '\n';
   });
   const blob = new Blob([txt], {type:'text/plain'});
-  const a = document.createElement('a');
-  a.href = URL.createObjectURL(blob);
-  a.download = 'gordon-lotto-tickets.txt';
-  a.click();
+  const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = 'gordon-lotto-tickets.txt'; a.click();
 }
-
 function downloadGordonCSV() {
   if (!gordonState) return;
   let csv = 'Ticket,Line,N1,N2,N3,N4,N5,N6,Powerball\n';
-  gordonState.finalTickets.forEach((tk, ti) => {
-    tk.forEach((line, li) => {
-      csv += (ti+1) + ',' + (li+1) + ',' + line.nums.join(',') + ',' + line.pb + '\n';
-    });
-  });
+  gordonState.finalTickets.forEach((tk, ti) => { tk.forEach((line, li) => { csv += (ti+1) + ',' + (li+1) + ',' + line.nums.join(',') + ',' + line.pb + '\n'; }); });
   const blob = new Blob([csv], {type:'text/csv'});
-  const a = document.createElement('a');
-  a.href = URL.createObjectURL(blob);
-  a.download = 'gordon-lotto-tickets.csv';
-  a.click();
+  const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = 'gordon-lotto-tickets.csv'; a.click();
 }
-
-// ── Init ─────────────────────────────────────────────────────
 stats = buildStats(draws);
 renderTab("latest");
 document.getElementById("page-latest").style.display = "block";
