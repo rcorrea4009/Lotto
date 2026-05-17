@@ -146,6 +146,53 @@ header{text-align:center;padding:28px 0 18px;border-bottom:1px solid var(--borde
 @keyframes fadeIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
 @keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
 @keyframes spin{to{transform:rotate(360deg)}}
+
+/* ── GORDON STYLES ─────────────────────────────────────── */
+.g-section{margin-bottom:18px}
+.g-label{font-family:'Orbitron',sans-serif;font-size:.58rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--cyan);margin-bottom:8px}
+.g-label.gold{color:var(--gold)}
+.g-label.green{color:var(--green)}
+.g-label.purple{color:#cc88ff}
+.g-step{background:rgba(255,255,255,.03);border:1px solid var(--border);border-left:3px solid var(--cyan);border-radius:6px;padding:10px 14px;margin-bottom:10px;font-size:.65rem;line-height:1.6}
+.g-step.gold{border-left-color:var(--gold)}
+.g-step.green{border-left-color:var(--green)}
+.g-step.purple{border-left-color:#cc88ff}
+.g-matrix{overflow-x:auto;margin:8px 0}
+.g-table{border-collapse:collapse;font-size:.58rem;width:100%}
+.g-table th{background:rgba(0,229,255,.08);color:var(--cyan);padding:4px 6px;border:1px solid var(--border);font-family:'Orbitron',sans-serif;font-size:.5rem;letter-spacing:.08em;white-space:nowrap;text-align:center}
+.g-table th.num-hdr{background:rgba(245,197,24,.08);color:var(--gold)}
+.g-table td{padding:3px 5px;border:1px solid rgba(255,255,255,.05);text-align:center;font-size:.6rem;white-space:nowrap}
+.g-table td.tkname{color:var(--dim);font-size:.55rem;background:rgba(255,255,255,.02);white-space:nowrap}
+.g-table td.hot{background:rgba(255,68,85,.18);color:#ff8899;font-weight:bold}
+.g-table td.warm{background:rgba(245,197,24,.15);color:var(--gold)}
+.g-table td.zero{color:rgba(255,255,255,.15)}
+.g-table td.pattern-match{background:rgba(0,255,136,.15);color:var(--green);font-weight:bold}
+.g-num-chip{display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:50%;font-size:.62rem;font-weight:bold;margin:2px;font-family:'Orbitron',sans-serif}
+.g-num-chip.aside{background:radial-gradient(circle at 35% 35%,#ffe066,#c8900a);border:2px solid var(--gold);color:#1a0800;box-shadow:0 0 8px rgba(245,197,24,.4)}
+.g-num-chip.hot{background:radial-gradient(circle at 35% 35%,#ff8899,#cc2233);border:2px solid var(--red);color:#fff}
+.g-num-chip.dim{background:rgba(255,255,255,.06);border:1px solid var(--border);color:var(--dim)}
+.g-ticket{background:var(--panel);border:1px solid var(--border);border-radius:8px;margin-bottom:10px;overflow:hidden}
+.g-ticket-hdr{background:rgba(245,197,24,.08);border-bottom:1px solid var(--border);padding:7px 12px;font-family:'Orbitron',sans-serif;font-size:.58rem;font-weight:700;color:var(--gold);letter-spacing:.1em;display:flex;justify-content:space-between;align-items:center}
+.g-line{display:flex;gap:5px;padding:5px 12px;border-bottom:1px solid rgba(255,255,255,.03);align-items:center;flex-wrap:wrap}
+.g-line:last-child{border-bottom:none}
+.g-line-num{font-size:.5rem;color:var(--dim);width:16px;flex-shrink:0}
+.g-ball{width:26px;height:26px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.58rem;font-weight:bold;flex-shrink:0}
+.g-ball.main{background:radial-gradient(circle at 35% 30%,#ffe888,#c88800);border:1px solid var(--gold);color:#1a0800}
+.g-ball.pb{background:radial-gradient(circle at 35% 30%,#aaccff,#0033cc);border:1px solid var(--cyan);color:#fff}
+.g-progress{background:rgba(0,229,255,.06);border:1px solid rgba(0,229,255,.2);border-radius:8px;padding:16px;text-align:center}
+.g-progress-title{font-family:'Orbitron',sans-serif;font-size:.65rem;font-weight:700;color:var(--cyan);margin-bottom:8px;letter-spacing:.12em}
+.g-progress-bar{height:6px;background:var(--border);border-radius:3px;overflow:hidden;margin:8px 0}
+.g-progress-fill{height:100%;background:linear-gradient(90deg,var(--cyan),var(--green));border-radius:3px;transition:width .4s ease}
+.g-run-btn{font-family:'Orbitron',sans-serif;font-size:.65rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:12px 28px;border:none;border-radius:8px;cursor:pointer;background:linear-gradient(135deg,#cc88ff,#8833cc);color:#fff;box-shadow:0 0 20px rgba(200,136,255,.3);transition:all .2s;display:block;margin:0 auto}
+.g-run-btn:hover{transform:translateY(-2px);box-shadow:0 0 30px rgba(200,136,255,.5)}
+.pattern-row{display:flex;gap:4px;align-items:center;font-size:.6rem;margin:3px 0}
+.pattern-col{display:flex;flex-direction:column;align-items:center;gap:2px;padding:4px 6px;border-radius:4px;border:1px solid var(--border);min-width:28px}
+.pattern-col.match{border-color:var(--green);background:rgba(0,255,136,.06)}
+.pattern-cell{font-size:.62rem;font-weight:bold;width:20px;text-align:center}
+.dl-btn{font-family:'Orbitron',sans-serif;font-size:.55rem;font-weight:700;letter-spacing:.1em;padding:8px 16px;border-radius:6px;cursor:pointer;background:linear-gradient(135deg,var(--green),#009944);color:#001a0e;border:none;transition:all .2s}
+.dl-btn:hover{transform:translateY(-1px);filter:brightness(1.1)}
+.g-chips{display:flex;flex-wrap:wrap;gap:4px;margin:6px 0}
+
 </style>
 </head>
 <body>
@@ -186,6 +233,7 @@ header{text-align:center;padding:28px 0 18px;border-bottom:1px solid var(--borde
   <button class="tab" onclick="switchTab('simulate')">🎲 Simulate</button>
   <button class="tab" onclick="switchTab('history')">📋 History</button>
   <button class="tab" onclick="switchTab('ai')">🤖 AI</button>
+  <button class="tab" onclick="switchTab('gordon')">🧠 Gordon</button>
 </div>
 
 <!-- PAGES -->
@@ -197,6 +245,7 @@ header{text-align:center;padding:28px 0 18px;border-bottom:1px solid var(--borde
 <div id="page-ai" class="page" style="display:none"></div>
 
 </div>
+<div id="page-gordon" class="page" style="display:none"></div>
 
 <script>
 // ── FALLBACK DATA (11 real verified 2026 draws) ─────────────
@@ -412,7 +461,7 @@ function updateUploadUI() {
 // ── Tab switching ────────────────────────────────────────────
 function switchTab(name) {
   document.querySelectorAll(".tab").forEach((t, i) => {
-    const names = ["latest","heatmap","picks","simulate","history","ai"];
+    const names = ["latest","heatmap","picks","simulate","history","ai","gordon"];
     t.classList.toggle("on", names[i] === name);
   });
   document.querySelectorAll(".page").forEach(p => p.style.display = "none");
@@ -429,6 +478,7 @@ function renderTab(name) {
   else if (name === "simulate") el.innerHTML = renderSimulate();
   else if (name === "history") el.innerHTML = renderHistory();
   else if (name === "ai") el.innerHTML = renderAI();
+  else if (name === "gordon") el.innerHTML = renderGordon();
 }
 
 // ── LATEST ──────────────────────────────────────────────────
@@ -673,6 +723,492 @@ async function runAI(type) {
       <div class="ai-out" style="color:#ff8899">Error: ${e.message}</div>
     </div>`;
   }
+}
+
+
+// ══════════════════════════════════════════════════════════
+// GORDON ANALYSIS ENGINE
+// ══════════════════════════════════════════════════════════
+
+let gordonState = null; // stores full analysis result
+
+// Generate a single weighted random ticket (12 lines of 6 numbers)
+function genTicket() {
+  const lines = [];
+  for (let i = 0; i < 12; i++) {
+    lines.push(pickNums('weighted'));
+  }
+  return lines;
+}
+
+// Count how many times each number 1-40 appears across all 12 lines of a ticket
+function countTicket(ticket) {
+  const cnt = {};
+  for (let n = 1; n <= 40; n++) cnt[n] = 0;
+  ticket.forEach(line => line.forEach(n => cnt[n]++));
+  return cnt;
+}
+
+// Detect pattern shape for a number across 3 tickets
+// Returns array of 3 counts e.g. [2,2,1]
+function getPattern(counts3, num) {
+  return counts3.map(c => c[num]);
+}
+
+// Check if two patterns are "similar" - same shape with slight variation
+function patternSimilar(p1, p2) {
+  // Exact match
+  if (p1[0]===p2[0] && p1[1]===p2[1] && p1[2]===p2[2]) return true;
+  // Same direction trend
+  const trend = arr => {
+    if (arr[0]===arr[1] && arr[1]===arr[2]) return 'flat';
+    if (arr[0]<=arr[1] && arr[1]<=arr[2]) return 'up';
+    if (arr[0]>=arr[1] && arr[1]>=arr[2]) return 'down';
+    if (arr[0]<arr[1] && arr[1]>arr[2]) return 'peak';
+    if (arr[0]>arr[1] && arr[1]<arr[2]) return 'valley';
+    return 'mixed';
+  };
+  if (trend(p1) === trend(p2)) return true;
+  // Within 1 count difference on each position
+  const diff = Math.abs(p1[0]-p2[0]) + Math.abs(p1[1]-p2[1]) + Math.abs(p1[2]-p2[2]);
+  return diff <= 2;
+}
+
+// Check if a number is consistent (low variance) across 3 counts
+function isConsistent(pattern) {
+  const avg = pattern.reduce((a,b)=>a+b,0)/3;
+  const variance = pattern.reduce((s,v)=>s+Math.pow(v-avg,2),0)/3;
+  return variance <= 1.5 && avg >= 1; // appears regularly with low variance
+}
+
+// Parse pasted Pick Your Dip lines
+// Handles the real Lotto NZ copy-paste format:
+// Each line = letter label (A/B/C...) then 6 numbers one per row, separated by ● bullets
+function parseDipAndRun() {
+  const raw = document.getElementById("dipPaste").value.trim();
+  const errEl = document.getElementById("dipError");
+  const infoEl = document.getElementById("dipInfo");
+  errEl.style.display = "none"; infoEl.style.display = "none";
+
+  if (!raw) {
+    errEl.textContent = "Please paste your Pick Your Dip lines first.";
+    errEl.style.display = "block"; return;
+  }
+
+  // Split into tokens line by line
+  const tokens = raw.split("\n").map(t => t.trim()).filter(t => t.length > 0);
+  const parsed = [];
+  let current = [];
+
+  for (const token of tokens) {
+    // ● bullet = end of current line, save it
+    if (token === "●" || token === "•" || token === "*") {
+      if (current.length === 6) parsed.push([...current]);
+      current = [];
+      continue;
+    }
+    // Single letter = line label (A, B, C, J, K etc) — skip
+    if (/^[A-Za-z]$/.test(token)) {
+      continue;
+    }
+    // Try to parse as a number
+    const n = parseInt(token, 10);
+    if (!isNaN(n) && n >= 1 && n <= 40) {
+      current.push(n);
+      // Auto-save when we hit 6 numbers
+      if (current.length === 6) {
+        parsed.push([...current]);
+        current = [];
+      }
+    }
+  }
+  // Catch any final group without a trailing ●
+  if (current.length === 6) parsed.push([...current]);
+
+  if (parsed.length === 0) {
+    errEl.textContent = "Could not parse any lines. Make sure you copy directly from the Lotto NZ Pick Your Dip page and paste as-is.";
+    errEl.style.display = "block"; return;
+  }
+  if (parsed.length < 12) {
+    errEl.textContent = "Only found " + parsed.length + " valid lines. Need at least 12 (ideally 72). Try copying all lines from the Lotto NZ page.";
+    errEl.style.display = "block"; return;
+  }
+  if (parsed.length < 72) {
+    infoEl.textContent = "⚠ Found " + parsed.length + " lines (expected 72). Continuing — results may vary with fewer lines.";
+    infoEl.style.display = "block";
+  } else {
+    infoEl.textContent = "✅ Found " + parsed.length + " lines — splitting into " + Math.floor(parsed.length/12) + " tickets of 12 lines each.";
+    infoEl.style.display = "block";
+  }
+
+  // Use however many complete tickets we have (min 1, max 6)
+  const ticketCount = Math.min(6, Math.floor(parsed.length / 12));
+  let dipLines = parsed.slice(0, ticketCount * 12);
+  // Pad to 72 if needed by repeating
+  while (dipLines.length < 72) dipLines = [...dipLines, ...parsed.slice(0, 72 - dipLines.length)];
+  dipLines = dipLines.slice(0, 72);
+
+  runGordon(dipLines);
+}
+
+function loadDipExample() {
+  // Generate 72 example lines (pure random to demo)
+  let ex = "";
+  for (let i = 0; i < 72; i++) {
+    const nums = [];
+    while (nums.length < 6) {
+      const n = Math.floor(Math.random()*40)+1;
+      if (!nums.includes(n)) nums.push(n);
+    }
+    nums.sort((a,b)=>a-b);
+    ex += nums.join(" ") + "\n";
+  }
+  document.getElementById("dipPaste").value = ex.trim();
+  document.getElementById("dipInfo").textContent = "✅ Example loaded — 72 random lines. In real use, paste your actual Pick Your Dip lines from lotto.co.nz";
+  document.getElementById("dipInfo").style.display = "block";
+}
+
+// Main Gordon analysis function
+function runGordon(dipLines) {
+  // dipLines = array of 72 arrays of 6 numbers from Pick Your Dip paste
+  // Split into 6 tickets of 12 lines each
+  const tickets = [];
+  for (let t = 0; t < 6; t++) {
+    tickets.push(dipLines.slice(t*12, t*12+12));
+  }
+
+  // Step 2: Count each number across each ticket's 12 lines
+  const counts = tickets.map(t => countTicket(t));
+
+  // Step 3: Split into Group A (0-2) and Group B (3-5)
+  const groupA = counts.slice(0,3);
+  const groupB = counts.slice(3,6);
+
+  // Step 4: For each number, check pattern consistency across both groups
+  const numbersAside = [];
+  const patternData = {};
+
+  for (let n = 1; n <= 40; n++) {
+    const patA = getPattern(groupA, n);
+    const patB = getPattern(groupB, n);
+    const consistent = isConsistent(patA) && isConsistent(patB);
+    const similar = patternSimilar(patA, patB);
+    patternData[n] = { patA, patB, consistent, similar, qualifies: consistent && similar };
+    if (consistent && similar) numbersAside.push(n);
+  }
+
+  // Step 5: Compare numbersAside against last 6 draws
+  const last6 = draws.slice(0,6);
+  const recentNums = new Set(last6.flatMap(d => d.numbers));
+
+  // Categorise
+  const inRecent = numbersAside.filter(n => recentNums.has(n));
+  const notInRecent = numbersAside.filter(n => !recentNums.has(n));
+  const finalPool = numbersAside; // use all qualified numbers
+
+  // Step 6: Split pool into ranges and build combinations
+  const r1 = finalPool.filter(n => n >= 1  && n <= 10);
+  const r2 = finalPool.filter(n => n >= 11 && n <= 20);
+  const r3 = finalPool.filter(n => n >= 21 && n <= 30);
+  const r4 = finalPool.filter(n => n >= 31 && n <= 40);
+
+  // Pad ranges if too small using hot numbers
+  const { sorted } = stats;
+  function padRange(arr, lo, hi, need) {
+    if (arr.length >= need) return arr;
+    const hot = sorted.map(x=>+x[0]).filter(n=>n>=lo&&n<=hi&&!arr.includes(n));
+    return [...arr, ...hot].slice(0, Math.max(need, arr.length));
+  }
+  const p1 = padRange(r1, 1, 10, 4);
+  const p2 = padRange(r2, 11, 20, 4);
+  const p3 = padRange(r3, 21, 30, 4);
+  const p4 = padRange(r4, 31, 40, 2);
+
+  // Build combinations: pick 1 from each range group
+  const combinations = [];
+  const used = new Set();
+
+  // Systematic combinations: vary within each range
+  const maxCombos = 120;
+  let attempts = 0;
+
+  // Use first few from each range, rotate through them
+  const pool1 = p1.slice(0, Math.min(p1.length, 5));
+  const pool2 = p2.slice(0, Math.min(p2.length, 5));
+  const pool3 = p3.slice(0, Math.min(p3.length, 6));
+  const pool4 = p4.slice(0, Math.min(p4.length, 4));
+
+  // Ensure minimum pool sizes
+  function ensurePool(pool, lo, hi, need) {
+    if (pool.length >= need) return pool;
+    const extras = sorted.map(x=>+x[0]).filter(n=>n>=lo&&n<=hi&&!pool.includes(n));
+    return [...pool, ...extras].slice(0, need);
+  }
+  const ep1 = ensurePool(pool1,1,10,3);
+  const ep2 = ensurePool(pool2,11,20,3);
+  const ep3 = ensurePool(pool3,21,30,4);
+  const ep4 = ensurePool(pool4,31,40,3);
+
+  // Generate systematic combos
+  for (let a=0; a<ep1.length && combinations.length<maxCombos; a++) {
+    for (let b=0; b<ep2.length && combinations.length<maxCombos; b++) {
+      for (let c=0; c<ep3.length && combinations.length<maxCombos; c++) {
+        for (let d=c+1; d<ep3.length && combinations.length<maxCombos; d++) {
+          for (let e=0; e<ep4.length && combinations.length<maxCombos; e++) {
+            // Build a 6-number line: 1 from range1, 1 from range2, 2 from range3, 1 from range4 + 1 bonus from range4
+            const extra4 = ep4.filter(n=>n!==ep4[e]);
+            const lastNum = extra4.length > 0 ? extra4[e % extra4.length] : ep4[e];
+            const line = [ep1[a], ep2[b], ep3[c], ep3[d], ep4[e], lastNum];
+            const unique = [...new Set(line)].sort((x,y)=>x-y);
+            if (unique.length === 6) {
+              const key = unique.join(',');
+              if (!used.has(key)) { used.add(key); combinations.push(unique); }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // Fill remaining with weighted random if needed
+  while (combinations.length < maxCombos) {
+    const line = pickNums('weighted').sort((a,b)=>a-b);
+    const key = line.join(',');
+    if (!used.has(key)) { used.add(key); combinations.push(line); }
+  }
+
+  // Step 7: Format into 10 tickets x 12 lines
+  const finalTickets = [];
+  let idx = 0;
+  for (let t = 0; t < 10; t++) {
+    const ticketLines = [];
+    for (let l = 0; l < 12; l++) {
+      ticketLines.push({ nums: combinations[idx % combinations.length], pb: pickPB() });
+      idx++;
+    }
+    finalTickets.push(ticketLines);
+  }
+
+  gordonState = { tickets, counts, groupA, groupB, patternData, numbersAside, inRecent, notInRecent, finalPool, r1, r2, r3, r4, combinations, finalTickets, last6 };
+  renderTab('gordon');
+}
+
+// ── GORDON RENDER ────────────────────────────────────────────
+function renderGordon() {
+  if (!gordonState) return renderGordonStart();
+  return renderGordonResult();
+}
+
+function renderGordonStart() {
+  return `<div class="panel" style="border-top-color:#cc88ff">
+    <div class="ptitle" style="color:#cc88ff">🧠 Gordon Analysis System</div>
+
+    <div class="g-step purple" style="margin-bottom:14px">
+      <strong style="color:#cc88ff">How it works:</strong><br>
+      1. Go to <strong style="color:var(--gold)">lotto.co.nz</strong> → Pick Your Dip → auto-generate each line <strong style="color:var(--gold)">72 times</strong><br>
+      2. Copy all 72 lines and paste them below<br>
+      3. App splits them into 6 tickets × 12 lines<br>
+      4. Counts how many times each number (1–40) appears per ticket<br>
+      5. Finds numbers with consistent patterns across both groups<br>
+      6. Compares against last 6 real draws<br>
+      7. Builds 120 combinations → <strong style="color:var(--gold)">10 tickets × 12 lines</strong> ready to play
+    </div>
+
+    <div class="g-label purple">📋 PASTE YOUR 72 PICK YOUR DIP LINES HERE</div>
+    <div style="font-size:.6rem;color:var(--dim);margin-bottom:8px">
+      Go to <a href="https://lotto.co.nz" target="_blank" style="color:var(--cyan)">lotto.co.nz</a> → Pick Your Dip → auto-generate <strong style="color:var(--gold)">72 lines</strong> → select all & copy → paste below.<br>
+      The app handles the exact Lotto NZ format (numbers one per line with ● separators and letter labels like A, B, C automatically).
+    </div>
+    <textarea id="dipPaste" placeholder="Paste your Pick Your Dip lines here...
+The app handles the exact Lotto NZ copy format e.g.:
+6
+12
+13
+22
+25
+29
+●
+B
+3
+4
+8
+..." style="width:100%;height:200px;background:#05080f;border:1px solid #cc88ff;border-radius:6px;color:var(--text);font-family:'Share Tech Mono',monospace;font-size:.65rem;padding:10px;resize:vertical;outline:none;line-height:1.6"></textarea>
+
+    <div id="dipError" style="display:none;font-size:.62rem;color:#ff8899;margin:6px 0;padding:6px 10px;background:rgba(255,68,85,.08);border:1px solid rgba(255,68,85,.3);border-radius:5px"></div>
+    <div id="dipInfo" style="display:none;font-size:.62rem;color:var(--green);margin:6px 0"></div>
+
+    <div style="display:flex;gap:10px;margin-top:12px;flex-wrap:wrap;align-items:center">
+      <button class="g-run-btn" style="margin:0;padding:10px 22px;font-size:.6rem" onclick="parseDipAndRun()">🧠 PARSE & RUN GORDON</button>
+      <button onclick="loadDipExample()" style="padding:9px 14px;border-radius:6px;border:1px solid #cc88ff;background:transparent;color:#cc88ff;font-family:'Orbitron',sans-serif;font-size:.52rem;font-weight:700;letter-spacing:.08em;cursor:pointer">LOAD EXAMPLE</button>
+    </div>
+  </div>`;
+}
+
+function renderGordonResult() {
+  const { tickets, counts, groupA, groupB, patternData, numbersAside, inRecent, notInRecent, finalTickets, last6, combinations } = gordonState;
+  const allNums = Array.from({length:40},(_,i)=>i+1);
+
+  // ── Step 1: Matrix display ──────────────────────────────
+  // Show count matrix for all 6 tickets
+  let matrixRows = '';
+  tickets.forEach((tk, ti) => {
+    const cnt = counts[ti];
+    const group = ti < 3 ? 'A' : 'B';
+    const cells = allNums.map(n => {
+      const v = cnt[n];
+      const pd = patternData[n];
+      const cls = pd.qualifies ? 'pattern-match' : v >= 3 ? 'hot' : v === 2 ? 'warm' : v === 0 ? 'zero' : '';
+      return `<td class="${cls}">${v === 0 ? '·' : v}</td>`;
+    }).join('');
+    matrixRows += `<tr><td class="tkname">T${ti+1} (Grp ${group})</td>${cells}</tr>`;
+  });
+
+  const numHeaders = allNums.map(n => {
+    const pd = patternData[n];
+    return `<th class="${pd.qualifies?'num-hdr':''}">${n}</th>`;
+  }).join('');
+
+  // ── Step 2: Pattern qualified numbers ──────────────────
+  const asideChips = numbersAside.map(n => {
+    const isHot = gordonState.inRecent.includes(n);
+    return `<span class="g-num-chip ${isHot?'hot':'aside'}" title="${isHot?'In last 6 draws':'Not in last 6 draws'}">${n}</span>`;
+  }).join('');
+
+  // ── Step 3: Last 6 draws display ───────────────────────
+  const last6HTML = last6.map(d =>
+    `<div style="display:flex;gap:4px;align-items:center;margin-bottom:4px;font-size:.6rem">
+      <span style="color:var(--dim);width:70px;flex-shrink:0">${d.date}</span>
+      ${d.numbers.map(n => {
+        const aside = numbersAside.includes(n);
+        return `<div class="g-ball ${aside?'main':'pb'}" style="${aside?'':'opacity:0.4'}">${n}</div>`;
+      }).join('')}
+    </div>`
+  ).join('');
+
+  // ── Step 4: Final 10 tickets ───────────────────────────
+  let ticketsHTML = '';
+  finalTickets.forEach((tk, ti) => {
+    const linesHTML = tk.map((line, li) =>
+      `<div class="g-line">
+        <span class="g-line-num">${li+1}.</span>
+        ${line.nums.map(n => `<div class="g-ball main">${n}</div>`).join('')}
+        <div class="g-ball pb" style="margin-left:6px">${line.pb}</div>
+      </div>`
+    ).join('');
+    ticketsHTML += `<div class="g-ticket">
+      <div class="g-ticket-hdr">
+        <span>TICKET ${ti+1}</span>
+        <span style="font-size:.5rem;color:var(--dim)">12 LINES</span>
+      </div>
+      ${linesHTML}
+    </div>`;
+  });
+
+  return `
+  <div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:14px;align-items:center">
+    <button class="g-run-btn" onclick="gordonState=null;renderTab('gordon');document.getElementById('page-gordon').style.display='block'" style="margin:0;padding:9px 18px;font-size:.58rem">🔄 PASTE NEW LINES</button>
+    <button class="dl-btn" onclick="downloadGordon()">⬇ DOWNLOAD TICKETS</button>
+  </div>
+
+  <!-- STEP 1: COUNT MATRIX -->
+  <div class="panel" style="border-top-color:#cc88ff">
+    <div class="ptitle" style="color:#cc88ff">STEP 1 · Count Matrix (all 6 tickets × 40 numbers)</div>
+    <div style="font-size:.6rem;color:var(--dim);margin-bottom:8px">
+      Each cell = how many times that number appeared across the 12 lines of that ticket.
+      <span style="color:var(--green)">■ Green</span> = consistent pattern · <span style="color:var(--gold)">■ Gold</span> = appears often
+    </div>
+    <div class="g-matrix">
+      <table class="g-table">
+        <thead><tr><th>Ticket</th>${numHeaders}</tr></thead>
+        <tbody>${matrixRows}</tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- STEP 2: NUMBERS ASIDE -->
+  <div class="panel gold" style="border-top-color:var(--gold)">
+    <div class="ptitle">STEP 2 · Numbers Put Aside (${numbersAside.length} qualified)</div>
+    <div style="font-size:.6rem;color:var(--dim);margin-bottom:8px">
+      Numbers showing consistent patterns across both groups (tickets 1-3 and 4-6).
+      <span style="color:var(--red)">Red</span> = also appeared in last 6 draws · <span style="color:var(--gold)">Gold</span> = pattern only
+    </div>
+    <div class="g-chips">${asideChips || '<span style="color:var(--dim);font-size:.65rem">No numbers qualified — try regenerating</span>'}</div>
+    <div style="font-size:.58rem;color:var(--dim);margin-top:8px">
+      In last 6 draws: <strong style="color:var(--red)">${gordonState.inRecent.join(', ') || 'none'}</strong> &nbsp;|&nbsp;
+      Not in last 6: <strong style="color:var(--gold)">${gordonState.notInRecent.join(', ') || 'none'}</strong>
+    </div>
+  </div>
+
+  <!-- STEP 3: LAST 6 DRAWS COMPARISON -->
+  <div class="panel" style="border-top-color:var(--green)">
+    <div class="ptitle" style="color:var(--green)">STEP 3 · Last 6 Draws (highlighted = in pool)</div>
+    <div style="font-size:.6rem;color:var(--dim);margin-bottom:8px">Gold balls = number is in the qualified pool. Blue = not qualified.</div>
+    ${last6HTML}
+  </div>
+
+  <!-- STEP 4: 120 COMBINATIONS PREVIEW -->
+  <div class="panel" style="border-top-color:var(--cyan)">
+    <div class="ptitle">STEP 4 · ${combinations.length} Combinations Built</div>
+    <div style="font-size:.6rem;color:var(--dim);margin-bottom:10px">
+      Numbers split by range: 
+      1-10: <strong style="color:var(--gold)">${gordonState.r1.join(', ')||'—'}</strong> · 
+      11-20: <strong style="color:var(--cyan)">${gordonState.r2.join(', ')||'—'}</strong> · 
+      21-30: <strong style="color:var(--green)">${gordonState.r3.join(', ')||'—'}</strong> · 
+      31-40: <strong style="color:#cc88ff">${gordonState.r4.join(', ')||'—'}</strong>
+    </div>
+    <div style="display:flex;flex-wrap:wrap;gap:4px;max-height:120px;overflow-y:auto">
+      ${combinations.slice(0,30).map((c,i)=>`<div style="font-size:.55rem;background:rgba(255,255,255,.04);border:1px solid var(--border);border-radius:4px;padding:3px 6px;white-space:nowrap;color:var(--text)">${i+1}. ${c.join('-')}</div>`).join('')}
+      ${combinations.length>30?`<div style="font-size:.55rem;color:var(--dim);padding:3px 6px">...and ${combinations.length-30} more</div>`:''}
+    </div>
+  </div>
+
+  <!-- STEP 5: FINAL 10 TICKETS -->
+  <div class="panel gold">
+    <div class="ptitle">STEP 5 · Final 10 Tickets × 12 Lines</div>
+    <div style="font-size:.6rem;color:var(--dim);margin-bottom:12px">Gold balls = main numbers · Blue = Powerball</div>
+    ${ticketsHTML}
+    <div style="margin-top:14px;display:flex;gap:10px;flex-wrap:wrap">
+      <button class="dl-btn" onclick="downloadGordon()">⬇ DOWNLOAD ALL TICKETS (TEXT)</button>
+      <button class="dl-btn" onclick="downloadGordonCSV()" style="background:linear-gradient(135deg,var(--cyan),#0099bb);color:#001a2a">⬇ DOWNLOAD CSV</button>
+      <button onclick="gordonState=null;renderTab('gordon');document.getElementById('page-gordon').style.display='block'" style="padding:9px 14px;border-radius:6px;border:1px solid #cc88ff;background:transparent;color:#cc88ff;font-family:'Orbitron',sans-serif;font-size:.52rem;font-weight:700;letter-spacing:.08em;cursor:pointer">🔄 PASTE NEW LINES</button>
+    </div>
+  </div>`;
+}
+
+// ── DOWNLOAD FUNCTIONS ───────────────────────────────────────
+function downloadGordon() {
+  if (!gordonState) return;
+  let txt = 'NZ LOTTO - GORDON ANALYSIS\n';
+  txt += '================================\n\n';
+  txt += 'QUALIFIED NUMBERS: ' + gordonState.numbersAside.join(', ') + '\n\n';
+  gordonState.finalTickets.forEach((tk, ti) => {
+    txt += 'TICKET ' + (ti+1) + '\n';
+    txt += '-----------\n';
+    tk.forEach((line, li) => {
+      txt += 'Line ' + (li+1).toString().padStart(2,' ') + ': ' + line.nums.join('  ') + '  |  PB: ' + line.pb + '\n';
+    });
+    txt += '\n';
+  });
+  const blob = new Blob([txt], {type:'text/plain'});
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'gordon-lotto-tickets.txt';
+  a.click();
+}
+
+function downloadGordonCSV() {
+  if (!gordonState) return;
+  let csv = 'Ticket,Line,N1,N2,N3,N4,N5,N6,Powerball\n';
+  gordonState.finalTickets.forEach((tk, ti) => {
+    tk.forEach((line, li) => {
+      csv += (ti+1) + ',' + (li+1) + ',' + line.nums.join(',') + ',' + line.pb + '\n';
+    });
+  });
+  const blob = new Blob([csv], {type:'text/csv'});
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'gordon-lotto-tickets.csv';
+  a.click();
 }
 
 // ── Init ─────────────────────────────────────────────────────
