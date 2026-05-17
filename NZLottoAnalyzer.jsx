@@ -4,6 +4,9 @@ import * as XLSX from "xlsx";
 
 // ── Fallback hardcoded draws (11 real verified 2026 draws) ──
 const FALLBACK = [
+  {date:"2026-05-16",numbers:[6,8,13,17,34,36],bonus:28,powerball:5,draw:2586}
+  {date:"2026-05-13",numbers:[2,5,6,12,14,28],bonus:34,powerball:6,draw:2585},
+  {date:"2026-05-09",numbers:[3,10,12,18,26,32],bonus:36,powerball:5,draw:2584},
   {date:"2026-05-06",numbers:[3,4,16,22,24,34],bonus:38,powerball:10,draw:2583},
   {date:"2026-05-02",numbers:[14,15,17,25,29,30],bonus:13,powerball:3,draw:2582},
   {date:"2026-04-29",numbers:[7,9,12,21,31,33],bonus:26,powerball:1,draw:2581},
