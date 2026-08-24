@@ -7,19 +7,27 @@ pure-random guessing. See the [published report](https://claude.ai/code/artifact
 
 ## Files
 
-- `draws.json` -- 44 real, cross-validated NZ Lotto draws (10 Jan - 19 Aug 2026),
-  compiled via web search because `mylotto.co.nz` is unreachable from this dev
-  sandbox (gambling-category domains are blocked at the network egress proxy for
-  every tool, confirmed via direct `curl` -> 403). `_meta` in the file documents
-  provenance and known gaps (Powerball numbers only found for 17/44 draws).
+- `draws.json` -- 100 real, official NZ Lotto draws (draws #2509-#2608, 20 Aug
+  2025 - 1 Aug 2026), read directly from a user-supplied official Lotto NZ
+  results workbook (the "Lotto Powerball" sheet, which covers every draw back
+  to #1 in 1987). Every row has a complete 6-number line, bonus ball, and
+  Powerball number -- no reconstruction or estimation needed. `_meta` in the
+  file documents provenance. (An earlier version of this file held ~44 draws
+  reconstructed via web search, from when `mylotto.co.nz` itself was the only
+  option and was unreachable from this dev sandbox -- gambling-category domains
+  are blocked at the network egress proxy for every tool, confirmed via direct
+  `curl` -> 403. That reconstruction is no longer needed now that the real
+  workbook is available, but `scrape_history.py` below still documents that
+  path for the future.)
 - `lotto_analysis.py` -- run with `python3 lotto_analysis.py` (stdlib only, no
   dependencies). Reads `draws.json`, writes `report.json`, and prints a summary
   including the 8 generated lines.
 - `report.json` -- output of the above; this is the data baked into the
   published HTML report.
 - `scrape_history.py` -- best-effort scraper for `lottoresults.co.nz`'s monthly
-  archive pages, meant to be run from a network that isn't gambling-blocked to
-  pull a full 100+ draw history. Needs `pip install requests beautifulsoup4`.
+  archive pages, meant to be run from a network that isn't gambling-blocked, for
+  refreshing the dataset with newer draws in the future without needing another
+  manual workbook upload. Needs `pip install requests beautifulsoup4`.
   **Not verified end-to-end** since it couldn't be tested against the live site
   from here -- see the troubleshooting notes in its docstring if it returns 0 rows.
 

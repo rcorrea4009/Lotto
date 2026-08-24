@@ -1,57 +1,1412 @@
 {
   "_meta": {
     "generated": "2026-08-24",
-    "source": "Compiled via web search of independently-published NZ Lotto result pages (lotto.net, powerball.net, lottodraw.co.nz, lottoresults.co.nz, mylotto.co.nz press releases) because mylotto.co.nz itself is unreachable from this environment (network policy blocks gambling-category domains for all outbound tools, confirmed via direct curl -> 403 at the proxy).",
-    "validation": "Draw numbers were cross-checked for sequential consistency (NZ Lotto draws twice weekly, Wed/Sat, draw # increments by 1 each time) and, where two independent sources listed the same draw, numbers were required to match. Rows with malformed extractions (7 numbers instead of 6, duplicated rows) were dropped rather than guessed.",
-    "count": 44,
-    "note_bonus": "Bonus ball (1-40) is the 7th ball drawn from the same barrel as the main 6 in the Lotto game itself.",
-    "note_powerball": "Powerball (1-10) is a separate add-on barrel, only reliably found for 17 of the 44 draws via search; missing values are null, not zero.",
-    "note_estimated_dates": "A few draws in Jan/Feb/Mar had numbers but no explicit date in the source snippet; their dates were inferred from the Wed/Sat cadence and are marked estimated_date: true."
+    "source": "User-provided official NZ Lotto results spreadsheet (Lotto Powerball sheet), covering every draw from draw #1 (1 Aug 1987) to the most recent draw at time of upload (draw #2608, 1 Aug 2026). This replaces the earlier 44-draw web-search-compiled dataset now that authoritative source data is available.",
+    "validation": "Read directly from the workbook, no reconstruction needed. Every one of the 100 rows has a complete 6-number line, bonus ball, and Powerball number -- no missing values.",
+    "count": 100,
+    "note_bonus": "Bonus ball (1-40) is the 7th ball drawn from the same barrel as the main 6.",
+    "note_powerball": "Powerball (1-10) is a separate add-on barrel, present for all 100 draws in this set."
   },
   "draws": [
-    {"draw":2613,"date":"2026-08-19","numbers":[13,16,19,20,25,37],"bonus":12,"powerball":null},
-    {"draw":2612,"date":"2026-08-15","numbers":[14,15,17,22,32,40],"bonus":3,"powerball":null},
-    {"draw":2611,"date":"2026-08-12","numbers":[2,8,13,19,28,39],"bonus":24,"powerball":null},
-    {"draw":2610,"date":"2026-08-08","numbers":[9,13,21,24,25,35],"bonus":5,"powerball":5},
-    {"draw":2608,"date":"2026-08-01","numbers":[8,14,15,24,26,30],"bonus":null,"powerball":4},
-    {"draw":2607,"date":"2026-07-29","numbers":[8,19,21,32,33,35],"bonus":17,"powerball":6},
-    {"draw":2604,"date":"2026-07-18","numbers":[13,28,30,31,34,35],"bonus":10,"powerball":null},
-    {"draw":2596,"date":"2026-06-20","numbers":[6,9,27,28,30,32],"bonus":36,"powerball":null},
-    {"draw":2595,"date":"2026-06-17","numbers":[3,7,10,31,35,37],"bonus":16,"powerball":null,"estimated_date":true},
-    {"draw":2594,"date":"2026-06-13","numbers":[7,8,13,32,33,37],"bonus":22,"powerball":null,"estimated_date":true},
-    {"draw":2593,"date":"2026-06-10","numbers":[2,7,12,17,21,37],"bonus":35,"powerball":null,"estimated_date":true},
-    {"draw":2592,"date":"2026-06-06","numbers":[3,22,29,37,39,40],"bonus":13,"powerball":null},
-    {"draw":2588,"date":"2026-05-23","numbers":[6,17,19,21,27,32],"bonus":28,"powerball":null},
-    {"draw":2587,"date":"2026-05-20","numbers":[8,10,12,14,20,23],"bonus":40,"powerball":null},
-    {"draw":2586,"date":"2026-05-16","numbers":[6,8,13,17,34,36],"bonus":28,"powerball":5},
-    {"draw":2585,"date":"2026-05-13","numbers":[2,5,6,12,14,28],"bonus":34,"powerball":6},
-    {"draw":2584,"date":"2026-05-09","numbers":[3,10,12,18,26,32],"bonus":36,"powerball":5},
-    {"draw":2583,"date":"2026-05-06","numbers":[3,4,16,22,24,34],"bonus":38,"powerball":10},
-    {"draw":2582,"date":"2026-05-02","numbers":[14,15,17,25,29,30],"bonus":13,"powerball":3},
-    {"draw":2581,"date":"2026-04-29","numbers":[7,9,12,21,31,33],"bonus":26,"powerball":1},
-    {"draw":2580,"date":"2026-04-25","numbers":[1,9,14,24,26,32],"bonus":15,"powerball":2},
-    {"draw":2579,"date":"2026-04-22","numbers":[1,6,11,19,28,34],"bonus":4,"powerball":5},
-    {"draw":2578,"date":"2026-04-18","numbers":[1,2,9,19,21,34],"bonus":24,"powerball":6},
-    {"draw":2577,"date":"2026-04-15","numbers":[5,12,29,32,33,40],"bonus":17,"powerball":5},
-    {"draw":2576,"date":"2026-04-11","numbers":[8,22,24,25,29,38],"bonus":3,"powerball":4},
-    {"draw":2575,"date":"2026-04-08","numbers":[7,14,16,29,32,35],"bonus":12,"powerball":1},
-    {"draw":2574,"date":"2026-04-04","numbers":[1,9,25,30,38,40],"bonus":22,"powerball":4},
-    {"draw":2573,"date":"2026-04-01","numbers":[1,2,24,25,30,38],"bonus":39,"powerball":1},
-    {"draw":2571,"date":"2026-03-25","numbers":[13,22,27,31,34,37],"bonus":14,"powerball":null},
-    {"draw":2570,"date":"2026-03-21","numbers":[11,12,17,22,28,32],"bonus":4,"powerball":null},
-    {"draw":2569,"date":"2026-03-18","numbers":[3,18,28,30,33,36],"bonus":23,"powerball":null},
-    {"draw":2568,"date":"2026-03-14","numbers":[4,9,10,12,15,21],"bonus":38,"powerball":null,"estimated_date":true},
-    {"draw":2567,"date":"2026-03-11","numbers":[7,12,22,32,35,38],"bonus":11,"powerball":null,"estimated_date":true},
-    {"draw":2566,"date":"2026-03-07","numbers":[5,27,30,31,32,33],"bonus":7,"powerball":null,"estimated_date":true},
-    {"draw":2565,"date":"2026-03-04","numbers":[6,7,14,29,37,39],"bonus":11,"powerball":null,"estimated_date":true},
-    {"draw":2558,"date":"2026-02-07","numbers":[11,21,24,26,35,36],"bonus":34,"powerball":null,"estimated_date":true},
-    {"draw":2557,"date":"2026-02-04","numbers":[13,18,19,20,36,37],"bonus":16,"powerball":null},
-    {"draw":2556,"date":"2026-01-31","numbers":[2,14,16,23,34,35],"bonus":20,"powerball":null},
-    {"draw":2555,"date":"2026-01-28","numbers":[6,9,10,15,22,25],"bonus":18,"powerball":null},
-    {"draw":2554,"date":"2026-01-24","numbers":[1,3,13,16,21,40],"bonus":38,"powerball":null,"estimated_date":true},
-    {"draw":2553,"date":"2026-01-21","numbers":[3,9,10,13,14,40],"bonus":39,"powerball":null,"estimated_date":true},
-    {"draw":2552,"date":"2026-01-17","numbers":[11,22,23,31,33,36],"bonus":24,"powerball":null,"estimated_date":true},
-    {"draw":2551,"date":"2026-01-14","numbers":[11,24,25,28,35,40],"bonus":27,"powerball":null,"estimated_date":true},
-    {"draw":2550,"date":"2026-01-10","numbers":[5,9,15,21,31,40],"bonus":25,"powerball":null,"estimated_date":true}
+    {
+      "draw": 2608,
+      "date": "2026-08-01",
+      "numbers": [
+        8,
+        14,
+        15,
+        24,
+        26,
+        30
+      ],
+      "bonus": 7,
+      "powerball": 4
+    },
+    {
+      "draw": 2607,
+      "date": "2026-07-29",
+      "numbers": [
+        8,
+        19,
+        21,
+        32,
+        33,
+        35
+      ],
+      "bonus": 17,
+      "powerball": 6
+    },
+    {
+      "draw": 2606,
+      "date": "2026-07-25",
+      "numbers": [
+        1,
+        12,
+        14,
+        18,
+        22,
+        29
+      ],
+      "bonus": 32,
+      "powerball": 8
+    },
+    {
+      "draw": 2605,
+      "date": "2026-07-22",
+      "numbers": [
+        3,
+        18,
+        25,
+        26,
+        30,
+        34
+      ],
+      "bonus": 37,
+      "powerball": 10
+    },
+    {
+      "draw": 2604,
+      "date": "2026-07-18",
+      "numbers": [
+        13,
+        28,
+        30,
+        31,
+        34,
+        35
+      ],
+      "bonus": 10,
+      "powerball": 9
+    },
+    {
+      "draw": 2603,
+      "date": "2026-07-15",
+      "numbers": [
+        6,
+        10,
+        14,
+        19,
+        20,
+        27
+      ],
+      "bonus": 39,
+      "powerball": 1
+    },
+    {
+      "draw": 2602,
+      "date": "2026-07-11",
+      "numbers": [
+        10,
+        21,
+        22,
+        26,
+        37,
+        40
+      ],
+      "bonus": 15,
+      "powerball": 6
+    },
+    {
+      "draw": 2601,
+      "date": "2026-07-08",
+      "numbers": [
+        12,
+        15,
+        27,
+        28,
+        35,
+        40
+      ],
+      "bonus": 9,
+      "powerball": 7
+    },
+    {
+      "draw": 2600,
+      "date": "2026-07-04",
+      "numbers": [
+        2,
+        15,
+        17,
+        18,
+        26,
+        30
+      ],
+      "bonus": 28,
+      "powerball": 9
+    },
+    {
+      "draw": 2599,
+      "date": "2026-07-01",
+      "numbers": [
+        1,
+        7,
+        11,
+        32,
+        35,
+        40
+      ],
+      "bonus": 39,
+      "powerball": 1
+    },
+    {
+      "draw": 2598,
+      "date": "2026-06-27",
+      "numbers": [
+        2,
+        7,
+        21,
+        24,
+        29,
+        37
+      ],
+      "bonus": 17,
+      "powerball": 10
+    },
+    {
+      "draw": 2597,
+      "date": "2026-06-24",
+      "numbers": [
+        5,
+        7,
+        12,
+        30,
+        32,
+        36
+      ],
+      "bonus": 40,
+      "powerball": 6
+    },
+    {
+      "draw": 2596,
+      "date": "2026-06-20",
+      "numbers": [
+        6,
+        9,
+        27,
+        28,
+        30,
+        32
+      ],
+      "bonus": 36,
+      "powerball": 9
+    },
+    {
+      "draw": 2595,
+      "date": "2026-06-17",
+      "numbers": [
+        3,
+        7,
+        10,
+        31,
+        35,
+        37
+      ],
+      "bonus": 16,
+      "powerball": 3
+    },
+    {
+      "draw": 2594,
+      "date": "2026-06-13",
+      "numbers": [
+        7,
+        8,
+        13,
+        32,
+        33,
+        37
+      ],
+      "bonus": 22,
+      "powerball": 5
+    },
+    {
+      "draw": 2593,
+      "date": "2026-06-10",
+      "numbers": [
+        2,
+        7,
+        12,
+        17,
+        21,
+        37
+      ],
+      "bonus": 35,
+      "powerball": 6
+    },
+    {
+      "draw": 2592,
+      "date": "2026-06-06",
+      "numbers": [
+        3,
+        22,
+        29,
+        37,
+        39,
+        40
+      ],
+      "bonus": 13,
+      "powerball": 1
+    },
+    {
+      "draw": 2591,
+      "date": "2026-06-03",
+      "numbers": [
+        1,
+        4,
+        9,
+        11,
+        13,
+        36
+      ],
+      "bonus": 24,
+      "powerball": 9
+    },
+    {
+      "draw": 2590,
+      "date": "2026-05-30",
+      "numbers": [
+        8,
+        10,
+        29,
+        35,
+        36,
+        39
+      ],
+      "bonus": 3,
+      "powerball": 3
+    },
+    {
+      "draw": 2589,
+      "date": "2026-05-27",
+      "numbers": [
+        6,
+        17,
+        19,
+        21,
+        27,
+        32
+      ],
+      "bonus": 28,
+      "powerball": 10
+    },
+    {
+      "draw": 2588,
+      "date": "2026-05-23",
+      "numbers": [
+        5,
+        11,
+        22,
+        24,
+        34,
+        36
+      ],
+      "bonus": 10,
+      "powerball": 1
+    },
+    {
+      "draw": 2587,
+      "date": "2026-05-20",
+      "numbers": [
+        8,
+        10,
+        12,
+        14,
+        20,
+        23
+      ],
+      "bonus": 40,
+      "powerball": 6
+    },
+    {
+      "draw": 2586,
+      "date": "2026-05-16",
+      "numbers": [
+        6,
+        8,
+        13,
+        17,
+        34,
+        36
+      ],
+      "bonus": 28,
+      "powerball": 5
+    },
+    {
+      "draw": 2585,
+      "date": "2026-05-13",
+      "numbers": [
+        2,
+        5,
+        6,
+        12,
+        14,
+        28
+      ],
+      "bonus": 34,
+      "powerball": 6
+    },
+    {
+      "draw": 2584,
+      "date": "2026-05-09",
+      "numbers": [
+        3,
+        10,
+        12,
+        18,
+        26,
+        32
+      ],
+      "bonus": 36,
+      "powerball": 5
+    },
+    {
+      "draw": 2583,
+      "date": "2026-05-06",
+      "numbers": [
+        3,
+        4,
+        16,
+        22,
+        24,
+        34
+      ],
+      "bonus": 38,
+      "powerball": 10
+    },
+    {
+      "draw": 2582,
+      "date": "2026-05-02",
+      "numbers": [
+        14,
+        15,
+        17,
+        25,
+        29,
+        30
+      ],
+      "bonus": 13,
+      "powerball": 3
+    },
+    {
+      "draw": 2581,
+      "date": "2026-04-29",
+      "numbers": [
+        7,
+        9,
+        12,
+        21,
+        31,
+        33
+      ],
+      "bonus": 26,
+      "powerball": 1
+    },
+    {
+      "draw": 2580,
+      "date": "2026-04-25",
+      "numbers": [
+        1,
+        9,
+        14,
+        24,
+        26,
+        32
+      ],
+      "bonus": 15,
+      "powerball": 2
+    },
+    {
+      "draw": 2579,
+      "date": "2026-04-22",
+      "numbers": [
+        1,
+        6,
+        11,
+        19,
+        28,
+        34
+      ],
+      "bonus": 4,
+      "powerball": 5
+    },
+    {
+      "draw": 2578,
+      "date": "2026-04-18",
+      "numbers": [
+        1,
+        2,
+        9,
+        19,
+        21,
+        34
+      ],
+      "bonus": 24,
+      "powerball": 6
+    },
+    {
+      "draw": 2577,
+      "date": "2026-04-15",
+      "numbers": [
+        5,
+        12,
+        29,
+        32,
+        33,
+        40
+      ],
+      "bonus": 17,
+      "powerball": 5
+    },
+    {
+      "draw": 2576,
+      "date": "2026-04-11",
+      "numbers": [
+        8,
+        22,
+        24,
+        25,
+        29,
+        38
+      ],
+      "bonus": 3,
+      "powerball": 4
+    },
+    {
+      "draw": 2575,
+      "date": "2026-04-08",
+      "numbers": [
+        7,
+        14,
+        16,
+        29,
+        32,
+        35
+      ],
+      "bonus": 12,
+      "powerball": 1
+    },
+    {
+      "draw": 2574,
+      "date": "2026-04-04",
+      "numbers": [
+        1,
+        9,
+        25,
+        30,
+        38,
+        40
+      ],
+      "bonus": 22,
+      "powerball": 4
+    },
+    {
+      "draw": 2573,
+      "date": "2026-04-01",
+      "numbers": [
+        1,
+        2,
+        24,
+        25,
+        30,
+        38
+      ],
+      "bonus": 39,
+      "powerball": 1
+    },
+    {
+      "draw": 2572,
+      "date": "2026-03-28",
+      "numbers": [
+        5,
+        12,
+        19,
+        27,
+        30,
+        38
+      ],
+      "bonus": 14,
+      "powerball": 3
+    },
+    {
+      "draw": 2571,
+      "date": "2026-03-25",
+      "numbers": [
+        13,
+        22,
+        27,
+        31,
+        34,
+        37
+      ],
+      "bonus": 14,
+      "powerball": 10
+    },
+    {
+      "draw": 2570,
+      "date": "2026-03-21",
+      "numbers": [
+        11,
+        12,
+        17,
+        22,
+        28,
+        32
+      ],
+      "bonus": 4,
+      "powerball": 3
+    },
+    {
+      "draw": 2569,
+      "date": "2026-03-18",
+      "numbers": [
+        3,
+        18,
+        28,
+        30,
+        33,
+        36
+      ],
+      "bonus": 23,
+      "powerball": 6
+    },
+    {
+      "draw": 2568,
+      "date": "2026-03-14",
+      "numbers": [
+        4,
+        9,
+        10,
+        12,
+        15,
+        21
+      ],
+      "bonus": 38,
+      "powerball": 10
+    },
+    {
+      "draw": 2567,
+      "date": "2026-03-11",
+      "numbers": [
+        7,
+        12,
+        22,
+        32,
+        35,
+        38
+      ],
+      "bonus": 11,
+      "powerball": 4
+    },
+    {
+      "draw": 2566,
+      "date": "2026-03-07",
+      "numbers": [
+        5,
+        27,
+        30,
+        31,
+        32,
+        33
+      ],
+      "bonus": 7,
+      "powerball": 4
+    },
+    {
+      "draw": 2565,
+      "date": "2026-03-04",
+      "numbers": [
+        6,
+        7,
+        14,
+        29,
+        37,
+        39
+      ],
+      "bonus": 11,
+      "powerball": 10
+    },
+    {
+      "draw": 2564,
+      "date": "2026-02-28",
+      "numbers": [
+        2,
+        17,
+        20,
+        23,
+        26,
+        39
+      ],
+      "bonus": 40,
+      "powerball": 1
+    },
+    {
+      "draw": 2563,
+      "date": "2026-02-25",
+      "numbers": [
+        8,
+        13,
+        20,
+        24,
+        33,
+        35
+      ],
+      "bonus": 5,
+      "powerball": 7
+    },
+    {
+      "draw": 2562,
+      "date": "2026-02-21",
+      "numbers": [
+        4,
+        10,
+        14,
+        21,
+        37,
+        38
+      ],
+      "bonus": 26,
+      "powerball": 3
+    },
+    {
+      "draw": 2561,
+      "date": "2026-02-18",
+      "numbers": [
+        2,
+        4,
+        8,
+        17,
+        24,
+        34
+      ],
+      "bonus": 29,
+      "powerball": 1
+    },
+    {
+      "draw": 2560,
+      "date": "2026-02-14",
+      "numbers": [
+        2,
+        7,
+        11,
+        19,
+        28,
+        31
+      ],
+      "bonus": 5,
+      "powerball": 1
+    },
+    {
+      "draw": 2559,
+      "date": "2026-02-11",
+      "numbers": [
+        6,
+        15,
+        18,
+        23,
+        26,
+        29
+      ],
+      "bonus": 16,
+      "powerball": 9
+    },
+    {
+      "draw": 2558,
+      "date": "2026-02-07",
+      "numbers": [
+        11,
+        21,
+        24,
+        26,
+        35,
+        36
+      ],
+      "bonus": 34,
+      "powerball": 8
+    },
+    {
+      "draw": 2557,
+      "date": "2026-02-04",
+      "numbers": [
+        13,
+        18,
+        19,
+        20,
+        36,
+        37
+      ],
+      "bonus": 16,
+      "powerball": 6
+    },
+    {
+      "draw": 2556,
+      "date": "2026-01-31",
+      "numbers": [
+        2,
+        14,
+        16,
+        23,
+        34,
+        35
+      ],
+      "bonus": 20,
+      "powerball": 3
+    },
+    {
+      "draw": 2555,
+      "date": "2026-01-28",
+      "numbers": [
+        6,
+        9,
+        10,
+        15,
+        22,
+        25
+      ],
+      "bonus": 18,
+      "powerball": 5
+    },
+    {
+      "draw": 2554,
+      "date": "2026-01-24",
+      "numbers": [
+        1,
+        3,
+        13,
+        16,
+        21,
+        40
+      ],
+      "bonus": 38,
+      "powerball": 3
+    },
+    {
+      "draw": 2553,
+      "date": "2026-01-21",
+      "numbers": [
+        3,
+        9,
+        10,
+        13,
+        14,
+        40
+      ],
+      "bonus": 39,
+      "powerball": 6
+    },
+    {
+      "draw": 2552,
+      "date": "2026-01-17",
+      "numbers": [
+        11,
+        22,
+        23,
+        31,
+        33,
+        36
+      ],
+      "bonus": 24,
+      "powerball": 9
+    },
+    {
+      "draw": 2551,
+      "date": "2026-01-14",
+      "numbers": [
+        11,
+        24,
+        25,
+        28,
+        35,
+        40
+      ],
+      "bonus": 27,
+      "powerball": 10
+    },
+    {
+      "draw": 2550,
+      "date": "2026-01-10",
+      "numbers": [
+        5,
+        9,
+        15,
+        21,
+        31,
+        40
+      ],
+      "bonus": 25,
+      "powerball": 8
+    },
+    {
+      "draw": 2549,
+      "date": "2026-01-07",
+      "numbers": [
+        6,
+        8,
+        13,
+        16,
+        22,
+        24
+      ],
+      "bonus": 14,
+      "powerball": 3
+    },
+    {
+      "draw": 2548,
+      "date": "2026-01-03",
+      "numbers": [
+        1,
+        5,
+        7,
+        8,
+        10,
+        26
+      ],
+      "bonus": 9,
+      "powerball": 4
+    },
+    {
+      "draw": 2547,
+      "date": "2025-12-31",
+      "numbers": [
+        1,
+        3,
+        11,
+        23,
+        26,
+        33
+      ],
+      "bonus": 39,
+      "powerball": 10
+    },
+    {
+      "draw": 2546,
+      "date": "2025-12-27",
+      "numbers": [
+        2,
+        14,
+        19,
+        23,
+        26,
+        27
+      ],
+      "bonus": 7,
+      "powerball": 3
+    },
+    {
+      "draw": 2545,
+      "date": "2025-12-24",
+      "numbers": [
+        2,
+        17,
+        18,
+        23,
+        28,
+        33
+      ],
+      "bonus": 31,
+      "powerball": 7
+    },
+    {
+      "draw": 2544,
+      "date": "2025-12-20",
+      "numbers": [
+        2,
+        14,
+        17,
+        19,
+        31,
+        33
+      ],
+      "bonus": 9,
+      "powerball": 1
+    },
+    {
+      "draw": 2543,
+      "date": "2025-12-17",
+      "numbers": [
+        4,
+        8,
+        15,
+        18,
+        22,
+        27
+      ],
+      "bonus": 3,
+      "powerball": 6
+    },
+    {
+      "draw": 2542,
+      "date": "2025-12-13",
+      "numbers": [
+        7,
+        10,
+        18,
+        21,
+        24,
+        39
+      ],
+      "bonus": 34,
+      "powerball": 4
+    },
+    {
+      "draw": 2541,
+      "date": "2025-12-10",
+      "numbers": [
+        5,
+        6,
+        13,
+        27,
+        31,
+        32
+      ],
+      "bonus": 3,
+      "powerball": 4
+    },
+    {
+      "draw": 2540,
+      "date": "2025-12-06",
+      "numbers": [
+        4,
+        17,
+        29,
+        31,
+        35,
+        37
+      ],
+      "bonus": 33,
+      "powerball": 7
+    },
+    {
+      "draw": 2539,
+      "date": "2025-12-03",
+      "numbers": [
+        3,
+        9,
+        24,
+        30,
+        38,
+        40
+      ],
+      "bonus": 34,
+      "powerball": 2
+    },
+    {
+      "draw": 2538,
+      "date": "2025-11-29",
+      "numbers": [
+        8,
+        11,
+        19,
+        29,
+        33,
+        37
+      ],
+      "bonus": 3,
+      "powerball": 3
+    },
+    {
+      "draw": 2537,
+      "date": "2025-11-26",
+      "numbers": [
+        4,
+        5,
+        9,
+        21,
+        32,
+        34
+      ],
+      "bonus": 3,
+      "powerball": 1
+    },
+    {
+      "draw": 2536,
+      "date": "2025-11-22",
+      "numbers": [
+        2,
+        6,
+        10,
+        12,
+        28,
+        30
+      ],
+      "bonus": 22,
+      "powerball": 8
+    },
+    {
+      "draw": 2535,
+      "date": "2025-11-19",
+      "numbers": [
+        2,
+        10,
+        18,
+        25,
+        29,
+        31
+      ],
+      "bonus": 21,
+      "powerball": 3
+    },
+    {
+      "draw": 2534,
+      "date": "2025-11-15",
+      "numbers": [
+        2,
+        5,
+        14,
+        19,
+        28,
+        38
+      ],
+      "bonus": 29,
+      "powerball": 6
+    },
+    {
+      "draw": 2533,
+      "date": "2025-11-12",
+      "numbers": [
+        4,
+        10,
+        18,
+        19,
+        27,
+        30
+      ],
+      "bonus": 32,
+      "powerball": 8
+    },
+    {
+      "draw": 2532,
+      "date": "2025-11-08",
+      "numbers": [
+        2,
+        4,
+        13,
+        22,
+        24,
+        28
+      ],
+      "bonus": 35,
+      "powerball": 8
+    },
+    {
+      "draw": 2531,
+      "date": "2025-11-05",
+      "numbers": [
+        3,
+        4,
+        9,
+        25,
+        29,
+        40
+      ],
+      "bonus": 20,
+      "powerball": 3
+    },
+    {
+      "draw": 2530,
+      "date": "2025-11-01",
+      "numbers": [
+        4,
+        5,
+        7,
+        9,
+        26,
+        35
+      ],
+      "bonus": 13,
+      "powerball": 10
+    },
+    {
+      "draw": 2529,
+      "date": "2025-10-29",
+      "numbers": [
+        4,
+        13,
+        14,
+        24,
+        30,
+        33
+      ],
+      "bonus": 38,
+      "powerball": 2
+    },
+    {
+      "draw": 2528,
+      "date": "2025-10-25",
+      "numbers": [
+        3,
+        20,
+        22,
+        24,
+        36,
+        37
+      ],
+      "bonus": 19,
+      "powerball": 5
+    },
+    {
+      "draw": 2527,
+      "date": "2025-10-22",
+      "numbers": [
+        3,
+        9,
+        12,
+        15,
+        31,
+        37
+      ],
+      "bonus": 39,
+      "powerball": 6
+    },
+    {
+      "draw": 2526,
+      "date": "2025-10-18",
+      "numbers": [
+        10,
+        20,
+        26,
+        32,
+        33,
+        37
+      ],
+      "bonus": 29,
+      "powerball": 2
+    },
+    {
+      "draw": 2525,
+      "date": "2025-10-15",
+      "numbers": [
+        12,
+        14,
+        15,
+        17,
+        38,
+        40
+      ],
+      "bonus": 19,
+      "powerball": 5
+    },
+    {
+      "draw": 2524,
+      "date": "2025-10-11",
+      "numbers": [
+        7,
+        11,
+        24,
+        37,
+        39,
+        40
+      ],
+      "bonus": 4,
+      "powerball": 7
+    },
+    {
+      "draw": 2523,
+      "date": "2025-10-08",
+      "numbers": [
+        5,
+        11,
+        17,
+        30,
+        32,
+        34
+      ],
+      "bonus": 15,
+      "powerball": 3
+    },
+    {
+      "draw": 2522,
+      "date": "2025-10-04",
+      "numbers": [
+        14,
+        17,
+        24,
+        25,
+        27,
+        32
+      ],
+      "bonus": 28,
+      "powerball": 7
+    },
+    {
+      "draw": 2521,
+      "date": "2025-10-01",
+      "numbers": [
+        2,
+        10,
+        22,
+        27,
+        32,
+        38
+      ],
+      "bonus": 33,
+      "powerball": 10
+    },
+    {
+      "draw": 2520,
+      "date": "2025-09-27",
+      "numbers": [
+        6,
+        10,
+        15,
+        17,
+        19,
+        35
+      ],
+      "bonus": 14,
+      "powerball": 5
+    },
+    {
+      "draw": 2519,
+      "date": "2025-09-24",
+      "numbers": [
+        10,
+        20,
+        24,
+        26,
+        31,
+        36
+      ],
+      "bonus": 12,
+      "powerball": 5
+    },
+    {
+      "draw": 2518,
+      "date": "2025-09-20",
+      "numbers": [
+        9,
+        13,
+        21,
+        22,
+        23,
+        32
+      ],
+      "bonus": 27,
+      "powerball": 1
+    },
+    {
+      "draw": 2517,
+      "date": "2025-09-17",
+      "numbers": [
+        6,
+        12,
+        14,
+        20,
+        33,
+        37
+      ],
+      "bonus": 3,
+      "powerball": 2
+    },
+    {
+      "draw": 2516,
+      "date": "2025-09-13",
+      "numbers": [
+        8,
+        14,
+        21,
+        32,
+        34,
+        40
+      ],
+      "bonus": 25,
+      "powerball": 1
+    },
+    {
+      "draw": 2515,
+      "date": "2025-09-10",
+      "numbers": [
+        13,
+        14,
+        18,
+        26,
+        27,
+        35
+      ],
+      "bonus": 19,
+      "powerball": 8
+    },
+    {
+      "draw": 2514,
+      "date": "2025-09-06",
+      "numbers": [
+        6,
+        17,
+        18,
+        27,
+        32,
+        40
+      ],
+      "bonus": 39,
+      "powerball": 9
+    },
+    {
+      "draw": 2513,
+      "date": "2025-09-03",
+      "numbers": [
+        1,
+        2,
+        4,
+        10,
+        28,
+        38
+      ],
+      "bonus": 40,
+      "powerball": 2
+    },
+    {
+      "draw": 2512,
+      "date": "2025-08-30",
+      "numbers": [
+        4,
+        9,
+        13,
+        15,
+        33,
+        40
+      ],
+      "bonus": 1,
+      "powerball": 4
+    },
+    {
+      "draw": 2511,
+      "date": "2025-08-27",
+      "numbers": [
+        9,
+        12,
+        13,
+        14,
+        21,
+        32
+      ],
+      "bonus": 28,
+      "powerball": 2
+    },
+    {
+      "draw": 2510,
+      "date": "2025-08-23",
+      "numbers": [
+        13,
+        16,
+        17,
+        24,
+        25,
+        31
+      ],
+      "bonus": 38,
+      "powerball": 8
+    },
+    {
+      "draw": 2509,
+      "date": "2025-08-20",
+      "numbers": [
+        7,
+        11,
+        12,
+        16,
+        27,
+        37
+      ],
+      "bonus": 26,
+      "powerball": 9
+    }
   ]
 }
