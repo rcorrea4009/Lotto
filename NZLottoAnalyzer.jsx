@@ -2,9 +2,29 @@ import { useState } from "react";
 import Papa from "papaparse";
 import * as XLSX from "xlsx";
 
-// ── Fallback hardcoded draws (11 real verified 2026 draws) ──
+// ── Fallback hardcoded draws (44 real, cross-validated 2026 draws) ──
+// Gathered via search of independently-published NZ Lotto result pages, since
+// mylotto.co.nz itself is unreachable from sandboxed dev environments (gambling-
+// category network block). Draw numbers were cross-checked for sequential
+// consistency (draws twice weekly, # increments by 1) before inclusion.
+// powerball:0 means no reliable powerball figure was found for that draw (not
+// "powerball was 0" -- NZ Powerball numbers run 1-10).
 const FALLBACK = [
-  {date:"2026-05-16",numbers:[6,8,13,17,34,36],bonus:28,powerball:5,draw:2586}
+  {date:"2026-08-19",numbers:[13,16,19,20,25,37],bonus:12,powerball:0,draw:2613},
+  {date:"2026-08-15",numbers:[14,15,17,22,32,40],bonus:3,powerball:0,draw:2612},
+  {date:"2026-08-12",numbers:[2,8,13,19,28,39],bonus:24,powerball:0,draw:2611},
+  {date:"2026-08-08",numbers:[9,13,21,24,25,35],bonus:5,powerball:5,draw:2610},
+  {date:"2026-08-01",numbers:[8,14,15,24,26,30],bonus:0,powerball:4,draw:2608},
+  {date:"2026-07-29",numbers:[8,19,21,32,33,35],bonus:17,powerball:6,draw:2607},
+  {date:"2026-07-18",numbers:[13,28,30,31,34,35],bonus:10,powerball:0,draw:2604},
+  {date:"2026-06-20",numbers:[6,9,27,28,30,32],bonus:36,powerball:0,draw:2596},
+  {date:"2026-06-17",numbers:[3,7,10,31,35,37],bonus:16,powerball:0,draw:2595},
+  {date:"2026-06-13",numbers:[7,8,13,32,33,37],bonus:22,powerball:0,draw:2594},
+  {date:"2026-06-10",numbers:[2,7,12,17,21,37],bonus:35,powerball:0,draw:2593},
+  {date:"2026-06-06",numbers:[3,22,29,37,39,40],bonus:13,powerball:0,draw:2592},
+  {date:"2026-05-23",numbers:[6,17,19,21,27,32],bonus:28,powerball:0,draw:2588},
+  {date:"2026-05-20",numbers:[8,10,12,14,20,23],bonus:40,powerball:0,draw:2587},
+  {date:"2026-05-16",numbers:[6,8,13,17,34,36],bonus:28,powerball:5,draw:2586},
   {date:"2026-05-13",numbers:[2,5,6,12,14,28],bonus:34,powerball:6,draw:2585},
   {date:"2026-05-09",numbers:[3,10,12,18,26,32],bonus:36,powerball:5,draw:2584},
   {date:"2026-05-06",numbers:[3,4,16,22,24,34],bonus:38,powerball:10,draw:2583},
@@ -18,6 +38,22 @@ const FALLBACK = [
   {date:"2026-04-08",numbers:[7,14,16,29,32,35],bonus:12,powerball:1,draw:2575},
   {date:"2026-04-04",numbers:[1,9,25,30,38,40],bonus:22,powerball:4,draw:2574},
   {date:"2026-04-01",numbers:[1,2,24,25,30,38],bonus:39,powerball:1,draw:2573},
+  {date:"2026-03-25",numbers:[13,22,27,31,34,37],bonus:14,powerball:0,draw:2571},
+  {date:"2026-03-21",numbers:[11,12,17,22,28,32],bonus:4,powerball:0,draw:2570},
+  {date:"2026-03-18",numbers:[3,18,28,30,33,36],bonus:23,powerball:0,draw:2569},
+  {date:"2026-03-14",numbers:[4,9,10,12,15,21],bonus:38,powerball:0,draw:2568},
+  {date:"2026-03-11",numbers:[7,12,22,32,35,38],bonus:11,powerball:0,draw:2567},
+  {date:"2026-03-07",numbers:[5,27,30,31,32,33],bonus:7,powerball:0,draw:2566},
+  {date:"2026-03-04",numbers:[6,7,14,29,37,39],bonus:11,powerball:0,draw:2565},
+  {date:"2026-02-07",numbers:[11,21,24,26,35,36],bonus:34,powerball:0,draw:2558},
+  {date:"2026-02-04",numbers:[13,18,19,20,36,37],bonus:16,powerball:0,draw:2557},
+  {date:"2026-01-31",numbers:[2,14,16,23,34,35],bonus:20,powerball:0,draw:2556},
+  {date:"2026-01-28",numbers:[6,9,10,15,22,25],bonus:18,powerball:0,draw:2555},
+  {date:"2026-01-24",numbers:[1,3,13,16,21,40],bonus:38,powerball:0,draw:2554},
+  {date:"2026-01-21",numbers:[3,9,10,13,14,40],bonus:39,powerball:0,draw:2553},
+  {date:"2026-01-17",numbers:[11,22,23,31,33,36],bonus:24,powerball:0,draw:2552},
+  {date:"2026-01-14",numbers:[11,24,25,28,35,40],bonus:27,powerball:0,draw:2551},
+  {date:"2026-01-10",numbers:[5,9,15,21,31,40],bonus:25,powerball:0,draw:2550}
 ];
 
 // ── Build frequency stats from any draws array ──────────────
