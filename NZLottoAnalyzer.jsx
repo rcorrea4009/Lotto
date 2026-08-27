@@ -2,10 +2,18 @@ import { useState } from "react";
 import Papa from "papaparse";
 import * as XLSX from "xlsx";
 
-// ── Fallback hardcoded draws (100 real, official draws from a user-provided NZ ──
-// Lotto results workbook — draws #2509–#2608, 20 Aug 2025 to 1 Aug 2026. Every
-// row has a verified 6-number line, bonus ball, and Powerball number.
+// ── Fallback hardcoded draws (100 real, official/verified draws) — rolling ──
+// window, most recent 100 as of 2026-08-27. Draws #2609–#2615 were added via
+// web search (mylotto.co.nz is unreachable from this environment); everything
+// else was read directly from a user-provided official results workbook.
 const FALLBACK = [
+  {date:"2026-08-26",numbers:[11,13,14,21,27,39],bonus:32,powerball:8,draw:2615},
+  {date:"2026-08-22",numbers:[3,14,20,22,37,40],bonus:12,powerball:5,draw:2614},
+  {date:"2026-08-19",numbers:[13,16,19,20,25,37],bonus:12,powerball:10,draw:2613},
+  {date:"2026-08-15",numbers:[14,15,17,22,32,40],bonus:3,powerball:9,draw:2612},
+  {date:"2026-08-12",numbers:[2,8,13,19,28,39],bonus:24,powerball:9,draw:2611},
+  {date:"2026-08-08",numbers:[9,13,21,24,25,35],bonus:5,powerball:8,draw:2610},
+  {date:"2026-08-05",numbers:[4,13,16,24,32,37],bonus:38,powerball:2,draw:2609},
   {date:"2026-08-01",numbers:[8,14,15,24,26,30],bonus:7,powerball:4,draw:2608},
   {date:"2026-07-29",numbers:[8,19,21,32,33,35],bonus:17,powerball:6,draw:2607},
   {date:"2026-07-25",numbers:[1,12,14,18,22,29],bonus:32,powerball:8,draw:2606},
@@ -98,14 +106,7 @@ const FALLBACK = [
   {date:"2025-09-24",numbers:[10,20,24,26,31,36],bonus:12,powerball:5,draw:2519},
   {date:"2025-09-20",numbers:[9,13,21,22,23,32],bonus:27,powerball:1,draw:2518},
   {date:"2025-09-17",numbers:[6,12,14,20,33,37],bonus:3,powerball:2,draw:2517},
-  {date:"2025-09-13",numbers:[8,14,21,32,34,40],bonus:25,powerball:1,draw:2516},
-  {date:"2025-09-10",numbers:[13,14,18,26,27,35],bonus:19,powerball:8,draw:2515},
-  {date:"2025-09-06",numbers:[6,17,18,27,32,40],bonus:39,powerball:9,draw:2514},
-  {date:"2025-09-03",numbers:[1,2,4,10,28,38],bonus:40,powerball:2,draw:2513},
-  {date:"2025-08-30",numbers:[4,9,13,15,33,40],bonus:1,powerball:4,draw:2512},
-  {date:"2025-08-27",numbers:[9,12,13,14,21,32],bonus:28,powerball:2,draw:2511},
-  {date:"2025-08-23",numbers:[13,16,17,24,25,31],bonus:38,powerball:8,draw:2510},
-  {date:"2025-08-20",numbers:[7,11,12,16,27,37],bonus:26,powerball:9,draw:2509}
+  {date:"2025-09-13",numbers:[8,14,21,32,34,40],bonus:25,powerball:1,draw:2516}
 ];
 
 // ── Build frequency stats from any draws array ──────────────
