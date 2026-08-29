@@ -1,0 +1,101 @@
+{
+  "chi_square_test": {
+    "n_draws": 2608,
+    "total_balls_drawn": 15648,
+    "expected_count_per_number": 391.2,
+    "chi2_statistic": 25.22,
+    "degrees_of_freedom": 39,
+    "p_value": 0.9569668948566643,
+    "verdict": "NOT statistically significant (p > 0.05) -- no evidence any number deviates from a fair 1/40 chance across the full history",
+    "top_deviations": [
+      {
+        "number": 1,
+        "observed": 429,
+        "expected": 391.2,
+        "diff": 37.8
+      },
+      {
+        "number": 12,
+        "observed": 424,
+        "expected": 391.2,
+        "diff": 32.8
+      },
+      {
+        "number": 13,
+        "observed": 418,
+        "expected": 391.2,
+        "diff": 26.8
+      },
+      {
+        "number": 22,
+        "observed": 418,
+        "expected": 391.2,
+        "diff": 26.8
+      },
+      {
+        "number": 19,
+        "observed": 414,
+        "expected": 391.2,
+        "diff": 22.8
+      }
+    ]
+  },
+  "backtest": {
+    "top6_freq_full_history": {
+      "n_predictions": 2408,
+      "avg_matches_of_6": 0.8908,
+      "std_error": 0.0166,
+      "95pct_ci": [
+        0.8582,
+        0.9233
+      ]
+    },
+    "top6_freq_recent50": {
+      "n_predictions": 2408,
+      "avg_matches_of_6": 0.8933,
+      "std_error": 0.0168,
+      "95pct_ci": [
+        0.8604,
+        0.9262
+      ]
+    },
+    "top6_freq_recent20": {
+      "n_predictions": 2408,
+      "avg_matches_of_6": 0.8929,
+      "std_error": 0.0166,
+      "95pct_ci": [
+        0.8603,
+        0.9254
+      ]
+    },
+    "weighted_sample_freq": {
+      "n_predictions": 2408,
+      "avg_matches_of_6": 0.902,
+      "std_error": 0.0163,
+      "95pct_ci": [
+        0.87,
+        0.934
+      ]
+    },
+    "random_uniform": {
+      "n_predictions": 2408,
+      "avg_matches_of_6": 0.8916,
+      "std_error": 0.0168,
+      "95pct_ci": [
+        0.8586,
+        0.9246
+      ]
+    },
+    "top6_logreg": {
+      "n_predictions": 2207,
+      "avg_matches_of_6": 0.9257,
+      "std_error": 0.0172,
+      "95pct_ci": [
+        0.8919,
+        0.9595
+      ]
+    },
+    "theoretical_expected_if_pure_chance": 0.9
+  },
+  "n_draws_used": 2608
+}
