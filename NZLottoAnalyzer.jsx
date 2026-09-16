@@ -3,10 +3,15 @@ import Papa from "papaparse";
 import * as XLSX from "xlsx";
 
 // ── Fallback hardcoded draws (100 real, official/verified draws) — rolling ──
-// window, most recent 100 as of 2026-08-27. Draws #2609–#2615 were added via
+// window, most recent 100 as of 2026-09-16. Draws #2609–#2620 were added via
 // web search (mylotto.co.nz is unreachable from this environment); everything
 // else was read directly from a user-provided official results workbook.
 const FALLBACK = [
+  {date:"2026-09-12",numbers:[3,4,26,29,38,40],bonus:27,powerball:7,draw:2620},
+  {date:"2026-09-09",numbers:[4,7,20,23,33,34],bonus:29,powerball:3,draw:2619},
+  {date:"2026-09-05",numbers:[3,14,16,23,31,34],bonus:33,powerball:7,draw:2618},
+  {date:"2026-09-02",numbers:[4,8,22,25,32,38],bonus:34,powerball:3,draw:2617},
+  {date:"2026-08-29",numbers:[2,5,20,24,25,31],bonus:18,powerball:5,draw:2616},
   {date:"2026-08-26",numbers:[11,13,14,21,27,39],bonus:32,powerball:8,draw:2615},
   {date:"2026-08-22",numbers:[3,14,20,22,37,40],bonus:12,powerball:5,draw:2614},
   {date:"2026-08-19",numbers:[13,16,19,20,25,37],bonus:12,powerball:10,draw:2613},
@@ -101,12 +106,7 @@ const FALLBACK = [
   {date:"2025-10-11",numbers:[7,11,24,37,39,40],bonus:4,powerball:7,draw:2524},
   {date:"2025-10-08",numbers:[5,11,17,30,32,34],bonus:15,powerball:3,draw:2523},
   {date:"2025-10-04",numbers:[14,17,24,25,27,32],bonus:28,powerball:7,draw:2522},
-  {date:"2025-10-01",numbers:[2,10,22,27,32,38],bonus:33,powerball:10,draw:2521},
-  {date:"2025-09-27",numbers:[6,10,15,17,19,35],bonus:14,powerball:5,draw:2520},
-  {date:"2025-09-24",numbers:[10,20,24,26,31,36],bonus:12,powerball:5,draw:2519},
-  {date:"2025-09-20",numbers:[9,13,21,22,23,32],bonus:27,powerball:1,draw:2518},
-  {date:"2025-09-17",numbers:[6,12,14,20,33,37],bonus:3,powerball:2,draw:2517},
-  {date:"2025-09-13",numbers:[8,14,21,32,34,40],bonus:25,powerball:1,draw:2516}
+  {date:"2025-10-01",numbers:[2,10,22,27,32,38],bonus:33,powerball:10,draw:2521}
 ];
 
 // ── Build frequency stats from any draws array ──────────────

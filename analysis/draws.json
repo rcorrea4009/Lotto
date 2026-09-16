@@ -1,13 +1,83 @@
 {
   "_meta": {
-    "generated": "2026-08-27",
-    "source": "User-provided official NZ Lotto results spreadsheet (Lotto Powerball sheet), covering every draw from draw #1 (1 Aug 1987) to the most recent draw at time of upload (draw #2608, 1 Aug 2026). This replaces the earlier 44-draw web-search-compiled dataset now that authoritative source data is available. Updated 2026-08-27: draws #2609-#2615 (5-26 Aug 2026) added via web search (cross-validated against sequential draw numbering and Wed/Sat cadence) since mylotto.co.nz remains unreachable from this environment; the 7 oldest draws (#2509-#2515) were dropped to keep a rolling 100-draw window.",
+    "generated": "2026-09-16",
+    "source": "User-provided official NZ Lotto results spreadsheet (Lotto Powerball sheet), covering every draw from draw #1 (1 Aug 1987) to the most recent draw at time of upload (draw #2608, 1 Aug 2026). This replaces the earlier 44-draw web-search-compiled dataset now that authoritative source data is available. Updated 2026-08-27: draws #2609-#2615 (5-26 Aug 2026) added via web search (cross-validated against sequential draw numbering and Wed/Sat cadence) since mylotto.co.nz remains unreachable from this environment; the 7 oldest draws (#2509-#2515) were dropped to keep a rolling 100-draw window. Updated 2026-09-16: draws #2616-#2620 (29 Aug - 12 Sep 2026) added via web search (draw #2616 cross-confirmed directly against a screenshot the user took of mylotto.co.nz itself), cross-validated by sequential draw numbering. This catches up a 3-week gap: the Wed/Sat auto-refresh Routine had been firing and updating the published report, but a fresh spawned session lacks this repo's git push credentials, so nothing reached the repository until fixed manually here.",
     "validation": "Read directly from the workbook, no reconstruction needed. Every one of the 100 rows has a complete 6-number line, bonus ball, and Powerball number -- no missing values. The 2026-08-27 update draws (2609-2615) were reconstructed from search snippets, not read from a workbook -- one (#2609) had its bonus ball duplicated as a 7th \"main\" number in the source snippet and was corrected accordingly.",
     "count": 100,
     "note_bonus": "Bonus ball (1-40) is the 7th ball drawn from the same barrel as the main 6.",
     "note_powerball": "Powerball (1-10) is a separate add-on barrel, present for all 100 draws in this set."
   },
   "draws": [
+    {
+      "draw": 2620,
+      "date": "2026-09-12",
+      "numbers": [
+        3,
+        4,
+        26,
+        29,
+        38,
+        40
+      ],
+      "bonus": 27,
+      "powerball": 7
+    },
+    {
+      "draw": 2619,
+      "date": "2026-09-09",
+      "numbers": [
+        4,
+        7,
+        20,
+        23,
+        33,
+        34
+      ],
+      "bonus": 29,
+      "powerball": 3
+    },
+    {
+      "draw": 2618,
+      "date": "2026-09-05",
+      "numbers": [
+        3,
+        14,
+        16,
+        23,
+        31,
+        34
+      ],
+      "bonus": 33,
+      "powerball": 7
+    },
+    {
+      "draw": 2617,
+      "date": "2026-09-02",
+      "numbers": [
+        4,
+        8,
+        22,
+        25,
+        32,
+        38
+      ],
+      "bonus": 34,
+      "powerball": 3
+    },
+    {
+      "draw": 2616,
+      "date": "2026-08-29",
+      "numbers": [
+        2,
+        5,
+        20,
+        24,
+        25,
+        31
+      ],
+      "bonus": 18,
+      "powerball": 5
+    },
     {
       "draw": 2615,
       "date": "2026-08-26",
@@ -1337,76 +1407,6 @@
       ],
       "bonus": 33,
       "powerball": 10
-    },
-    {
-      "draw": 2520,
-      "date": "2025-09-27",
-      "numbers": [
-        6,
-        10,
-        15,
-        17,
-        19,
-        35
-      ],
-      "bonus": 14,
-      "powerball": 5
-    },
-    {
-      "draw": 2519,
-      "date": "2025-09-24",
-      "numbers": [
-        10,
-        20,
-        24,
-        26,
-        31,
-        36
-      ],
-      "bonus": 12,
-      "powerball": 5
-    },
-    {
-      "draw": 2518,
-      "date": "2025-09-20",
-      "numbers": [
-        9,
-        13,
-        21,
-        22,
-        23,
-        32
-      ],
-      "bonus": 27,
-      "powerball": 1
-    },
-    {
-      "draw": 2517,
-      "date": "2025-09-17",
-      "numbers": [
-        6,
-        12,
-        14,
-        20,
-        33,
-        37
-      ],
-      "bonus": 3,
-      "powerball": 2
-    },
-    {
-      "draw": 2516,
-      "date": "2025-09-13",
-      "numbers": [
-        8,
-        14,
-        21,
-        32,
-        34,
-        40
-      ],
-      "bonus": 25,
-      "powerball": 1
     }
   ]
 }
