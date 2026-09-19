@@ -21,7 +21,9 @@ from pathlib import Path
 
 HERE = Path(__file__).parent
 MAIN_POOL = list(range(1, 41))
-PB_POOL = list(range(1, 11))
+# Powerball expanded from a 10-ball pool to 14 effective draw #2621 (16 Sep 2026);
+# see draws.json's _meta.powerball_rule_change for sourcing.
+PB_POOL = list(range(1, 15))
 LAST_N = 6
 NUM_LINES = 8
 ALPHA = 1.0          # Dirichlet smoothing prior (add-alpha smoothing)

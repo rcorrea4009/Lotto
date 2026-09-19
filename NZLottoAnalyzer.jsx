@@ -3,10 +3,13 @@ import Papa from "papaparse";
 import * as XLSX from "xlsx";
 
 // ── Fallback hardcoded draws (100 real, official/verified draws) — rolling ──
-// window, most recent 100 as of 2026-09-16. Draws #2609–#2620 were added via
+// window, most recent 100 as of 2026-09-19. Draws #2609–#2621 were added via
 // web search (mylotto.co.nz is unreachable from this environment); everything
 // else was read directly from a user-provided official results workbook.
+// NOTE: Powerball expanded from a 10-ball to a 14-ball pool at draw #2621
+// (16 Sep 2026) — draws before that use the old 1-10 range, #2621+ use 1-14.
 const FALLBACK = [
+  {date:"2026-09-16",numbers:[1,10,20,25,29,30],bonus:35,powerball:11,draw:2621},
   {date:"2026-09-12",numbers:[3,4,26,29,38,40],bonus:27,powerball:7,draw:2620},
   {date:"2026-09-09",numbers:[4,7,20,23,33,34],bonus:29,powerball:3,draw:2619},
   {date:"2026-09-05",numbers:[3,14,16,23,31,34],bonus:33,powerball:7,draw:2618},
@@ -105,8 +108,7 @@ const FALLBACK = [
   {date:"2025-10-15",numbers:[12,14,15,17,38,40],bonus:19,powerball:5,draw:2525},
   {date:"2025-10-11",numbers:[7,11,24,37,39,40],bonus:4,powerball:7,draw:2524},
   {date:"2025-10-08",numbers:[5,11,17,30,32,34],bonus:15,powerball:3,draw:2523},
-  {date:"2025-10-04",numbers:[14,17,24,25,27,32],bonus:28,powerball:7,draw:2522},
-  {date:"2025-10-01",numbers:[2,10,22,27,32,38],bonus:33,powerball:10,draw:2521}
+  {date:"2025-10-04",numbers:[14,17,24,25,27,32],bonus:28,powerball:7,draw:2522}
 ];
 
 // ── Build frequency stats from any draws array ──────────────
