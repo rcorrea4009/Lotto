@@ -1,7 +1,7 @@
 {
   "_meta": {
-    "generated": "2026-09-19",
-    "source": "User-provided official NZ Lotto results spreadsheet (Lotto Powerball sheet), covering every draw from draw #1 (1 Aug 1987) to the most recent draw at time of upload (draw #2608, 1 Aug 2026). This replaces the earlier 44-draw web-search-compiled dataset now that authoritative source data is available. Updated 2026-08-27: draws #2609-#2615 (5-26 Aug 2026) added via web search (cross-validated against sequential draw numbering and Wed/Sat cadence) since mylotto.co.nz remains unreachable from this environment; the 7 oldest draws (#2509-#2515) were dropped to keep a rolling 100-draw window. Updated 2026-09-16: draws #2616-#2620 (29 Aug - 12 Sep 2026) added via web search (draw #2616 cross-confirmed directly against a screenshot the user took of mylotto.co.nz itself), cross-validated by sequential draw numbering. This catches up a 3-week gap: the Wed/Sat auto-refresh Routine had been firing and updating the published report, but a fresh spawned session lacks this repo's git push credentials, so nothing reached the repository until fixed manually here. Updated 2026-09-19: draw #2621 (16 Sep 2026) added via web search, cross-validated.",
+    "generated": "2026-09-23T10:01:47Z",
+    "source": "User-provided official results workbook (draws through #2608) + WebSearch-verified additions for #2609 onward (mylotto.co.nz network-blocked in this environment). Draw #2622 (19 Sep 2026) added this run, cross-validated against two independent search results (lottolyzer.com-sourced aggregators).",
     "validation": "Read directly from the workbook, no reconstruction needed. Every one of the 100 rows has a complete 6-number line, bonus ball, and Powerball number -- no missing values. The 2026-08-27 update draws (2609-2615) were reconstructed from search snippets, not read from a workbook -- one (#2609) had its bonus ball duplicated as a 7th \"main\" number in the source snippet and was corrected accordingly.",
     "count": 100,
     "note_bonus": "Bonus ball (1-40) is the 7th ball drawn from the same barrel as the main 6.",
@@ -9,6 +9,20 @@
     "powerball_rule_change": "IMPORTANT: NZ Lotto Powerball expanded from a 10-ball pool (1-10) to a 14-ball pool (1-14) effective draw #2621 (16 Sep 2026) -- confirmed via multiple independent news sources (1News, Stuff) and mylotto.co.nz/powerball-changes. All draws #2621 onward use the new 1-14 range; every draw before that (#2620 and earlier, all data back to 1987) used the old 1-10 range. Powerball frequency stats spanning this boundary mix two different underlying probability distributions -- numbers 11-14 will show near-zero historical counts simply because they did not exist as valid outcomes until draw #2621, not because they are cold. Division 8 was also added (fixed prize, 2 main + bonus + powerball) and jackpot odds shifted from 1-in-38.4m to 1-in-53.7m -- this does not affect the main 6-number game or its analysis, only Powerball."
   },
   "draws": [
+    {
+      "draw": 2622,
+      "date": "2026-09-19",
+      "numbers": [
+        7,
+        10,
+        11,
+        28,
+        35,
+        37
+      ],
+      "bonus": 12,
+      "powerball": 14
+    },
     {
       "draw": 2621,
       "date": "2026-09-16",
@@ -1394,20 +1408,6 @@
       ],
       "bonus": 15,
       "powerball": 3
-    },
-    {
-      "draw": 2522,
-      "date": "2025-10-04",
-      "numbers": [
-        14,
-        17,
-        24,
-        25,
-        27,
-        32
-      ],
-      "bonus": 28,
-      "powerball": 7
     }
   ]
 }
