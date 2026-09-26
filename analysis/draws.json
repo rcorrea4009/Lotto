@@ -1,7 +1,7 @@
 {
   "_meta": {
-    "generated": "2026-09-23T10:01:47Z",
-    "source": "User-provided official results workbook (draws through #2608) + WebSearch-verified additions for #2609 onward (mylotto.co.nz network-blocked in this environment). Draw #2622 (19 Sep 2026) added this run, cross-validated against two independent search results (lottolyzer.com-sourced aggregators).",
+    "generated": "2026-09-26T10:16:49Z",
+    "source": "User-provided official results workbook (draws through #2608) + WebSearch-verified additions for #2609 onward (mylotto.co.nz network-blocked in this environment). Draws #2623 and #2624 (23 and 26 Sep 2026) added this run, each cross-validated against two independent search results.",
     "validation": "Read directly from the workbook, no reconstruction needed. Every one of the 100 rows has a complete 6-number line, bonus ball, and Powerball number -- no missing values. The 2026-08-27 update draws (2609-2615) were reconstructed from search snippets, not read from a workbook -- one (#2609) had its bonus ball duplicated as a 7th \"main\" number in the source snippet and was corrected accordingly.",
     "count": 100,
     "note_bonus": "Bonus ball (1-40) is the 7th ball drawn from the same barrel as the main 6.",
@@ -9,6 +9,34 @@
     "powerball_rule_change": "IMPORTANT: NZ Lotto Powerball expanded from a 10-ball pool (1-10) to a 14-ball pool (1-14) effective draw #2621 (16 Sep 2026) -- confirmed via multiple independent news sources (1News, Stuff) and mylotto.co.nz/powerball-changes. All draws #2621 onward use the new 1-14 range; every draw before that (#2620 and earlier, all data back to 1987) used the old 1-10 range. Powerball frequency stats spanning this boundary mix two different underlying probability distributions -- numbers 11-14 will show near-zero historical counts simply because they did not exist as valid outcomes until draw #2621, not because they are cold. Division 8 was also added (fixed prize, 2 main + bonus + powerball) and jackpot odds shifted from 1-in-38.4m to 1-in-53.7m -- this does not affect the main 6-number game or its analysis, only Powerball."
   },
   "draws": [
+    {
+      "draw": 2624,
+      "date": "2026-09-26",
+      "numbers": [
+        5,
+        12,
+        19,
+        21,
+        24,
+        38
+      ],
+      "bonus": 17,
+      "powerball": 7
+    },
+    {
+      "draw": 2623,
+      "date": "2026-09-23",
+      "numbers": [
+        1,
+        4,
+        6,
+        9,
+        16,
+        27
+      ],
+      "bonus": 35,
+      "powerball": 12
+    },
     {
       "draw": 2622,
       "date": "2026-09-19",
@@ -1380,34 +1408,6 @@
       ],
       "bonus": 19,
       "powerball": 5
-    },
-    {
-      "draw": 2524,
-      "date": "2025-10-11",
-      "numbers": [
-        7,
-        11,
-        24,
-        37,
-        39,
-        40
-      ],
-      "bonus": 4,
-      "powerball": 7
-    },
-    {
-      "draw": 2523,
-      "date": "2025-10-08",
-      "numbers": [
-        5,
-        11,
-        17,
-        30,
-        32,
-        34
-      ],
-      "bonus": 15,
-      "powerball": 3
     }
   ]
 }
