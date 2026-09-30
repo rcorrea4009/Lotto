@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generated": "2026-09-26T10:16:49Z",
-    "source": "User-provided official results workbook (draws through #2608) + WebSearch-verified additions for #2609 onward (mylotto.co.nz network-blocked in this environment). Draws #2623 and #2624 (23 and 26 Sep 2026) added this run, each cross-validated against two independent search results.",
+    "generated": "2026-09-30T10:02:08Z",
+    "source": "User-provided official results workbook (draws through #2608) + WebSearch-verified additions for #2609 onward (mylotto.co.nz network-blocked in this environment). Draw #2625 (30 Sep 2026) added this run, cross-validated against two independent search results (Stuff.co.nz-sourced).",
     "validation": "Read directly from the workbook, no reconstruction needed. Every one of the 100 rows has a complete 6-number line, bonus ball, and Powerball number -- no missing values. The 2026-08-27 update draws (2609-2615) were reconstructed from search snippets, not read from a workbook -- one (#2609) had its bonus ball duplicated as a 7th \"main\" number in the source snippet and was corrected accordingly.",
     "count": 100,
     "note_bonus": "Bonus ball (1-40) is the 7th ball drawn from the same barrel as the main 6.",
@@ -11,36 +11,36 @@
   "sample_size": 100,
   "recent_window": 6,
   "main_number_frequency_full": {
-    "1": 13,
+    "1": 14,
     "2": 19,
     "3": 16,
     "4": 18,
     "5": 14,
     "6": 13,
     "7": 16,
-    "8": 15,
+    "8": 16,
     "9": 17,
     "10": 18,
     "11": 13,
-    "12": 17,
+    "12": 16,
     "13": 18,
-    "14": 21,
-    "15": 12,
+    "14": 20,
+    "15": 11,
     "16": 9,
-    "17": 13,
+    "17": 12,
     "18": 12,
-    "19": 16,
+    "19": 17,
     "20": 12,
     "21": 17,
     "22": 18,
-    "23": 10,
+    "23": 11,
     "24": 21,
-    "25": 14,
+    "25": 15,
     "26": 15,
     "27": 13,
     "28": 15,
     "29": 16,
-    "30": 17,
+    "30": 18,
     "31": 15,
     "32": 19,
     "33": 15,
@@ -48,19 +48,19 @@
     "35": 16,
     "36": 10,
     "37": 19,
-    "38": 12,
+    "38": 11,
     "39": 7,
-    "40": 16
+    "40": 15
   },
   "main_number_frequency_last6": {
-    "1": 2,
+    "1": 3,
     "2": 0,
     "3": 1,
-    "4": 3,
+    "4": 2,
     "5": 1,
     "6": 1,
-    "7": 2,
-    "8": 0,
+    "7": 1,
+    "8": 1,
     "9": 1,
     "10": 2,
     "11": 1,
@@ -71,22 +71,22 @@
     "16": 1,
     "17": 0,
     "18": 0,
-    "19": 1,
-    "20": 2,
+    "19": 2,
+    "20": 1,
     "21": 1,
     "22": 0,
     "23": 1,
     "24": 1,
-    "25": 1,
+    "25": 2,
     "26": 1,
     "27": 1,
     "28": 1,
     "29": 2,
-    "30": 1,
+    "30": 2,
     "31": 0,
     "32": 0,
-    "33": 1,
-    "34": 1,
+    "33": 0,
+    "34": 0,
     "35": 1,
     "36": 0,
     "37": 1,
@@ -96,12 +96,12 @@
   },
   "hottest_full": [
     [
-      14,
+      24,
       21
     ],
     [
-      24,
-      21
+      14,
+      20
     ],
     [
       2,
@@ -138,27 +138,27 @@
       9
     ],
     [
-      23,
-      10
-    ],
-    [
       36,
       10
     ],
     [
       15,
+      11
+    ],
+    [
+      23,
+      11
+    ],
+    [
+      38,
+      11
+    ],
+    [
+      17,
       12
     ],
     [
       18,
-      12
-    ],
-    [
-      20,
-      12
-    ],
-    [
-      38,
       12
     ]
   ],
@@ -169,6 +169,7 @@
     5,
     6,
     7,
+    8,
     9,
     10,
     11,
@@ -185,8 +186,6 @@
     28,
     29,
     30,
-    33,
-    34,
     35,
     37,
     38,
@@ -195,35 +194,35 @@
   "most_overdue": [
     [
       36,
-      27
+      28
     ],
     [
       18,
-      18
+      19
     ],
     [
       15,
-      12
+      13
     ],
     [
       17,
-      12
+      13
     ],
     [
       13,
-      9
+      10
     ],
     [
       39,
-      9
+      10
     ],
     [
       2,
-      8
+      9
     ],
     [
-      8,
-      7
+      22,
+      8
     ]
   ],
   "top_pairs": [
@@ -240,6 +239,13 @@
         28
       ],
       "count": 7
+    },
+    {
+      "pair": [
+        25,
+        30
+      ],
+      "count": 6
     },
     {
       "pair": [
@@ -289,31 +295,24 @@
         17
       ],
       "count": 6
-    },
-    {
-      "pair": [
-        22,
-        24
-      ],
-      "count": 6
     }
   ],
   "sum_distribution": {
-    "mean": 120.4,
-    "stdev": 24.4,
+    "mean": 120.1,
+    "stdev": 24.3,
     "min": 57,
     "max": 171
   },
   "odd_even_high_low": {
-    "avg_odd_of_6": 2.9,
-    "avg_high_of_6": 2.98,
+    "avg_odd_of_6": 2.92,
+    "avg_high_of_6": 2.99,
     "most_common_odd_split": [
       3,
       30
     ],
     "most_common_high_split": [
       3,
-      41
+      42
     ]
   },
   "bonus_frequency_full": {
@@ -323,7 +322,7 @@
     "4": 2,
     "5": 3,
     "6": 0,
-    "7": 3,
+    "7": 4,
     "8": 0,
     "9": 3,
     "10": 2,
@@ -335,7 +334,7 @@
     "16": 3,
     "17": 4,
     "18": 2,
-    "19": 2,
+    "19": 1,
     "20": 2,
     "21": 1,
     "22": 3,
@@ -359,10 +358,10 @@
     "40": 3
   },
   "bonus_frequency_last6": {
+    "7": 1,
     "12": 1,
     "17": 1,
     "27": 1,
-    "29": 1,
     "35": 2
   },
   "powerball_sample_size": 100,
@@ -371,9 +370,9 @@
     "2": 5,
     "3": 15,
     "4": 8,
-    "5": 10,
+    "5": 9,
     "6": 13,
-    "7": 7,
+    "7": 8,
     "8": 8,
     "9": 8,
     "10": 11,
@@ -383,8 +382,7 @@
     "14": 1
   },
   "powerball_frequency_last6": {
-    "3": 1,
-    "7": 2,
+    "7": 3,
     "11": 1,
     "12": 1,
     "14": 1
@@ -392,121 +390,121 @@
   "generated_lines": [
     {
       "numbers": [
-        10,
-        17,
-        20,
-        23,
-        25,
+        5,
+        9,
+        21,
+        24,
+        28,
         32
       ],
-      "bonus": 21,
-      "powerball": 6
+      "bonus": 35,
+      "powerball": 3
     },
     {
       "numbers": [
-        1,
-        6,
-        10,
-        21,
-        27,
-        39
-      ],
-      "bonus": 7,
-      "powerball": 11
-    },
-    {
-      "numbers": [
-        1,
-        6,
-        16,
-        19,
-        21,
-        39
-      ],
-      "bonus": 17,
-      "powerball": 10
-    },
-    {
-      "numbers": [
-        1,
         7,
-        9,
+        14,
+        21,
         24,
-        35,
-        37
+        30,
+        32
       ],
-      "bonus": 4,
-      "powerball": 10
-    },
-    {
-      "numbers": [
-        4,
-        5,
-        8,
-        11,
-        25,
-        33
-      ],
-      "bonus": 24,
-      "powerball": 6
+      "bonus": 27,
+      "powerball": 2
     },
     {
       "numbers": [
         9,
-        13,
-        15,
-        24,
-        25,
-        31
+        10,
+        12,
+        17,
+        23,
+        24
       ],
-      "bonus": 12,
+      "bonus": 27,
       "powerball": 12
     },
     {
       "numbers": [
-        3,
-        9,
-        15,
-        18,
-        21,
+        1,
+        2,
+        29,
+        31,
+        32,
         38
       ],
-      "bonus": 31,
-      "powerball": 12
+      "bonus": 8,
+      "powerball": 7
     },
     {
       "numbers": [
-        7,
-        8,
-        12,
-        16,
-        19,
-        39
+        18,
+        24,
+        29,
+        30,
+        38,
+        40
       ],
-      "bonus": 15,
+      "bonus": 20,
+      "powerball": 10
+    },
+    {
+      "numbers": [
+        6,
+        8,
+        9,
+        12,
+        19,
+        24
+      ],
+      "bonus": 10,
       "powerball": 6
+    },
+    {
+      "numbers": [
+        9,
+        10,
+        12,
+        20,
+        30,
+        32
+      ],
+      "bonus": 34,
+      "powerball": 2
+    },
+    {
+      "numbers": [
+        2,
+        4,
+        14,
+        17,
+        34,
+        38
+      ],
+      "bonus": 18,
+      "powerball": 7
     }
   ],
   "monte_carlo_validation": {
     "trials": 20000,
     "weighted_ticket": [
-      3,
+      5,
+      6,
+      9,
       17,
-      21,
-      24,
-      33,
-      40
+      23,
+      38
     ],
     "random_ticket": [
-      21,
-      33,
-      40,
-      2,
-      29,
-      26
+      16,
+      3,
+      18,
+      30,
+      11,
+      23
     ],
-    "weighted_avg_matches": 0.8938,
-    "random_avg_matches": 0.9001,
+    "weighted_avg_matches": 0.9049,
+    "random_avg_matches": 0.905,
     "theoretical_expected_matches": 0.9,
     "note": "Both should hover near the theoretical expected value (0.9) with no statistically meaningful gap -- confirming the model has no real edge, as expected for a fair, independent lottery draw."
   }
