@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generated": "2026-09-30T10:02:08Z",
-    "source": "User-provided official results workbook (draws through #2608) + WebSearch-verified additions for #2609 onward (mylotto.co.nz network-blocked in this environment). Draw #2625 (30 Sep 2026) added this run, cross-validated against two independent search results (Stuff.co.nz-sourced).",
+    "generated": "2026-10-03T10:02:07Z",
+    "source": "User-provided official results workbook (draws through #2608) + WebSearch-verified additions for #2609 onward (mylotto.co.nz network-blocked in this environment). Draw #2626 (3 Oct 2026) added this run, cross-validated against two independent search results (Stuff.co.nz and NZ Herald).",
     "validation": "Read directly from the workbook, no reconstruction needed. Every one of the 100 rows has a complete 6-number line, bonus ball, and Powerball number -- no missing values. The 2026-08-27 update draws (2609-2615) were reconstructed from search snippets, not read from a workbook -- one (#2609) had its bonus ball duplicated as a 7th \"main\" number in the source snippet and was corrected accordingly.",
     "count": 100,
     "note_bonus": "Bonus ball (1-40) is the 7th ball drawn from the same barrel as the main 6.",
@@ -13,41 +13,41 @@
   "main_number_frequency_full": {
     "1": 14,
     "2": 19,
-    "3": 16,
-    "4": 18,
-    "5": 14,
+    "3": 17,
+    "4": 19,
+    "5": 15,
     "6": 13,
     "7": 16,
     "8": 16,
     "9": 17,
-    "10": 18,
+    "10": 17,
     "11": 13,
     "12": 16,
     "13": 18,
     "14": 20,
     "15": 11,
     "16": 9,
-    "17": 12,
-    "18": 12,
+    "17": 13,
+    "18": 13,
     "19": 17,
-    "20": 12,
+    "20": 11,
     "21": 17,
     "22": 18,
     "23": 11,
     "24": 21,
     "25": 15,
-    "26": 15,
+    "26": 14,
     "27": 13,
     "28": 15,
     "29": 16,
     "30": 18,
     "31": 15,
-    "32": 19,
-    "33": 15,
+    "32": 18,
+    "33": 14,
     "34": 13,
     "35": 16,
-    "36": 10,
-    "37": 19,
+    "36": 11,
+    "37": 18,
     "38": 11,
     "39": 7,
     "40": 15
@@ -57,7 +57,7 @@
     "2": 0,
     "3": 1,
     "4": 2,
-    "5": 1,
+    "5": 2,
     "6": 1,
     "7": 1,
     "8": 1,
@@ -69,8 +69,8 @@
     "14": 0,
     "15": 0,
     "16": 1,
-    "17": 0,
-    "18": 0,
+    "17": 1,
+    "18": 1,
     "19": 2,
     "20": 1,
     "21": 1,
@@ -78,21 +78,21 @@
     "23": 1,
     "24": 1,
     "25": 2,
-    "26": 1,
+    "26": 0,
     "27": 1,
     "28": 1,
-    "29": 2,
+    "29": 1,
     "30": 2,
     "31": 0,
     "32": 0,
     "33": 0,
     "34": 0,
     "35": 1,
-    "36": 0,
+    "36": 1,
     "37": 1,
-    "38": 2,
+    "38": 1,
     "39": 0,
-    "40": 1
+    "40": 0
   },
   "hottest_full": [
     [
@@ -108,23 +108,23 @@
       19
     ],
     [
-      32,
-      19
-    ],
-    [
-      37,
-      19
-    ],
-    [
       4,
-      18
-    ],
-    [
-      10,
-      18
+      19
     ],
     [
       13,
+      18
+    ],
+    [
+      22,
+      18
+    ],
+    [
+      30,
+      18
+    ],
+    [
+      32,
       18
     ]
   ],
@@ -138,11 +138,11 @@
       9
     ],
     [
-      36,
-      10
+      15,
+      11
     ],
     [
-      15,
+      20,
       11
     ],
     [
@@ -150,16 +150,16 @@
       11
     ],
     [
+      36,
+      11
+    ],
+    [
       38,
       11
     ],
     [
-      17,
-      12
-    ],
-    [
-      18,
-      12
+      6,
+      13
     ]
   ],
   "hottest_last6": [
@@ -175,53 +175,54 @@
     11,
     12,
     16,
+    17,
+    18,
     19,
     20,
     21,
     23,
     24,
     25,
-    26,
     27,
     28,
     29,
     30,
     35,
+    36,
     37,
-    38,
-    40
+    38
   ],
   "most_overdue": [
     [
-      36,
-      28
-    ],
-    [
-      18,
-      19
-    ],
-    [
       15,
-      13
-    ],
-    [
-      17,
-      13
+      14
     ],
     [
       13,
-      10
+      11
     ],
     [
       39,
-      10
+      11
     ],
     [
       2,
-      9
+      10
     ],
     [
       22,
+      9
+    ],
+    [
+      32,
+      9
+    ],
+    [
+      14,
+      8
+    ],
+    [
+      31,
       8
     ]
   ],
@@ -298,17 +299,17 @@
     }
   ],
   "sum_distribution": {
-    "mean": 120.1,
+    "mean": 119.3,
     "stdev": 24.3,
     "min": 57,
     "max": 171
   },
   "odd_even_high_low": {
-    "avg_odd_of_6": 2.92,
-    "avg_high_of_6": 2.99,
+    "avg_odd_of_6": 2.93,
+    "avg_high_of_6": 2.96,
     "most_common_odd_split": [
       3,
-      30
+      31
     ],
     "most_common_high_split": [
       3,
@@ -322,7 +323,7 @@
     "4": 2,
     "5": 3,
     "6": 0,
-    "7": 4,
+    "7": 5,
     "8": 0,
     "9": 3,
     "10": 2,
@@ -344,7 +345,7 @@
     "26": 2,
     "27": 2,
     "28": 3,
-    "29": 4,
+    "29": 3,
     "30": 0,
     "31": 1,
     "32": 3,
@@ -358,16 +359,15 @@
     "40": 3
   },
   "bonus_frequency_last6": {
-    "7": 1,
+    "7": 2,
     "12": 1,
     "17": 1,
-    "27": 1,
     "35": 2
   },
   "powerball_sample_size": 100,
   "powerball_frequency_full": {
-    "1": 12,
-    "2": 5,
+    "1": 13,
+    "2": 4,
     "3": 15,
     "4": 8,
     "5": 9,
@@ -382,7 +382,8 @@
     "14": 1
   },
   "powerball_frequency_last6": {
-    "7": 3,
+    "1": 1,
+    "7": 2,
     "11": 1,
     "12": 1,
     "14": 1
@@ -390,121 +391,121 @@
   "generated_lines": [
     {
       "numbers": [
-        5,
-        9,
-        21,
-        24,
+        1,
+        2,
+        13,
+        27,
         28,
-        32
+        37
       ],
-      "bonus": 35,
+      "bonus": 30,
+      "powerball": 7
+    },
+    {
+      "numbers": [
+        3,
+        7,
+        8,
+        18,
+        23,
+        27
+      ],
+      "bonus": 37,
+      "powerball": 5
+    },
+    {
+      "numbers": [
+        11,
+        13,
+        22,
+        25,
+        35,
+        38
+      ],
+      "bonus": 33,
       "powerball": 3
     },
     {
       "numbers": [
-        7,
-        14,
-        21,
-        24,
-        30,
-        32
-      ],
-      "bonus": 27,
-      "powerball": 2
-    },
-    {
-      "numbers": [
-        9,
-        10,
-        12,
+        2,
+        8,
         17,
-        23,
-        24
+        19,
+        26,
+        36
       ],
-      "bonus": 27,
-      "powerball": 12
+      "bonus": 35,
+      "powerball": 14
     },
     {
       "numbers": [
         1,
         2,
-        29,
-        31,
-        32,
-        38
+        6,
+        20,
+        25,
+        30
       ],
-      "bonus": 8,
-      "powerball": 7
+      "bonus": 3,
+      "powerball": 4
     },
     {
       "numbers": [
-        18,
+        1,
+        9,
+        12,
         24,
         29,
-        30,
-        38,
-        40
+        37
       ],
-      "bonus": 20,
+      "bonus": 34,
       "powerball": 10
     },
     {
       "numbers": [
-        6,
-        8,
-        9,
-        12,
-        19,
-        24
-      ],
-      "bonus": 10,
-      "powerball": 6
-    },
-    {
-      "numbers": [
-        9,
-        10,
-        12,
-        20,
-        30,
-        32
-      ],
-      "bonus": 34,
-      "powerball": 2
-    },
-    {
-      "numbers": [
-        2,
-        4,
-        14,
-        17,
+        21,
+        26,
+        29,
+        33,
         34,
         38
       ],
-      "bonus": 18,
-      "powerball": 7
+      "bonus": 10,
+      "powerball": 11
+    },
+    {
+      "numbers": [
+        6,
+        7,
+        8,
+        13,
+        22,
+        35
+      ],
+      "bonus": 12,
+      "powerball": 5
     }
   ],
   "monte_carlo_validation": {
     "trials": 20000,
     "weighted_ticket": [
-      5,
-      6,
-      9,
-      17,
-      23,
-      38
+      10,
+      19,
+      20,
+      24,
+      32,
+      40
     ],
     "random_ticket": [
+      23,
+      15,
       16,
-      3,
-      18,
-      30,
+      24,
       11,
-      23
+      3
     ],
-    "weighted_avg_matches": 0.9049,
-    "random_avg_matches": 0.905,
+    "weighted_avg_matches": 0.895,
+    "random_avg_matches": 0.8964,
     "theoretical_expected_matches": 0.9,
     "note": "Both should hover near the theoretical expected value (0.9) with no statistically meaningful gap -- confirming the model has no real edge, as expected for a fair, independent lottery draw."
   }
