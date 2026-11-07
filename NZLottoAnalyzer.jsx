@@ -9,6 +9,7 @@ import * as XLSX from "xlsx";
 // NOTE: Powerball expanded from a 10-ball to a 14-ball pool at draw #2621
 // (16 Sep 2026) — draws before that use the old 1-10 range, #2621+ use 1-14.
 const FALLBACK = [
+  { draw: 2636, date: "2026-11-07", numbers: [4,7,13,23,29,36], bonus: 17, powerball: 13 },
   { draw: 2635, date: "2026-11-04", numbers: [4,8,14,17,20,32], bonus: 5, powerball: 3 },
   { draw: 2634, date: "2026-10-31", numbers: [4,6,8,19,20,31], bonus: 33, powerball: 3 },
   { draw: 2633, date: "2026-10-28", numbers: [10,27,29,30,32,40], bonus: 38, powerball: 10 },
@@ -108,7 +109,6 @@ const FALLBACK = [
   { draw: 2539, date: "2025-12-03", numbers: [3,9,24,30,38,40], bonus: 34, powerball: 2 },
   { draw: 2538, date: "2025-11-29", numbers: [8,11,19,29,33,37], bonus: 3, powerball: 3 },
   { draw: 2537, date: "2025-11-26", numbers: [4,5,9,21,32,34], bonus: 3, powerball: 1 },
-  { draw: 2536, date: "2025-11-22", numbers: [2,6,10,12,28,30], bonus: 22, powerball: 8 },
 ];
 
 // ── Build frequency stats from any draws array ──────────────
