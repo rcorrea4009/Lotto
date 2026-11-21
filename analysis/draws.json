@@ -1,7 +1,7 @@
 {
   "_meta": {
-    "generated": "2026-11-18T10:07:00Z",
-    "source": "User-provided official results workbook (draws through #2608) + WebSearch-verified additions for #2609 onward (mylotto.co.nz network-blocked in this environment). Draws #2637 (11 Nov 2026) and #2638 (14 Nov 2026) added this run, each cross-validated against two independent search results (Lottolyzer and lottodraw.co.nz for #2637; lottodraw.co.nz and LotteryExtreme for #2638). Draw #2637 had been dropped on an earlier firing for lacking a second source at that time; it is now confirmed.",
+    "generated": "2026-11-21T10:07:00Z",
+    "source": "User-provided official results workbook (draws through #2608) + WebSearch-verified additions for #2609 onward (mylotto.co.nz network-blocked in this environment). Draws #2639 (18 Nov 2026) and #2640 (21 Nov 2026) added this run, each cross-validated against multiple independent sources (Lottolyzer, lottodraw.co.nz, spintown.nz and LotteryExtreme for #2639; Lottolyzer and a Stuff.co.nz news report for #2640).",
     "validation": "Read directly from the workbook, no reconstruction needed. Every one of the 100 rows has a complete 6-number line, bonus ball, and Powerball number -- no missing values. The 2026-08-27 update draws (2609-2615) were reconstructed from search snippets, not read from a workbook -- one (#2609) had its bonus ball duplicated as a 7th \"main\" number in the source snippet and was corrected accordingly.",
     "count": 100,
     "note_bonus": "Bonus ball (1-40) is the 7th ball drawn from the same barrel as the main 6.",
@@ -9,6 +9,34 @@
     "powerball_rule_change": "IMPORTANT: NZ Lotto Powerball expanded from a 10-ball pool (1-10) to a 14-ball pool (1-14) effective draw #2621 (16 Sep 2026) -- confirmed via multiple independent news sources (1News, Stuff) and mylotto.co.nz/powerball-changes. All draws #2621 onward use the new 1-14 range; every draw before that (#2620 and earlier, all data back to 1987) used the old 1-10 range. Powerball frequency stats spanning this boundary mix two different underlying probability distributions -- numbers 11-14 will show near-zero historical counts simply because they did not exist as valid outcomes until draw #2621, not because they are cold. Division 8 was also added (fixed prize, 2 main + bonus + powerball) and jackpot odds shifted from 1-in-38.4m to 1-in-53.7m -- this does not affect the main 6-number game or its analysis, only Powerball."
   },
   "draws": [
+    {
+      "draw": 2640,
+      "date": "2026-11-21",
+      "numbers": [
+        4,
+        6,
+        7,
+        9,
+        23,
+        24
+      ],
+      "bonus": 20,
+      "powerball": 10
+    },
+    {
+      "draw": 2639,
+      "date": "2026-11-18",
+      "numbers": [
+        16,
+        17,
+        20,
+        27,
+        31,
+        33
+      ],
+      "bonus": 1,
+      "powerball": 6
+    },
     {
       "draw": 2638,
       "date": "2026-11-14",
@@ -1380,34 +1408,6 @@
       ],
       "bonus": 3,
       "powerball": 4
-    },
-    {
-      "draw": 2540,
-      "date": "2025-12-06",
-      "numbers": [
-        4,
-        17,
-        29,
-        31,
-        35,
-        37
-      ],
-      "bonus": 33,
-      "powerball": 7
-    },
-    {
-      "draw": 2539,
-      "date": "2025-12-03",
-      "numbers": [
-        3,
-        9,
-        24,
-        30,
-        38,
-        40
-      ],
-      "bonus": 34,
-      "powerball": 2
     }
   ]
 }
